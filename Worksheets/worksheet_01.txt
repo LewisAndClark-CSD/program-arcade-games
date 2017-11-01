@@ -6,26 +6,28 @@
      and punctuation. Please limit the length of each line to 80 characters.
      
   1. Write a line of code that will print your name.
-
+     print("Evan Witterholt")
   2. How do you enter a comment in a program?
-
+     #
   3. What do the following lines of code output?
      	ALSO: Why do they give a different answer?
-     
-     print(2 / 3)
-     print(2 // 3)
+     / is division, // is floor division
+     print(2 / 3) = 0.6666666666
+     print(2 // 3) = 0
      
   4. Write a line of code that creates a variable called pi and sets
      	it to an appropriate value.
+          pi = 9
 
   5. Why does this code not work?
-     
+     A and a are two different variables
      A = 22
      print(a)
      
   6. All of the variable names below can be used. But which ONE of these is
      	the better variable name to use?
-     
+                 
+                 area_of_rectangle
      a
      A
      Area
@@ -43,7 +45,7 @@
      APPLE
      Apple2
      1Apple
-     account number
+     account number      this one
      account_number
      account.number
      accountNumber
@@ -58,20 +60,21 @@
      great.big.variable
      2x
      x2x
-     total%
-     #left
+     total%       this one
+     #left        this one
      
-  8. Why does this code not work?
+  8. Why does this code not work? The print statement needs to be last
      
      print(a)
      a = 45
      
   9. Explain the mistake in this code:
-     
+     Only the first 3 digits are printing
      pi = float(3.14)
      
  10. This program runs, but the code still could be better. Explain what is
      wrong with the code.
+     You do not need x =3.14
      
      radius = float(input("Radius:"))
      x = 3.14
@@ -80,25 +83,27 @@
      print(area)
      
  11. Explain the mistake in the following code:
-     
+     There are excess parenthesis
      x = 4
      y = 5
      a = ((x) * (y))
      print(a)
      
  12. Explain the mistake in the following code:
-     
+     There is no int. All the numbers are being typed as strings.
      x = 4
      y = 5
      a = 3(x + y)
      print(a)
      
  13. Explain the mistake in the following code:
+     A radius does not need a float command
      
      radius = input(float("Enter the radius:"))
      
  14. Do all these print the same value? Which one is better to use and why?
-     
+     Yes, the first one     
+    
      print(2/3+4)
      print(2 / 3 + 4)
      print(   2 /    3+    4  )
@@ -139,6 +144,14 @@
  24. Correct the following code:
      
      value = int(input(print("Enter your age")))
+     
+     
+     
+     
+     
+     
+     
+     
      
 
 
