@@ -6,23 +6,24 @@
      and punctuation. Please limit the length of each line to 80 characters.
      
   1. Write a line of code that will print your name.
-
+   print('Conner')
   2. How do you enter a comment in a program?
-
+use # before the comment 
   3. What do the following lines of code output?
      	ALSO: Why do they give a different answer?
      
      print(2 / 3)
+     0.66
      print(2 // 3)
-     
+     0
   4. Write a line of code that creates a variable called pi and sets
      	it to an appropriate value.
-
+pi = 3.14
   5. Why does this code not work?
      
      A = 22
      print(a)
-     
+     Because the A variable is different than the a variable called to print.
   6. All of the variable names below can be used. But which ONE of these is
      	the better variable name to use?
      
@@ -34,6 +35,8 @@
      area_of_rectangle
      Area_Of_Rectangle
      
+     area_of_rectangle
+     
   7. Which of these variables names are not allowed in Python? (More than one
      might be wrong. Also, this question is not asking about improper names, just
      names that aren't allowed. Test them if you aren't sure.)
@@ -43,11 +46,11 @@
      APPLE
      Apple2
      1Apple
-     account number
+     account number this isn't allowed 
      account_number
      account.number
      accountNumber
-     account#
+     account# this isn't allowed 
      pi
      PI
      fred
@@ -58,17 +61,18 @@
      great.big.variable
      2x
      x2x
-     total%
-     #left
+     total% this isn't allowed 
+     #left this isn't allowed 
      
   8. Why does this code not work?
      
      print(a)
      a = 45
-     
+     Because it's telling the program to print something that hasn't been defined yet, then defining it.
   9. Explain the mistake in this code:
      
      pi = float(3.14)
+     the number 3.14 is already a float, it doesn't need a float in front of it  
      
  10. This program runs, but the code still could be better. Explain what is
      wrong with the code.
