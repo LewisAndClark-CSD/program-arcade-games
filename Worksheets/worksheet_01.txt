@@ -6,22 +6,27 @@
      and punctuation. Please limit the length of each line to 80 characters.
      
   1. Write a line of code that will print your name.
+  print(Bethany DuMontelle)
 
   2. How do you enter a comment in a program?
+  Use a #
 
   3. What do the following lines of code output?
      	ALSO: Why do they give a different answer?
      
      print(2 / 3)
      print(2 // 3)
+     The first line prints 0.6666666666666666, while the other code prints 0. This is because the first code is division, while the other one is floor division.
      
   4. Write a line of code that creates a variable called pi and sets
      	it to an appropriate value.
+    pi = 3.141592654
 
   5. Why does this code not work?
      
      A = 22
      print(a)
+     It tries to print out a lowercase a, which is different from an uppercase A.
      
   6. All of the variable names below can be used. But which ONE of these is
      	the better variable name to use?
@@ -33,6 +38,8 @@
      area
      area_of_rectangle
      Area_Of_Rectangle
+     
+     area_of_rectange is the best name to use.
      
   7. Which of these variables names are not allowed in Python? (More than one
      might be wrong. Also, this question is not asking about improper names, just
@@ -61,14 +68,20 @@
      total%
      #left
      
+     account number, 1Apple, 2x, and #left are not allowed.
+     
   8. Why does this code not work?
      
      print(a)
      a = 45
      
+     a needs to be established before it is printed.
+     
   9. Explain the mistake in this code:
      
      pi = float(3.14)
+     
+     float is used for floating point numbers, int needs to be used for integers.
      
  10. This program runs, but the code still could be better. Explain what is
      wrong with the code.
