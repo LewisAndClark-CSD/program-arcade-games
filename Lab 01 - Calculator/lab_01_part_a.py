@@ -7,4 +7,4 @@ fahrenheit = int(input("Enter a tempature in Fahrenheit: "))
 
 celcius = (fahrenheit - 32) * 5/9
 
-print(celcius)
+print('The temperature in celcius:', celcius)
