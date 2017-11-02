@@ -6,37 +6,80 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
+     
+     1010 0010 0011
 
   2. Give an example of a decimal number.
 
+  101
+  
   3. Give an example of a hexadecimal number.
 
+  A
+  
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
+1-1
+10-2  
+100-4
+1000-8
+10000-16
 
   5. What is a compiler?
 
   6. What is source code?
 
+  the skeleton code 
+  
   7. What is machine language? (Don't just say binary. That's not correct.)
 
+  machine language
+  
   8. What is a first generation language? (Don't just say binary. That's not correct.)
+  
+  assembly
 
   9. What is a second generation language?
 
+  compiler
+  
  10. What is a third generation language? (Explain, don't just give one example.)
 
+ a high lvl computer like c
+ 
  11. What is an interpreter and how does it differ from a compiler?
 
+ a person that gives the input
+ 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
 
+    1. Python
+
+    2. Java
+
+    3. JavaScript
+ 
+    4. C#
+
+    5. PHP
+    
+    https://www.forbes.com/sites/jeffkauflin/2017/05/12/the-five-most-in-demand-coding-languages/#69b15f87b3f5
+     
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
+     
+     most are looking for java
 
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
 
+     synatx deals with the form 
+     
+     semantics assienment 
+     
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
+     
+     phone linux runs on most and it uses a bunch of data bases for most the stuff you do 
 
      
