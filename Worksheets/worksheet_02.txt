@@ -48,8 +48,10 @@
 
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
+     Syntax is the structure or grammar of a language, while semantics is the meaning behind the language.
 
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
+     
 
      
