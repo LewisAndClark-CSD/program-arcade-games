@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#area calculator
+# trapazoid area calculator
 #Cole Robinson
 #11/01/17
 
