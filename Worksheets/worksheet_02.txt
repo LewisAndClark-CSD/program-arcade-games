@@ -6,37 +6,72 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
+     
+     00100100 - 36 it is base 2 for the places 128,64,32,16,8,4,2,1
 
   2. Give an example of a decimal number.
+  
+    13 is a decimal number, decimal numbers use base 10s for the places
 
   3. Give an example of a hexadecimal number.
+  
+    Hexadecimal - 24 is equivalent to Decimal - 36, Hexadecimal - 1C is equivalent to Decimal - 28
 
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
+  
+    In order from left to right they are the values - 1,2,4,8,16
 
   5. What is a compiler?
+  
+    A complier is a program that takes the source code and turns it into machine code that is then run by the computer
 
   6. What is source code?
+  
+    Source code in the program written by the programmer
 
   7. What is machine language? (Don't just say binary. That's not correct.)
+  
+    Machine language is a set of binary numbers that represent commands for the computer to run
 
   8. What is a first generation language? (Don't just say binary. That's not correct.)
+  
+    The 1GL is the native language for a computer, which is binary commands
 
   9. What is a second generation language?
+  
+    A second generation language also called the assembly language is a set of mnemonics that a complier can convert to machine language
 
  10. What is a third generation language? (Explain, don't just give one example.)
+ 
+    Third generation languages allowed the programmer to write and understand code easier, and didn't require as much direct input of the programmer. Basically they were more intuitive.
 
  11. What is an interpreter and how does it differ from a compiler?
+ 
+    An interpreter translates source code into machine code as it gets fed the code, this means as long as an interpreter is made for a language any language can be converted to machine language, using an interpreter
+    is however slower than using a computers native language
 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
+     
+     https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html
+     
+     Java, Python, C, JavaScript, and C# are some of the most popular coding languages
 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
+     
+     https://www.indeed.com/q-Computer-Programmer-jobs.html
+     
+     C, C++, SQL, Visual Basic, VBScript, Java, C# were some of the langauges being looked for
 
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
+     
+     Syntax has to do with how the code is structured, and semantics is the meaning behind the code
 
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
 
+     I have a hand held tetris game, in it is most likely a small hardrive to store basic score and setting information along with a proccesor of some kind that handles the funtions that happen while
+     playing tetris. This hardware also needs code that stores how the game is played, this code is most likely also stored on the small hardrive.
      
