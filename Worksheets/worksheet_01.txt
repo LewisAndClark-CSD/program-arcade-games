@@ -96,50 +96,53 @@
  13. Explain the mistake in the following code:
      
      radius = input(float("Enter the radius:"))
-     
+     Answer: They called for radius to be printed
  14. Do all these print the same value? Which one is better to use and why?
      
      print(2/3+4)
      print(2 / 3 + 4)
      print(   2 /    3+    4  )
-     
+     Answer: Yes they print the same value. The second one is the best because you don't want too many spaces but you do want some so it is not so clustered.
  15. What is a constant?
-
+     A variable that stays the same.
  16. How are variable names for constants different than other variable names?
-
+     Answer: A constant stays the same but a constant will be able to change.
  17. What is a single quote and what is a double quote?
      Give and label an example of both.
-
+     'My name'
+     "My name"
  18. Write a Python program that will use escape codes to print a double-quote
      and a new line using the Window's standard. (Note: I'm asking for the Window's
      standard here. Look it up out of Chapter 1.)
+     Answer: print('""'/n)
 
  19. Can a Python program print text to the screen using single quotes instead
      of double quotes?
-
+     Answer: Yes
  20. Why does this code not calculate the average?
      
      print(3 + 4 + 5 / 3)
-     
+     Answer: It does division first because of order of operations
 
  21. What is an ``operator'' in Python?
-
+     Answer:An operator is a character that represents an action,
  22. What does the following program print out?
      
      x = 3
      x + 1
      print(x)
-     
+     Answer: 3
 
  23. Correct the following code:
      
      user_name = input("Enter your name: )"
-     
+     Answer:username =input('Enter you name: ')
+            print(username)
 
  24. Correct the following code:
      
      value = int(input(print("Enter your age")))
-     
+     Answer:int(input("Enter your age: "))
 
 
      
