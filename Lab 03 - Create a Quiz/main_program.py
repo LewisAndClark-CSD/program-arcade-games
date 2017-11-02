@@ -22,7 +22,7 @@ print("This is my awesome quiz")
 
 
 #This is the first question
-print("A:",A+"\n"+"B:",B+"\n"+"C:",C+"\n")
+print("A:",a+"\n"+"B:",b+"\n"+"C:",c+"\n")
 question1 = input("What is the total population of the United States? ")
 if question1 == "A" or question1 == "a":
     print(congratulations)
@@ -63,7 +63,7 @@ if question5 == "Cyclone" or question5 == "cyclone":
 else:
     print(failure)
 
-print("Your average", average/5)
+print("Your average is",str(average/5*100)+"%")
 
 
                 
