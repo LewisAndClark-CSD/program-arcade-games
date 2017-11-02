@@ -6,32 +6,45 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
+     The decimal of 10 has a binary of 1010 and a hexadecimal of A.
 
   2. Give an example of a decimal number.
+        5
 
   3. Give an example of a hexadecimal number.
+        11
 
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
+        The decimals would be 1, 2, 4, 8, and 16.
 
-  5. What is a compiler?
+  5. What is a compiler? 
+        A compiler changes the program entered by the user into machine code.
 
   6. What is source code?
+        The code typed in by the user.
 
   7. What is machine language? (Don't just say binary. That's not correct.)
+        Machine language and machine code are the only languages computers can understand, they use numbers to represent commands.
 
   8. What is a first generation language? (Don't just say binary. That's not correct.)
+    The first programming language, it is the same thing as the machine's native language.
 
   9. What is a second generation language?
+        The second generation language is an assembly language that uses a mnemonic, that is changed with a compiler to the machine's native language.
 
  10. What is a third generation language? (Explain, don't just give one example.)
+        The third generation language is a type of source code typed in by the user that is changed into machine code by the compiler.
 
  11. What is an interpreter and how does it differ from a compiler?
+        An interpreter translates the source code into machine code for any type of computer, while a compiler only works for some types.
 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
+        Java, Python, C, Ruby, and JavaScript are the five most popular programming languages according to inc.com.
 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
+     
 
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
