@@ -13,7 +13,7 @@ c = "423.2 million"
 
 #These are the messages that tell the user if they got a question right or wrong
 congratulations = "Correct, Great Job!"
-failure = "Inccorrect, Better luck next time"
+failure = "Incorrect, Better luck next time"
 
 #This is an accumulator
 average = 0
