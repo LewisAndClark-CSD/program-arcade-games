@@ -82,68 +82,69 @@ pi = 3.14
      pi = x
      area = pi  * radius ** 2
      print(area)
-     
+     You don't need to assign x to 3.14 to assign pi to 3.14(or x), you could just assign pi to 3.14
  11. Explain the mistake in the following code:
      
      x = 4
      y = 5
      a = ((x) * (y))
      print(a)
-     
+     You don't need the extra parenthesis around each variable (x and y).
  12. Explain the mistake in the following code:
      
      x = 4
      y = 5
      a = 3(x + y)
      print(a)
-     
+     the 'int' object is not callable. 
  13. Explain the mistake in the following code:
      
      radius = input(float("Enter the radius:"))
-     
+     could not convert string to float, use of " instead of '
  14. Do all these print the same value? Which one is better to use and why?
      
      print(2/3+4)
      print(2 / 3 + 4)
      print(   2 /    3+    4  )
-     
+     Yes, print(2 / 3 + 4)
  15. What is a constant?
-
+a values that cannot be altered by the program.
  16. How are variable names for constants different than other variable names?
-
+constant variable names are immutable.
  17. What is a single quote and what is a double quote?
      Give and label an example of both.
-
+'hello'
+"hello"
  18. Write a Python program that will use escape codes to print a double-quote
      and a new line using the Window's standard. (Note: I'm asking for the Window's
      standard here. Look it up out of Chapter 1.)
-
+print("I want to print a double quote \"\n for some reason.")
  19. Can a Python program print text to the screen using single quotes instead
      of double quotes?
-
+Yes, print("I want to print a double quote \'\n for some reason.")
  20. Why does this code not calculate the average?
      
      print(3 + 4 + 5 / 3)
-     
+     It does in this specific situation, with these numbers. 
 
  21. What is an ``operator'' in Python?
-
+special symbols that carry out arithmetic or logical computation. 
  22. What does the following program print out?
      
      x = 3
      x + 1
      print(x)
-     
+     SyntaxError: multiple statements found while compiling a single statement
 
  23. Correct the following code:
      
      user_name = input("Enter your name: )"
-     
+     user_name = input("Enter your name: ")
 
  24. Correct the following code:
      
      value = int(input(print("Enter your age")))
-     
+     value = int(input("Enter your age: "))
 
 
      
