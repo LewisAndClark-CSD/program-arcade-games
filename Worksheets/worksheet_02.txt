@@ -6,9 +6,11 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
-
+     01101100
+  
   2. Give an example of a decimal number.
-
+     74
+ 
   3. Give an example of a hexadecimal number.
 
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
