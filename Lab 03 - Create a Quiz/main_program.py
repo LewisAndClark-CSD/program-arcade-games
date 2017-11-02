@@ -38,6 +38,7 @@ if questionThree == str(81):
     totalRight = totalRight + 1
     if totalRight == 3:
         print("YOU'RE ON FIRE!!!")
+        
 else:
     print()
     print('WRONG! The correct answer is 81')
