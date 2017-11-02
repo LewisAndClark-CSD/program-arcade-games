@@ -8,6 +8,6 @@ trap_height = int(input("Enter the height of the trapezoid: "))
 trap_bbase = int(input('Enter the ength of the bottom base: '))
 trap_tbase = int(input('Enter the length of the top base: '))
 
-trap_area = 1/2(( (trap_bbase) + (trap_tbase) ) * (trap_height))
+trap_area = 1/2 * (( (trap_bbase) + (trap_tbase) ) * (trap_height))
 
 print(str(trap_area))
