@@ -6,7 +6,7 @@
      and punctuation. Please limit the length of each line to 80 characters.
      
   1. Write a line of code that will print your name.
-print('name')
+print("name")
   2. How do you enter a comment in a program?
 #comment
   3. What do the following lines of code output?
