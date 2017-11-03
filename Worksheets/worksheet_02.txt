@@ -12,31 +12,301 @@
   3. Give an example of a hexadecimal number.
 D1CE
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+1  2  4  8  16
   5. What is a compiler?
-
+a program that converts instructions into a machine-code or lower-level form so that they can be read and executed by a computer.
   6. What is source code?
-
+a text listing of commands to be compiled or assembled into an executable computer program.
   7. What is machine language? (Don't just say binary. That's not correct.)
-
+  a computer programming language consisting of binary or hexadecimal instructions that a computer can respond to directly.
   8. What is a first generation language? (Don't just say binary. That's not correct.)
-
+a machine-level programming language.
   9. What is a second generation language?
-
+ a generational way to categorize assembly languages
  10. What is a third generation language? (Explain, don't just give one example.)
-
+a generational way to categorize high-level computer programming languages.
  11. What is an interpreter and how does it differ from a compiler?
-
+a program that can analyze and execute a program line by line.
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
+     
+     https://dzone.com/articles/big-list-256-programming
+     
+4th Dimension/4D
+ABAP
+ABC
+ActionScript
+Ada
+Agilent VEE
+Algol
+Alice
+Angelscript
+Apex
+APL
+AppleScript
+Arc
+Arduino
+ASP
+AspectJ
+Assembly
+ATLAS
+Augeas
+AutoHotkey
+AutoIt
+AutoLISP
+Automator
+Avenue
+Awk
+Bash
+(Visual) Basic
+bc
+BCPL
+BETA
+BlitzMax
+Boo
+Bourne Shell
+Bro
+C
+C Shell
+C#
+C++
+C++/CLI
+C-Omega
+Caml
+Ceylon
+CFML
+cg
+Ch
+CHILL
+CIL
+CL (OS/400)
+Clarion
+Clean
+Clipper
+Clojure
+CLU
+COBOL
+Cobra
+CoffeeScript
+ColdFusion
+COMAL
+Common Lisp
+Coq
+cT
+Curl
+D
+Dart
+DCL
+DCPU-16 ASM
+Delphi/Object Pascal
+DiBOL
+Dylan
+E
+eC
+Ecl
+ECMAScript
+EGL
+Eiffel
+Elixir
+Emacs Lisp
+Erlang
+Etoys
+Euphoria
+EXEC
+F#
+Factor
+Falcon
+Fancy
+Fantom
+Felix
+Forth
+Fortran
+Fortress
+(Visual) FoxPro
+Gambas
+GNU Octave
+Go
+Google AppsScript
+Gosu
+Groovy
+Haskell
+haXe
+Heron
+HPL
+HyperTalk
+Icon
+IDL
+Inform
+Informix-4GL
+INTERCAL
+Io
+Ioke
+J
+J#
+JADE
+Java
+Java FX Script
+JavaScript
+JScript
+JScript.NET
+Julia
+Korn Shell
+Kotlin
+LabVIEW
+Ladder Logic
+Lasso
+Limbo
+Lingo
+Lisp
+Logo
+Logtalk
+LotusScript
+LPC
+Lua
+Lustre
+M4
+MAD
+Magic
+Magik
+Malbolge
+MANTIS
+Maple
+Mathematica
+MATLAB
+Max/MSP
+MAXScript
+MEL
+Mercury
+Mirah
+Miva
+ML
+Monkey
+Modula-2
+Modula-3
+MOO
+Moto
+MS-DOS Batch
+MUMPS
+NATURAL
+Nemerle
+Nimrod
+NQC
+NSIS
+Nu
+NXT-G
+Oberon
+Object Rexx
+Objective-C
+Objective-J
+OCaml
+Occam
+ooc
+Opa
+OpenCL
+OpenEdge ABL
+OPL
+Oz
+Paradox
+Parrot
+Pascal
+Perl
+PHP
+Pike
+PILOT
+PL/I
+PL/SQL
+Pliant
+PostScript
+POV-Ray
+PowerBasic
+PowerScript
+PowerShell
+Processing
+Prolog
+Puppet
+Pure Data
+Python
+Q
+R
+Racket
+REALBasic
+REBOL
+Revolution
+REXX
+RPG (OS/400)
+Ruby
+Rust
+S
+S-PLUS
+SAS
+Sather
+Scala
+Scheme
+Scilab
+Scratch
+sed
+Seed7
+Self
+Shell
+SIGNAL
+Simula
+Simulink
+Slate
+Smalltalk
+Smarty
+SPARK
+SPSS
+SQR
+Squeak
+Squirrel
+Standard ML
+Suneido
+SuperCollider
+TACL
+Tcl
+Tex
+thinBasic
+TOM
+Transact-SQL
+Turing
+TypeScript
+Vala/Genie
+VBScript
+Verilog
+VHDL
+VimL
+Visual Basic .NET
+WebDNA
+Whitespace
+X10
+xBase
+XBase++
+Xen
+XPL
+XSLT
+XQuery
+yacc
+Yorick
+Z shell
 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
 
+   https://www.forbes.com/sites/jeffkauflin/2017/05/12/the-five-most-in-demand-coding-languages/#4eb47115b3f5
+SQL 
+Java
+Javascript
+C#
+Python
+C++
+PHP
+iOS
+Ruby
+
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
-
+Syntax refers to formal rules governing the construction of valid statements in a language. Semantics refers to the set of rules which give the meaning of a statement.
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
-
+My Nintendo 3DS and it runs on the netfront web browser
      
