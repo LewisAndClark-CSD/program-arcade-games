@@ -10,14 +10,22 @@
          print("It is hot outside.")
      else:
          print("It is not hot out.")
-     
+     second parenthensis 
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
-
+number = int(input('number: '))
+if number < 0:
+    print("negative")
+elif number > 1:
+    print("positive")
+else:
+    print('zero')
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
-
+    number1 = int(input('number: '))
+if number1 > -10 and number1 < 10:
+    print('Success')
   4. This runs, but there is something wrong. What is it? (1 pt)
      
      user_input = input("A cherry is a: ")
@@ -27,7 +35,7 @@
          print("Correct!")
      else:
          print("Incorrect.")
-     
+    it wont print choices until you after the input statement 
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
@@ -38,13 +46,13 @@
          print("x is positive.")
      else:
          print("x is not positive.")
-     
+     x doesnt have a value assigned and the equal sign doesnt need to be there 
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
-     
+     needs an int ,colon at the end of line 2,line 2 needs 2 equal signs 
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
      answer = input("What is the name of Dr. Bunsen Honeydew's assistant? ")
@@ -52,13 +60,13 @@
          print("Correct!")
          else
          print("Incorrect! It is Beaker.")
-     
+     there needs to be another equal sign,: after else , else doesnt need be indented ,a needs to be answer 
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
          print("That is good to hear!")
-     
+     glad needs to have an x== in front of it 
   9. Look at the code below. Write you best guess here on what it will print.
      Next, run the code and see if you are correct.
      Clearly label your guess and the actual answer.
@@ -78,7 +86,11 @@
          print("Fizz")
      if z:
          print("Buzz")
-     
+     guess ,x = 5 ,y=6 z=5 ,fizz ,buzz actual answer 
+     x= 5
+y= False
+z= True
+Buzz
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -96,7 +108,18 @@
      print(x == 5 and y == 10)
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
-     
+     false 
+     false
+     true
+     false
+     false
+      true 
+      true 
+      false
+      true
+      false
+      true
+      
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -109,6 +132,11 @@
      print( (2 == 2) == "True" )
      print( (2 == 2) == True )
      print(3 < "3")
+     true 
+     true
+     false 
+     false 
+     true 
      
 
  12. What things are wrong with this section of code?
@@ -130,6 +158,6 @@
      else if user_input = C:
          money = 50
 
-     
+     no print statement
 
      
