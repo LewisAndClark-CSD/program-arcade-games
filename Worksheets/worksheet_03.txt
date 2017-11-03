@@ -10,7 +10,7 @@
          print("It is hot outside.")
      else:
          print("It is not hot out.")
-     
+     the second parenthesis on the end of the first line 
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
