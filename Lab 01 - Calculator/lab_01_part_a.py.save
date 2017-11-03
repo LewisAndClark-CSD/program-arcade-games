@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+# Lab 1: Custom Calculators Part a
+# Brady Ballmann
+# 11/01/2017
+
+fahrenheit = input('
