@@ -29,14 +29,14 @@ Language like Python or C that has logical structures
 an interpreter translates a program one statement at a time, a compiler scans the entire program and translates it as a whole into machine code. 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
-
+Java, Python, C, website: https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
-
+Java, website: https://www.indeed.com/q-Software-Engineer-l-Missouri-jobs.html
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
-
- 15. Pick a piece of technology, other than a computer you use regularly. Briefly
+syntax refers to formal rules governing the construction of valid statements in a language, semantics refers to the set of rules which give the meaning of a statement.
+ 15. Pick a piece of technology, other than a computer, that you use regularly. Briefly
      describe the hardware and software that run on it.
-
+Cell Phone: a cell phone uses a touch screen to interact with the user through touch and sight, applications serve as software that run on the device. 
      
