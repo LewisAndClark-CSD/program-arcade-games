@@ -4,6 +4,7 @@
      
      
   1. What is missing from this code? (1 pt)
+     A second parenthesis at the end of the input statement
      
      temperature = float(input("Temperature: ")
      if temperature > 90:
@@ -14,10 +15,24 @@
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
-
+     number = int(input("Enter a number: "))
+          
+          if number > 0:
+              print("That number is positive")
+          elif number < 0:
+              print("That number is negative")
+          elif number == 0:
+              print("That number is 0")
+ 
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
-
+           
+           number = int(input("Enter a number: "))
+           if number > -10 and number < 10:
+               print("Success")
+           else:
+               print("Failure")
+  
   4. This runs, but there is something wrong. What is it? (1 pt)
      
      user_input = input("A cherry is a: ")
@@ -27,11 +42,13 @@
          print("Correct!")
      else:
          print("Incorrect.")
-     
-  5. There are two things wrong with this code that tests if x is set to a
+     The choices do not print until the user inputs an answer
+ 
+ 5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
      Identify both issues. (2 pts)
+     x is not defined and there does not need to be two equal signs in line one.
      
      x == 4
      if x >= 0:
@@ -40,12 +57,14 @@
          print("x is not positive.")
      
   6. What three things are wrong with the following code? (3 pts)
+     There needs to be 2 equal signs in front of the 3 and x is not defined.
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
+     There needs to be two = in front of a. The else needs to be alligned with the if. The else needs a : after it. a needs to        be answer.
      
      answer = input("What is the name of Dr. Bunsen Honeydew's assistant? ")
      if a = "Beaker":
@@ -54,6 +73,7 @@
          print("Incorrect! It is Beaker.")
      
   8. This program doesn't work correctly. What is wrong? (1 pt)
+     The output will always be "That is good to hear!"
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
@@ -67,6 +87,8 @@
      While you don't need to write an explanation, make sure you understand
      why the computer prints what it does. Don't get caught flat-footed when
      you need to know later. (2 pts)
+     Guess: I think it will print "Buzz"
+     Answer: It printed Buzz
      
      x = 5
      y = x == 6
@@ -81,6 +103,19 @@
      
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
+     Guess: I think there will be an error
+     Answer: It printed
+     True
+     False
+     True
+     False
+     False
+     True
+     False
+     False
+     True
+     False
+     True
      
      x = 5
      y = 10
@@ -99,6 +134,8 @@
      
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
+     Guess:It will print wether each one is true or false
+     Answer: It printed true and false with an end error
      
      print("3" == "3")
      print(" 3" == "3")
@@ -114,6 +151,10 @@
  12. What things are wrong with this section of code?
      The programmer wants to set the money variable according to
      the initial occupation the user selects. (1 pt)
+     
+     The else if statements need to be elifs, the choices are not defined, and the statements need double equal signs.
+     
+     
      
      print("Welcome to Oregon Trail!")
 
