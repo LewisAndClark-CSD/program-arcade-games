@@ -55,13 +55,15 @@
      else:
          print("x is not positive.")
          
-    0 should not be included, as it is not positive or negative. The other issue is that 
+    0 should not be included, as it is not positive or negative. The other issue is that there should only be one = when defining x as 4.
      
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
+         
+         The if statement needs to have 2 = signs for it to work, a : is needed after the if statement, and the print statement does not work. 
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
@@ -70,12 +72,16 @@
          print("Correct!")
          else
          print("Incorrect! It is Beaker.")
+         
+    else should not be indented and needs a :, a needs to be answer or answer needs to be a, and there needs to be 2 = instead of one.
      
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
          print("That is good to hear!")
+         
+    x needs to be defined as equal to Glad(x == "Happy" or x == "Glad") 
      
   9. Look at the code below. Write you best guess here on what it will print.
      Next, run the code and see if you are correct.
@@ -96,6 +102,9 @@
          print("Fizz")
      if z:
          print("Buzz")
+         
+    My guess: Fizz
+    Actual output: Buzz
      
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
@@ -115,6 +124,9 @@
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
      
+     My guess: true, false, true, false, false, true, false, true, false, true
+     Actual output: true, false, true, flase, flase, true, false, true, false, true
+     
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -127,6 +139,9 @@
      print( (2 == 2) == "True" )
      print( (2 == 2) == True )
      print(3 < "3")
+     
+     My guess: true, false, true, true, true, true, false, true, false
+     Actual output: true, false, true, true, true, flase, false, true, int str error
      
 
  12. What things are wrong with this section of code?
@@ -147,6 +162,8 @@
          money = 70
      else if user_input = C:
          money = 50
+         
+    there should be 2 = signs and A, B, and C should be in quotes.
 
      
 
