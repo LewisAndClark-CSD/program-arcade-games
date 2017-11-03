@@ -6,27 +6,27 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
-
+101101
   2. Give an example of a decimal number.
-
+82
   3. Give an example of a hexadecimal number.
-
+3FA
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+1 = 1, 10 = 2, 100 = 4, 1000 = 8, 10000 = 16
   5. What is a compiler?
-
+Converts source code to machine code
   6. What is source code?
-
+The program the developer types into the computer
   7. What is machine language? (Don't just say binary. That's not correct.)
-
+The native code the computer runs
   8. What is a first generation language? (Don't just say binary. That's not correct.)
-
+Machine Language
   9. What is a second generation language?
-
+Assembly Language
  10. What is a third generation language? (Explain, don't just give one example.)
-
+Language like Python or C that has logical structures
  11. What is an interpreter and how does it differ from a compiler?
-
+an interpreter translates a program one statement at a time, a compiler scans the entire program and translates it as a whole into machine code. 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
 
