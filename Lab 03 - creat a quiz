@@ -1,0 +1,56 @@
+#!/user/bin/env python3
+# Quiz
+# Ryan Moore
+# 11/6/2017
+
+percentage = 0
+print('Time to test you knowledge!')
+
+question_one = print('Who won 2011 American Idol? ')
+print('A.Trent Harmon')
+print('B.Scotty McCreery')
+print('C.Kelly Clarkson')
+print('D.Carrie Underwood')
+quest_one = input('? ')
+if quest_one.lower() == 'b':
+    print('Correct')
+    percentage += 1
+else:
+    print('Incorrect')
+
+question_two = print('what is 55*2/10+2*0')
+quest_two = input('? ')
+if quest_two == '11':
+    print('Correct')
+    percentage += 1
+else:
+    print('Incorrect')
+    
+question_three = print('What is Oliver Reeds first name?')
+print('A.Jim')
+print('B.Billy')
+print('C.Oliver')
+print('D.Robert')
+quest_three = input('? ')
+if quest_three.lower() == 'd':
+    print('Correct')
+    percentage += 1
+else:
+    print('Incorrect')
+
+question_four = print('What is the seventh planet from the sun?')
+quest_four = input('? ')
+if quest_four.lower() == 'uranus':
+    print('Correct')
+    percentage +=1
+else:
+    print('Incorrect')
+question_five = print('What is the only state that starts with the letter p?')
+quest_five = input('? ')
+if quest_five.lower =='pennsylvania':
+    print('Correct')
+    percentage +=1
+else:
+    print('Incorrect')
+percent = percentage * 20
+print('Congratulations you got a',percent)
