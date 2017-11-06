@@ -123,4 +123,48 @@
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
      
-     
+     print('Rock, Paper, or Scissors? ')
+print('O is for "Rock."')
+print('1 is for "Paper."')
+print('2 is for "Scissors."')
+usersPick = input('Your choice: ')
+import random
+for i in range(1):
+    number = random.randrange(0, 3)
+    if usersPick == '0':
+        print('Rock!')
+    elif usersPick == '1':
+        print('Paper!')
+    elif usersPick == '2':
+        print('Scissors!')
+for i in range(1):
+    number = random.randrange(0, 3)
+    if number == 0:
+        print("Robot's Choice: Rock!")
+    elif number == 1:
+        print("Robot's Choice: Paper!")
+    elif number == 2:
+        print("Robot's Choice: Scissors!")
+if usersPick == '0':
+    if number == 0:
+        print("It's a tie, try again!")
+    elif number == 1:
+        print('Robot wins!')
+    elif number == 2:
+        print('You win!')
+if usersPick == '1':
+    if number == 0:
+        print('You win!')
+    elif number == 1:
+        print("It's a tie, try again!")
+    elif number == 2:
+        print('Robot wins!')
+if usersPick == '2':
+    if number == 0:
+        print('Robot wins!')
+    elif number == 1:
+        print('You win!')
+    elif number == 2:
+        print("It's a tie, try again!")
+    
+
