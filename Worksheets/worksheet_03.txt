@@ -184,6 +184,6 @@
      elif user_input == "C":
          money = 50
 
-     First the syntax isn't else if it's elif, also A, B, C are strings and thus need to be in quotes, finally user input is being compared not assigned so it shouuld have double equals signs
+     First the syntax isn't else if it's elif, also A, B, C are strings and thus need to be in quotes, finally user_input is being compared not assigned so it shouuld have double equals signs
 
      
