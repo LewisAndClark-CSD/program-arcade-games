@@ -33,7 +33,7 @@ while done == False:
             print("You are thirsty.")
         if thirst == 0:
             done = True
-            print("You fainted frmo dehydration.")
+            print("You fainted from dehydration.")
         print("You travel at moderate speed.")
         if copMiles >= userMiles - 20:
             print("The cops are getting close!")
@@ -55,7 +55,7 @@ while done == False:
             done = True
             print("You fainted from dehydration.")
             print("You floor it ahead!")
-        if copMiles >= userMiles - 20:
+        if copMiles >= userMiles - 11:
             print("The cops are getting close!")
         if copMiles >= userMiles:
             print("The cops caught you!")
@@ -71,7 +71,7 @@ while done == False:
         print("You fuel up at a gas station")
     elif choice.lower() == "e":
         print("Miles traveled:", str(userMiles))
-        print("How many more meals you have enough money for:", str(money))
+        print("How many more drinks you have enough money for:", str(money))
         if thirst >= 4:
             print("You are not thirsty.")
         if thirst == 3:
