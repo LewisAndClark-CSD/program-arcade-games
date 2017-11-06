@@ -63,7 +63,7 @@
      
      pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
      
-     The origin coordinate for x is [20, 20] and the origin coordinate for y is [250, 100]. The origin coordinate specifies where in the upper left of the rectangle the ellipse. The length of the ellipse is 100, and the width is 2 pixels.
+     The origin coordinate for x is [20, 20] and the origin coordinate for y is [250, 100]. The origin coordinate specifies where in the upper left of the rectangle the ellipse. The length of the ellipse is 100, and the width is 100 pixels.
      
  12. When drawing an arc, what additional information is needed over drawing
      an ellipse?
