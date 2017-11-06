@@ -77,15 +77,15 @@ while done == False:
         if camel_tiredness > 8:
             print("Your camel is dead.")
             done = True
-        if miles_traveled >= 200:
+        if total_miles_traveled >= 200:
             print("You have won! Good Job")
             done = True
         if native_location >= 0:
             print("The natives have caught you")
             done = True
-        if 10 <= native_location <= 15:
+        if -10 <= native_location <= -15:
             print("The natives are getting close!")
-        if 8 <= native_location <= 2:
+        if -8 <= native_location <= -2:
             print("The natives are getting really close!")
         oasis = random.randint(1,20)
         lucky_oasis_number = 5
@@ -114,15 +114,15 @@ while done == False:
         if camel_tiredness > 8:
             print("Your camel is dead.")
             done = True
-        if miles_traveled >= 200:
+        if total_miles_traveled >= 200:
             print("You have won! Good Job")
-            dont = True
+            done = True
         if native_location >= 0:
             print("The natives have caught you")
             done = True
-        if 10 <= native_location <= 15:
+        if -10 <= native_location <= -15:
             print("The natives are getting close!")
-        if 5 <= native_location <= 2:
+        if -5 <= native_location <= -2:
             print("The natives are getting really close!")
         oasis = random.randint(1,20)
         lucky_oasis_number = 5
