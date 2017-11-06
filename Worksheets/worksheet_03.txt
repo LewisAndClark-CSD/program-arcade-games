@@ -10,13 +10,25 @@
          print("It is hot outside.")
      else:
          print("It is not hot out.")
+     This code is missing a second parentheses to close float()
      
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
 
+     number = int(input("Enter a number: "))
+     if number > 0:
+        print("This number is positive")
+    elif number < 0:
+        print("this number is negative")
+    else:
+        print("this number is zero")
+     
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
+     number = int(input("Enter a number: "))
+     if -10 <= number <= 10:
+        print("Success")
 
   4. This runs, but there is something wrong. What is it? (1 pt)
      
@@ -27,12 +39,23 @@
          print("Correct!")
      else:
          print("Incorrect.")
+     You have to put your guess in before you even see the choices.
      
+     print("A. Dessert topping")
+     print("B. Desert topping")
+     user_input = input("A cherry is a: ")
+     if user_input.upper() == "A":
+         print("Correct!")
+     else:
+         print("Incorrect.")
+        This is the corrected code.
+        
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
      Identify both issues. (2 pts)
-     
+     issue number 1: x needs to have one = sign, not two.
+     issue number 2: 
      x == 4
      if x >= 0:
          print("x is positive.")
