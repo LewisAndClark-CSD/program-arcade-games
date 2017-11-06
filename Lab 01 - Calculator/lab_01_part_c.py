@@ -1,1 +1,5 @@
-#
+print(" To solve problem: 8 * number ** 2")
+question = int(input("Enter a number: "))
+answer = ((8 * question) **2)
+Answer = str(answer)
+print ("The answer is: " + Answer)

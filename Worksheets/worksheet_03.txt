@@ -10,13 +10,31 @@
          print("It is hot outside.")
      else:
          print("It is not hot out.")
+         
+         The 90 needs to be a float as well. 
      
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
+     
+     question = int(input("Enter a number: "))
+     if question => 1:
+       print ("Postive")
+     elif =< -1:
+       print ("negative")
+     else: 
+       print("zero")
 
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
+     
+     question = int(input("Enter a number: "))
+     if question > -10:
+       print("Success")
+    elif question < 10:
+       print("Success")
+    else:
+       print("")
 
   4. This runs, but there is something wrong. What is it? (1 pt)
      
@@ -27,6 +45,8 @@
          print("Correct!")
      else:
          print("Incorrect.")
+         
+         When making the if statement they put "user_input.upper()" and it wont work because it's a if statement and it wont reconize that variable.
      
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
@@ -39,11 +59,15 @@
      else:
          print("x is not positive.")
      
+      The first issue is on the fisrt line. While making the variable they put two "==" and thats wrong its just one. The other is the face the x is already a set value and not a imput one so there would be no point of a if loop if it will always be 4.
+      
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
+     
+     1. On the second line there needs to be a colon after 3 2. In the first line there needs to be a int function since it is a number 3. On the second line there needs to be two "=" 
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
@@ -53,11 +77,15 @@
          else
          print("Incorrect! It is Beaker.")
      
+     1. On line 3 the else needs to be backed up and equal with the if  2. There needs to be a colon after else  3. in the if statement there needs to be two "="  4. In the if statement the "a" isn't a actual variable you need to type the full name out
+     
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
          print("That is good to hear!")
+     
+     Theres no space after today in the question.
      
   9. Look at the code below. Write you best guess here on what it will print.
      Next, run the code and see if you are correct.
@@ -79,6 +107,9 @@
      if z:
          print("Buzz")
      
+     MyGuess: I think that it will print the 3 lines and then under the lines print Fizz and Buzz.
+     Answer: There was a indentation error.
+     
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -97,6 +128,9 @@
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
      
+     MyGuess: I think there will be some kind of error, what kind i'm not sure the code just looks really strange. 
+     Answer: It printed out true and false statements (I had forgotten about them)
+     
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -110,6 +144,8 @@
      print( (2 == 2) == True )
      print(3 < "3")
      
+     MyGuess: I think everything will print fine, it will print out true anf false statements until it gets to line 9.
+     Answer: I was correct.
 
  12. What things are wrong with this section of code?
      The programmer wants to set the money variable according to
@@ -130,6 +166,7 @@
      else if user_input = C:
          money = 50
 
+         The indents and spacing are wrong. The other thing is in the if statements the answers need to be formatted like this: (print("")) and there cant be two else statments it should be if,elif,else.
      
 
      

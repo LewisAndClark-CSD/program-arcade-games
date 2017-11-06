@@ -6,37 +6,68 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
+     
+     A example of a binary number is '10' it means two because binary numbers count with 1's and 0's in a '0','1','10','11','100', '101' type fashion.
 
   2. Give an example of a decimal number.
 
+  A decimal number is what most people use, like '6' it means six and is world wide accepted as the symbol for six.
+  
   3. Give an example of a hexadecimal number.
+  
+  A example would be 'A' it means ten. hexadecimal count like decimal does til it reaches ten then starts with letters. Then when 'F' is hit it starts back at ten in decimal numbers and counts up. 
 
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
 
+   1 - 1, 10 - 2, 100 - 4, 10000 - 16
+  
   5. What is a compiler?
+  
+  A compiler takes source code and makes it into machine code.
 
   6. What is source code?
+  
+  It is the code typed in by the user.
 
   7. What is machine language? (Don't just say binary. That's not correct.)
+  
+  it is a hexadecimal or binary code set of instructions executed directly by the CPU, each instruction has a very specific task. 
 
   8. What is a first generation language? (Don't just say binary. That's not correct.)
+  
+  Is a machine-level programming language and is a grouping of programming languages that were used to program first-generation computers. 
 
   9. What is a second generation language?
+  
+  It is a language that is commonly found in kernals and device drivers and in games,video editing, etc. It is the code the programmer reads and writes, for the computer to use it it must be converted to machine language.  
 
  10. What is a third generation language? (Explain, don't just give one example.)
+ 
+ It is a high level programming language such as FORTRAN, COBOl, Pascal and C. It is above assembly language and is below forth gen. It is machine- independant meaning programs written in that language can be compiled to run on many devices. 
 
  11. What is an interpreter and how does it differ from a compiler?
+ 
+ It is a program that can follow instructions without it being in machine code. The diffrence between the two is the compiler changes source code to machine code while the interpreter can just follow the instrustions in source code.   
 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
+     
+     #1 JavaScrpit, #2 Python , #3 Java, #4 Ruby.      http://www.businessinsider.com/the-9-most-popular-programming-languages-according-to-the-facebook-for-programmers-2017-10/#4-ruby-12
 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
+     
+      JavaScript , Java, HTML
+     
+     https://www.google.com/search?ei=V3v8Wc7PN-KGjwSiuovQCA&q=jobs+with+programming&oq=jobs+with+programming&gs_l=psy-ab.3..0l2j0i22i30k1l8.38091.47889.0.48379.22.21.0.0.0.0.210.1998.0j15j1.17.0....0...1.1.64.psy-ab..5.16.1990.0..0i131i46k1j46i131k1j0i67k1j0i131k1j0i131i67k1.101.6qQ2K2De4eY&ibp=htl;jobs&htidocid=hlVE9ZT2MN-2phKwAAAAAA%3D%3D
 
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
+     
+     The diffrence is the syntax is the list of rules that you can do for each language like a indent or seomthing like that while the semantics is evaluating the meaning of legal strings in the syntax of that language and showing the computation involved.
 
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
 
+     My phone, the hardware and software is treated as a unified whole in the makers of the phone. They run on processors, they also have computer chips that provide functionality.
      

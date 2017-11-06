@@ -6,23 +6,32 @@
      and punctuation. Please limit the length of each line to 80 characters.
      
   1. Write a line of code that will print your name.
+   
+   question = input("What is your name? ")
+    print(question)
 
   2. How do you enter a comment in a program?
-
+    
+    You would put a "#" in front of line.
+    
   3. What do the following lines of code output?
      	ALSO: Why do they give a different answer?
      
-     print(2 / 3)
-     print(2 // 3)
-     
+     print(2 / 3)  prints("0.6666666" repeating)
+     print(2 // 3) prints ("0")
+     They give diffrent amnswers because the '/' and '//' are two diffrent functions.  
   4. Write a line of code that creates a variable called pi and sets
      	it to an appropriate value.
 
+     	pi = 3.14
+     	
   5. Why does this code not work?
      
      A = 22
      print(a)
-     
+      
+      It doesn't work because "a" isn't a varible so the computer doesnt reconize it "A" is the actual varible. It is all case sensitive. 
+      
   6. All of the variable names below can be used. But which ONE of these is
      	the better variable name to use?
      
@@ -31,7 +40,7 @@
      Area
      AREA
      area
-     area_of_rectangle
+     area_of_rectangle This one because it is the most discriptive and becasue it has the underscores it doesnt need capitazation. 
      Area_Of_Rectangle
      
   7. Which of these variables names are not allowed in Python? (More than one
@@ -42,8 +51,8 @@
      Apple
      APPLE
      Apple2
-     1Apple
-     account number
+     1Apple      doesnt work
+     account number    doesnt work 
      account_number
      account.number
      accountNumber
@@ -56,9 +65,9 @@
      greatBigVariable
      great_big_variable
      great.big.variable
-     2x
+     2x doesnt work
      x2x
-     total%
+     total%    doesnt work
      #left
      
   8. Why does this code not work?
@@ -66,9 +75,13 @@
      print(a)
      a = 45
      
+     This code didn't work because the variable "a" needs to be defined before the print line.
+     
   9. Explain the mistake in this code:
      
      pi = float(3.14)
+     
+     The mistake is that it is already a deciaml and that is what the 'float' funtion does.
      
  10. This program runs, but the code still could be better. Explain what is
      wrong with the code.
@@ -79,12 +92,16 @@
      area = pi  * radius ** 2
      print(area)
      
+     There are several uneeded steps.
+     
  11. Explain the mistake in the following code:
      
      x = 4
      y = 5
      a = ((x) * (y))
      print(a)
+     
+     The variables didnt need to be in ()
      
  12. Explain the mistake in the following code:
      
@@ -93,53 +110,80 @@
      a = 3(x + y)
      print(a)
      
+      The 3 isnt defined and the program doesnt know what to do with the 3. the program doesnt know to apply the distrubitive preoperty.
+     
+     
  13. Explain the mistake in the following code:
      
      radius = input(float("Enter the radius:"))
+     
+     There is no command to print. so it takes what you say and does the things but doesnt ever show back up.
      
  14. Do all these print the same value? Which one is better to use and why?
      
      print(2/3+4)
      print(2 / 3 + 4)
-     print(   2 /    3+    4  )
+     print(   2 /    3+    4  )]
+     
+     Only the first one will work or it will give you a indentation error. 
      
  15. What is a constant?
 
+ It is a varibale that is set in stone.
+ 
  16. How are variable names for constants different than other variable names?
 
+ They are camel-cased. (ex: " helloTherePeople")
+ 
  17. What is a single quote and what is a double quote?
      Give and label an example of both.
 
+    'a' - single quote
+    "A" - double quotes
+     
  18. Write a Python program that will use escape codes to print a double-quote
      and a new line using the Window's standard. (Note: I'm asking for the Window's
      standard here. Look it up out of Chapter 1.)
 
+     print("Hello."\n)
+     
  19. Can a Python program print text to the screen using single quotes instead
      of double quotes?
 
+     Yes as long as you stick with whatever quotes you use it will be fine.
+     
  20. Why does this code not calculate the average?
      
      print(3 + 4 + 5 / 3)
      
+     Because it isnt instructed to. You would need another set of ()
 
  21. What is an ``operator'' in Python?
 
+ A operator is a symbol like + or - 
+ 
  22. What does the following program print out?
      
      x = 3
      x + 1
      print(x)
      
+     It prints 3.
 
  23. Correct the following code:
      
      user_name = input("Enter your name: )"
-     
+    
+    user_name = input("Enter your name: ")
+    print(user_name)
+
 
  24. Correct the following code:
      
      value = int(input(print("Enter your age")))
      
+     value = int(input("Enter your age"))
+     print(value)
 
 
      
