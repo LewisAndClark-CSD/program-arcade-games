@@ -26,6 +26,10 @@ elif number == 0:
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
 
+number = int(input('Enter a number: '))
+if -11 < number < 11:
+    print('Success')
+    
   4. This runs, but there is something wrong. What is it? (1 pt)
      
      user_input = input("A cherry is a: ")
@@ -35,7 +39,9 @@ elif number == 0:
          print("Correct!")
      else:
          print("Incorrect.")
-     
+      
+      the ".upper" is not needed, it will only count a capital "A" as correct without it anyway. 
+      
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
@@ -47,11 +53,15 @@ elif number == 0:
      else:
          print("x is not positive.")
      
+     there can't be a double equal sign in the assigning line of code. also as long as x is assigned to 4 the output can never print "x is not posirive." 
+     
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
+     
+     there is no colon at the end of the if statement, 
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
