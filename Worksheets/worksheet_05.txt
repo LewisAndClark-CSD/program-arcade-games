@@ -8,20 +8,34 @@
   1. Explain how the computer coordinate system differs from the standard Cartesian
      coordinate system. There are two main differences. List both.
 
+     The main differences are that that the y coordinates are reversed and focuses on the lower right quadrant rather than the upper right quadrant.
+     
   2. Before a Python Pygame program can use any functions
      like pygame.display.set_mode(), what two lines of code must occur first?
 
+     pygame needs to be imported and the screen size needs to be established before the display is set.
+     
   3. Explain how WHITE = (255, 255, 255) represents a color.
 
+  It displays green, red, and blue at full intensity, which makes white.
+  
   4. When do we use variable names for colors in all upper-case, and when do we
      use variable names for colors in all lower-case? (This applies to all variables,
      not just colors.)
+     
+     Upper case is used for variables that will never change, such as a color.
 
   5. What does the pygame.display.set_mode() function do?
+  
+  This opens up a new window.
 
   6. What does this for event in pygame.event.get() loop do?
+  
+  This makes it so it will take user input.
 
   7. What is pygame.time.Clock used for?
+  
+  This is how fast the screen updates.
 
   8. For this line of code: (3 pts)
      
@@ -32,10 +46,18 @@
      * What does [100, 100] do?
      * What does 5 do?
      
+It tells where to draw the line
+0,0 is the starting point
+100,100 is the ending point
+5 is the width of the line in pixels
 
   9. What is the best way to repeat something over and over in a drawing?
+  
+  use a loop
 
  10. When drawing a rectangle, what happens if the specified line width is zero?
+ 
+ nothing will happen, as it is specified to have no pixels wide.
 
  11. Describe the ellipse drawn in the code below.
      * What is the x, y of the origin coordinate?
@@ -44,6 +66,10 @@
      
      
      pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
+     
+     20, 20
+     The origin is the center of the circle, where there is nothing drawn.
+     the length is 250, width is 100.
      
  12. When drawing an arc, what additional information is needed over drawing
      an ellipse?
