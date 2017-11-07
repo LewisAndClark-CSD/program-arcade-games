@@ -10,10 +10,20 @@
          print("It is hot outside.")
      else:
          print("It is not hot out.")
+         
+Temperature's input needs int
      
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
+     
+     num= int(input('Enter a number: ')
+if num=0:
+    print(num)
+elif num > 0 or num < 0:
+    print(num)
+else:
+    print('That is not a valid number.')
 
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
@@ -27,6 +37,8 @@
          print("Correct!")
      else:
          print("Incorrect.")
+         
+    should be if user_input.lower
      
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
@@ -39,11 +51,17 @@
      else:
          print("x is not positive.")
      
+     Should be x=4 and should be >=1 or >0
+     
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
+         
+        if x=3 needs to have :
+        if x==3 not x=3
+        The print statement isn't working
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
@@ -52,6 +70,11 @@
          print("Correct!")
          else
          print("Incorrect! It is Beaker.")
+         
+         else needs : , 
+         a needs to be answer still or set a to the value of answer
+         it should be if a == beaker not a = beaker
+         incorrect indentation will cause error to functions
      
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
@@ -59,6 +82,7 @@
      if x == "Happy" or "Glad":
          print("That is good to hear!")
      
+     It says that is good to hear no matter what. You need an else statement
   9. Look at the code below. Write you best guess here on what it will print.
      Next, run the code and see if you are correct.
      Clearly label your guess and the actual answer.
@@ -79,6 +103,10 @@
      if z:
          print("Buzz")
      
+     the program will print the values of the variables and either fizz or buzz
+     
+     the program printed x=5, y=f, z=t, and buzz.
+     
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -97,6 +125,9 @@
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
      
+    it prints t,f,t,f,t,t,f,f,t,f,t
+
+     
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -110,12 +141,23 @@
      print( (2 == 2) == True )
      print(3 < "3")
      
+the program prints an error.
 
  12. What things are wrong with this section of code?
      The programmer wants to set the money variable according to
      the initial occupation the user selects. (1 pt)
      
-     print("Welcome to Oregon Trail!")
+     print("Welcome to Oregon Trail!")True
+False
+True
+False
+False
+True
+False
+False
+True
+False
+True
 
      print("A. Banker")
      print("B. Carpenter")
@@ -130,6 +172,8 @@
      else if user_input = C:
          money = 50
 
-     
+     the if_user_input should have more options, such as a, banker, A.
+     Money was never defined
+     Doesn't ask what you want, it's not very desciptive
 
      
