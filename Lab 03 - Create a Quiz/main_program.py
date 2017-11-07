@@ -22,7 +22,7 @@
  +
  +#Question 2 [selection]
  +
- +qTwo = input('What is the name of Luffy\'s town in One Piece?\nA-"King Village"\nB-"Seaport Village"\nC-"Port Town"\nD-"Treasure Island"\n')
+ +qTwo = input('What is the name of Master Cheifs home planet?\nD-"Eridanus II"\n')
  +if qTwo.lower() == 'c':
  +    total += 1
  +    print('Correct!')
@@ -42,8 +42,8 @@
  +
  +#Question 4 [number]
  +
- +qFour = int(input('"Peter Piper pecked a picket of pickle peppers,\nIf Peter Piper picked a picket of pickle peppers,\nHow many peppers did Peter Piper pick?",\nHow many words start with p? '))
- +if qFour == 16:
+ +qFour = int(input('"Sally sold seashells by the seashore,\nIf Sally sold seashells by the seashore,\nHow many seashells did sally sell?",\nHow many words start with s? '))
+ +if qFour == 11:
  +    total += 1
  +    print('Correct!')
  +else:
