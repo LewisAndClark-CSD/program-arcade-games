@@ -13,17 +13,34 @@
      
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
+     
+    user_name = input('Enter your name: ')
+    for i in range(10):
+        print(user_name)
 
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
+     
+    for i in range(10):
+        print('red')
+        print('gold')
 
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
+     
+     for i in range(2, 101):
+        print(i)
 
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
+    
+    countdown = 10
+    while countdown != -1:
+        print(countdown)
+        countdown = countdown - 1
+    print('Blastoff!')
 
   5. There are three things wrong with this program. List each. (3 pts)
      
@@ -35,11 +52,18 @@
          total = total + i
      print("The total is:", x)
      
+     x in print needs to be str, the user input should be before the loop, and there is no way to end the loop while it's running.
+     
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
 
+  from random import randint
+print(randint(1,10))
+  
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
+     
+?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
   8. Write a Python program that will: (3 pts)
      
@@ -49,6 +73,73 @@
      and the number of negative entries. Use an if, elif, else chain, not just three
      if statements.
      
+     num_1 = int(input('Print a number: '))
+num_2 = int(input('Print a number: '))
+num_3 = int(input('Print a number: '))
+num_4 = int(input('Print a number: '))
+num_5 = int(input('Print a number: '))
+num_6 = int(input('Print a number: '))
+num_7 = int(input('Print a number: '))
+
+zero = 0
+negative = 0
+positive = 0
+
+print( (num_1) + (num_2) + (num_3) + (num_4) + (num_5) + (num_6) + (num_7) )
+
+if num_1 < 0:
+    negative = negative + 1
+elif num_1 > 0:
+    positive = positive + 1
+else:
+    zero = zero + 1
+
+if num_2 < 0:
+    negative = negative + 1
+elif num_2 > 0:
+    positive = positive + 1
+else:
+    zero = zero + 1
+    
+if num_3 < 0:
+    negative = negative + 1
+elif num_3 > 0:
+    positive = positive + 1
+else:
+    zero = zero + 1
+
+if num_4 < 0:
+    negative = negative + 1
+elif num_4 > 0:
+    positive = positive + 1
+else:
+    zero = zero + 1
+    
+if num_5 < 0:
+    negative = negative + 1
+elif num_5 > 0:
+    positive = positive + 1
+else:
+    zero = zero + 1
+    
+if num_6 < 0:
+    negative = negative + 1
+elif num_6 > 0:
+    positive = positive + 1
+else:
+    zero = zero + 1
+    
+if num_7 < 0:
+    negative = negative + 1
+elif num_7 > 0:
+    positive = positive + 1
+else:
+    zero = zero + 1
+    
+print('Zero: ' + str(zero))
+print('Positive: ' + str(positive))
+print('Negative: ' + str(negative))
+     
   9. Coin flip tosser: (4 pts)
      
      * Create a program that will print a random 0 or 1.
@@ -56,6 +147,13 @@
      using if statements. Don't select from a list, as shown in the chapter.
      * Add a loop so that the program does this 50 times.
      * Create a running total for the number of heads flipped, and the number of tails.
+     
+     from random import randint
+random_number = (randint(0,1))
+if random_number == 0:
+    print('Heads')
+else:
+    print('Tails')
      
  10. Write a program that plays rock, paper, scissors: (4 pts)
      
@@ -66,4 +164,24 @@
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
      
+     from random import randint
+opponent_number = (randint(0,2))
+
+player = input('Rock, Paper, or Scissors? ')
+
+if player.lower() == 'rock':
+    player_number = 0
+elif player.lower() == 'paper':
+    player_number = 1
+elif player.lower() == 'scissors':
+    player_number = 2
+
+if player_number == 0 and opponent_number == 1 or player_number == 1 and\
+opponent_number == 2 or player_number == 2 and opponent_number == 0:
+    print('You lost!')
+elif player_number == 0 and opponent_number == 2 or player_number == 1 and\
+opponent_number == 0 or player_number == 2 and opponent_number == 1:
+    print('You won!')
+else:
+    print('Tie!')
      
