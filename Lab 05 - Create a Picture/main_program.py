@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Destroy The City Pygame
+=======
+#Destroy The City PyGame
+>>>>>>> d65a200f26d213f86446b9aa3fa7733773ae286a
 
 import pygame
 
@@ -97,4 +101,8 @@ while not done:
     clock.tick(60)
  
 # Close the window and quit.
+<<<<<<< HEAD
 pygame.quit()
+=======
+pygame.quit() 
+>>>>>>> d65a200f26d213f86446b9aa3fa7733773ae286a
