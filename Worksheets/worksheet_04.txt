@@ -161,7 +161,46 @@ print(heads, "Heads")
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
      
-     
+import random
+
+
+person_input = int(input("Choose between Rock(1),Paper(2) or, Scissors(3): "))
+if person_input == 3: 
+      print("Scissors")
+elif person_input == 2:
+      print("Paper")
+else:
+      print("Rock")
+
+rand_number = random.randrange(0, 3)
+if rand_number == 1:
+      print("Rock")
+elif rand_number == 2:
+      print("Paper")
+elif rand_number == 0:
+      print("Scissors")
+
+if person_input == 3 and rand_number == 2:
+      print("You win!")
+elif person_input == 3 and rand_number == 1:
+      print("You lose!")
+elif person_input == 3 and rand_number == 0:
+      print("Tie!")
+      
+      
+elif person_input == 2 and rand_number == 2:
+      print("Tie!")
+elif person_input == 2 and rand_number == 1:
+      print("You win!")
+elif person_input == 2 and rand_number == 0:
+      print("You lose!")
+      
+elif person_input == 1 and rand_number == 2:
+      print("You lose!")
+elif person_input == 1 and rand_number == 1:
+      print("Tie!")
+elif person_input == 1 and rand_number == 0:
+      print("You win!")
      
      
      
