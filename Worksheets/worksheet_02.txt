@@ -6,37 +6,38 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
-
+0010 2
   2. Give an example of a decimal number.
-
+.6
   3. Give an example of a hexadecimal number.
-
+a2
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+1 2 4 8 16
   5. What is a compiler?
-
+iIt changes our code to computer code
   6. What is source code?
-
+Base code of a program in english
   7. What is machine language? (Don't just say binary. That's not correct.)
 
   8. What is a first generation language? (Don't just say binary. That's not correct.)
 
   9. What is a second generation language?
-
+python2
  10. What is a third generation language? (Explain, don't just give one example.)
-
+python3 it is the most up to date language that is faster and can do more complex 
+tasks than the last
  11. What is an interpreter and how does it differ from a compiler?
-
+a interpeter translates from what we understand to what a computer can read
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
-
+c sharp c++ java python
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
-
+JAVA and C++ bureau of labor statistics
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
-
+syntax is a structure error meaning assigned
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
-
+calculator 
      
