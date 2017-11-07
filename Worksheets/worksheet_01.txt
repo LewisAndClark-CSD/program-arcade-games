@@ -7,23 +7,34 @@
      
   1. Write a line of code that will print your name.
 
+  print('Sean Kang')
+  
   2. How do you enter a comment in a program?
 
+  Use # or ''' or """
+  
   3. What do the following lines of code output?
      	ALSO: Why do they give a different answer?
      
+     The first one divides 2 from 3 the second one divides 3 from 
+     2. They give different outputs because thats how division 
+     works
+    
      print(2 / 3)
      print(2 // 3)
      
-  4. Write a line of code that creates a variable called pi and sets
-     	it to an appropriate value.
+  4. Write a line of code that creates a variable called pi and sets it to an appropriate value.
 
+  pi = 3.14
+  
   5. Why does this code not work?
      
      A = 22
      print(a)
      
-  6. All of the variable names below can be used. But which ONE of these is
+     Because its printing a lowercase a when the variable is an upper case A
+ 
+ 6. All of the variable names below can be used. But which ONE of these is
      	the better variable name to use?
      
      a
@@ -33,6 +44,8 @@
      area
      area_of_rectangle
      Area_Of_Rectangle
+     
+     area_of_rectangle is the best one to use because its short and simple but it also tells you what it is used for
      
   7. Which of these variables names are not allowed in Python? (More than one
      might be wrong. Also, this question is not asking about improper names, just
@@ -59,16 +72,28 @@
      2x
      x2x
      total%
-     #left
-     
+    #left
+    
+    account number
+    account.number
+    account#
+    great.big.variable
+    total%
+    #left  
+    
   8. Why does this code not work?
      
      print(a)
      a = 45
      
+     You cant print something when the variable is below it.
+     
   9. Explain the mistake in this code:
      
      pi = float(3.14)
+     
+     
+     The float is not needed
      
  10. This program runs, but the code still could be better. Explain what is
      wrong with the code.
@@ -79,12 +104,16 @@
      area = pi  * radius ** 2
      print(area)
      
+     Does not need the pi = x
+     
  11. Explain the mistake in the following code:
      
      x = 4
      y = 5
      a = ((x) * (y))
      print(a)
+     
+     You only need one set of perentheses is line 3
      
  12. Explain the mistake in the following code:
      
@@ -93,9 +122,13 @@
      a = 3(x + y)
      print(a)
      
+     you need a * to symbolize multiplication otherwise the code will fail
+     
  13. Explain the mistake in the following code:
      
      radius = input(float("Enter the radius:"))
+     
+     The float should go in front of the input
      
  14. Do all these print the same value? Which one is better to use and why?
      
@@ -103,28 +136,46 @@
      print(2 / 3 + 4)
      print(   2 /    3+    4  )
      
+     Yes they all print the same value, it would be best to use the second one because theyre not to close together or to far apart
+     
  15. What is a constant?
 
+ Something in the code that stays the same throughout the program
+ 
  16. How are variable names for constants different than other variable names?
 
+ Variable names can change
+ 
  17. What is a single quote and what is a double quote?
      Give and label an example of both.
 
+     a single quote is '' and double quote is "". These are used for comments and printing.
+     
  18. Write a Python program that will use escape codes to print a double-quote
      and a new line using the Window's standard. (Note: I'm asking for the Window's
      standard here. Look it up out of Chapter 1.)
 
+     
+     
  19. Can a Python program print text to the screen using single quotes instead
      of double quotes?
 
+     yes 
+     
  20. Why does this code not calculate the average?
+     
+     because it does not follow order of operations
      
      print(3 + 4 + 5 / 3)
      
 
  21. What is an ``operator'' in Python?
 
+any sign that is used for math equations 
+ 
  22. What does the following program print out?
+     
+     3 + 1 which would be 4
      
      x = 3
      x + 1
@@ -135,11 +186,12 @@
      
      user_name = input("Enter your name: )"
      
+     The second quotation should be in the perentheses
 
  24. Correct the following code:
      
      value = int(input(print("Enter your age")))
      
-
+you dont need the int since you are typing in a name and not a number
 
      

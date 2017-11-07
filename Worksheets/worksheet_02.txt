@@ -7,36 +7,76 @@
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
 
+     001
+     
   2. Give an example of a decimal number.
 
+  213
+  
   3. Give an example of a hexadecimal number.
 
+  010
+  
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
 
+  1, 2, 8, 16
+  
   5. What is a compiler?
 
+  a program thats written in a certain language and turns it into a code that the computer processor uses
+  
   6. What is source code?
 
+  commands that make up an executable computer program
+  
   7. What is machine language? (Don't just say binary. That's not correct.)
 
+  a programming language that uses binary or hexadecimal instructions that the computer can read directly
+  
   8. What is a first generation language? (Don't just say binary. That's not correct.)
 
+  Altair 8800b
+  
   9. What is a second generation language?
 
+  assembly language
+  
  10. What is a third generation language? (Explain, don't just give one example.)
 
+ COBOL, third gen languages use a compiler to turn the source code into machine code
+ 
  11. What is an interpreter and how does it differ from a compiler?
 
+ interpreters interpret source code into machine language instantly
+ 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
 
+     Jave
+     Python
+     C
+     Ruby
+     Javascript
+     C#
+     PHP
+     https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html
+     
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
 
+     People are looking for a lot of languages but the most popular ones are python and Javascript
+     https://stackoverflow.com/jobs
+     
+     
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
 
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
 
+     car
+     
+     Hardware: Wheels, seats, Steering wheel, Mirrors, etc.
+     
+     Software: The software in a car is made for the speedomater, windshield wipers, and so much more
      
