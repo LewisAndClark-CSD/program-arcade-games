@@ -6,37 +6,38 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
-
+    - 1100110101101110000
   2. Give an example of a decimal number.
-
+    - 10
   3. Give an example of a hexadecimal number.
-
+    - CD
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+    -1, 2, 4, 8, 16
   5. What is a compiler?
-
+    - A compiler takes the program typed in by the user (called source code) and turns it into machine code
   6. What is source code?
-
+    - Input by the user
   7. What is machine language? (Don't just say binary. That's not correct.)
-
+    - numbers represent the commands and data for the program
   8. What is a first generation language? (Don't just say binary. That's not correct.)
-
+    - binary number systems, code represented in 1 & 0's
   9. What is a second generation language?
-
+    - Assembly Language
  10. What is a third generation language? (Explain, don't just give one example.)
-
+    - COBOL, FORTRAN, LISP; uses compiler and source code
  11. What is an interpreter and how does it differ from a compiler?
-
+    -uses for each platform and is used on the fly to explain source code
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
-
+    -Google; Python, javascript, and HTML
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
-
+    - Java, C#, PHP, Python, C, Job Board: DICE
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
-
+    - syntax = grammatical structure
+    - semantics = vocabulary symbols arranged with the structure
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
-
+    - Samsung Galaxy S8, has memory,motherboard,ram, and a CPU just like a computer, running the GUI and calling any apps that I press.
      
