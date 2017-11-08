@@ -57,7 +57,7 @@ It tells where to draw the line
 
  10. When drawing a rectangle, what happens if the specified line width is zero?
  
- nothing will happen, as it is specified to have no pixels wide.
+The polygon will be filled.
 
  11. Describe the ellipse drawn in the code below.
      * What is the x, y of the origin coordinate?
@@ -73,23 +73,37 @@ It tells where to draw the line
      
  12. When drawing an arc, what additional information is needed over drawing
      an ellipse?
+     
+     It needs to know what the radians is for the angle of the arc.
 
  13. Describe, in general, what are the three steps needed when printing text to
      the screen using graphics?
 
+     It needs to know what text to write, information about the text(color, size, font, etc), and where is place the text on the screen.
+     
  14. When drawing text, the first line of the three lines needed to draw text
      should actually be outside the main program loop. It should only run once at
      the start of the program. Why is this? You may need to ask.
+     
+     This is because one the text information is established, there's no need to keep telling it what the text should be when it already had the information before the loop started.
 
  15. What are the coordinates of the polygon that the code below draws?
      
      pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
      
+     The coordinates are where each point of the polygon is located on the screen, and 5 is the width of each line drawn.
+     
  16. What does pygame.display.flip() do?
+ 
+ This updates the screen with what was drawn.
 
  17. What does pygame.quit() do?
+ 
+ This closes the window and stops the program.
 
  18. Look up on-line how the pygame.draw.circle works. Get it working
      and paste a working sample here. I only need the one line of code that draws the
      circle, but make sure it is working by trying it out in a full working program.
+     
+    pygame.draw.circle(screen, WHITE, (200, 200), 20, 5)
      
