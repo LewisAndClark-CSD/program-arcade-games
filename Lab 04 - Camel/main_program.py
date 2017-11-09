@@ -15,7 +15,7 @@
  +miles = 0
  +hunger = 0
  +fuel = 6
- +nasa = -20
+ +Empire = -20
  +rations = 4
  +
  +#Introduction
@@ -50,7 +50,7 @@
  +    elif user_choice.upper() == 'D':
  +        fuel = 3
  +        print('\nYou found more fuel!')
- +        nasa = nasa - (milestra - nasatra)
+ +        Empire = Empire - (milestra - nasatra)
  +        
  +    #Full Speed
  +        
@@ -59,7 +59,7 @@
  +        print('\nYou traveled:', str(milestra), 'miles\n')
  +        hunger += 1
  +        fuel = fuel - random.randint(1, 4)
- +        nasa = nasa - (milestra - nasatra)
+ +        Empire = Empire - (milestra - nasatra)
  +        
  +    #Moderate Speed
  +        
@@ -68,7 +68,7 @@
  +        print('\nYou traveled:', str(milestra), 'miles\n')
  +        hunger += 1
  +        fuel -= 1
- +        nasa = nasa - (milestra - nasatra)
+ +        Empire = Empire - (milestra - nasatra)
  +        
  +    #Eat Rations
  +        
@@ -93,29 +93,29 @@
  +    if -3 < fuel <= 0:
  +        print('Your running on fumes!\n')
  +    if  -3 >= fuel:
- +        print('Your ship ran out of gas\nNASA caught you :(\n')
+ +        print('Your ship ran out of gas\nThe Empire caught you :(\n')
  +        done = True
  +        continue
  +        
  +    #NASA
  +        
- +    if nasa >= 0:
- +        print('NASA has caught you!\n')
+ +    if Empire >= 0:
+ +        print('The Empire has caught you!\n')
  +        done = True
  +        continue
- +    elif 0 > nasa >= -15:
- +        print('NASA is gaining on you!\n')
+ +    elif 0 > Empire >= -15:
+ +        print('The Empire is gaining on you!\n')
  +        
  +    #Winning
  +        
  +    if miles >= 200:
- +        print('YOU MADE IT ACROSS THE MILKY WAY!!!\n')
+ +        print('YOU MADE IT ACROSS THE OUTER RIM!!!\n')
  +        
  +    #Oasis
  +    
  +    oasis = random.randint(1, 21)
  +    if oasis == 2:
- +        print('You found the International Space Station!\n')
+ +        print('You found the Rebel Alliance!\n')
  +        hunger = 0
  +        fuel = 3
  +        rations = 4
