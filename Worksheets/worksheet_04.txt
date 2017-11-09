@@ -81,7 +81,7 @@ print(uniform(1, 10))
      * Print the total sum of the numbers
      * Print the count of the positive entries, the number entries equal to zero,
      and the number of negative entries. Use an if, elif, else chain, not just three
-     if statements.
+     if statements. 
      
   9. Coin flip tosser: (4 pts)
      
