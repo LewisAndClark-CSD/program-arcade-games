@@ -1,6 +1,6 @@
 #
 #!/usr/bin/env python3
- +#Space Hopper
+ +#Space Smuggler
  +#Jordan Watt
  +#11-6-17
  +
@@ -20,7 +20,7 @@
  +
  +#Introduction
  +
- +print('\nWelcome to Space Hopper!\n\nYou have stolen a space ship to make your way across the Milky-Way.\nNASA want their space ship back and are chasing you down!\nSurvive your space trek and out run NASA.\n')
+ +print('\nWelcome to Space Smuggler!\n\nYou have stolen a space ship to make your way across the Outer Rim.\nThe Empire want their space ship back and are chasing you down!\nSurvive your space trek and out run NASA.\n')
  +
  +#While choices
  +
