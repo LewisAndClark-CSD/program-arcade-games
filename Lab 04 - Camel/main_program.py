@@ -47,6 +47,7 @@ while not done:
     thirst= thirst+1
     camel_tiredness+= random.randrange(1,4)
     natives_distance+= random.randrange(7,14)
+    oasis= random.randrange(1,21)
     print()
     print("Your miles traveled are:", miles_traveled)
     print()
@@ -65,6 +66,11 @@ while not done:
     print("Your thrist is:", thirst)
     print()
     
+  if oasis == 20:
+    camel_tiredness= 0
+    thirst= 0
+    canteen += 3
+    print("You found an oasis! You are no longer thirsty, you filled your canteen and your camel has rested.")
   if miles_traveled >= 200 and not done:
     print("You've won the game!")
     done= True
