@@ -14,16 +14,40 @@
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
 
+word = input('Name: ')
+
+for i in range(10):
+    print(word)
+
+print("Done")
+
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
+     
+     word = input("Q: ")
+
+for i in range(20):
+    print('Red')
+    print('Gold')
 
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
 
+for i in range(0, 101):
+    if (i % 2 == 0):
+        print(i)
+
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
+     
+countdown = 10
+while countdown:
+    print (countdown),
+    countdown -= 1
+print('0')    
+print("Blastoff!")
 
   5. There are three things wrong with this program. List each. (3 pts)
      
@@ -35,11 +59,21 @@
          total = total + i
      print("The total is:", x)
      
+     first they forgot to put int( before the input
+     then they shouldve put total = total + x
+     finally they shouldve put print("The total is:", total)
+     
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
+
+from random import randint
+print(randint(1, 10))
 
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
+     
+from random import *
+print(uniform(1, 10))
 
   8. Write a Python program that will: (3 pts)
      
