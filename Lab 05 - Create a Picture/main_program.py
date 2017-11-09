@@ -32,10 +32,11 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
     screen.fill(WHITE)
-     
+    
+    pygame.draw.rect(screen, GREEN, [0, 400, 700, 500])
+    pygame.draw.ellipse(screen, BLUE, [100,340,220,120])
     pygame.draw.rect(screen, SKYBLUE, [0, 0, 700, 400])
     pygame.draw.circle(screen, YELLOW, [100, 100], 100)
-    pygame.draw.rect(screen, GREEN, [0, 400, 700, 500])
     pygame.draw.rect(screen, BROWN, [400, 350, 30, 80])
     pygame.draw.circle(screen, GREEN, [415, 250], 100)
     pygame.draw.lines(screen, BLACK, False, [(600, 100), (610, 110), (620, 100)], 4)
@@ -47,7 +48,7 @@ while not done:
     pygame.draw.circle(screen, RED, [420, 320], 9)
     pygame.draw.circle(screen, RED, [350, 295], 9)
     pygame.draw.circle(screen, RED, [480, 285], 9)
-    pygame.draw.arc(screen, BLUE, [100,340,220,120], PI, 4*PI/2, 60)
+    
     
     pygame.display.flip()
     clock.tick(60)
