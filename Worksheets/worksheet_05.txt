@@ -103,4 +103,4 @@ it loops to print the pictures
      
      it draws a circle around a point
 
-     py.game.draw.circle(DISPLAYSURF, BLUE, (300, 50), 20, 0
+     pygame.draw.circle(screen, BLUE, (300, 50), 20, 0)
