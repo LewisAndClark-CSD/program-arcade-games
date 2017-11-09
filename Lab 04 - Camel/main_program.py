@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# main_program.py
+# Jared Rhodes
+# 11/07/2017
+
+""" This is the camel game lab from chapter 4 """
+
 import random
 
 print("Welcome to Camel!")
