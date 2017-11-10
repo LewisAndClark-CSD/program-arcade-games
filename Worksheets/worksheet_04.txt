@@ -129,4 +129,30 @@ print('Tails:', numberTails)
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
      
-     
+     from random import randint
+options = [1,2,3]
+computerPlayer = options[randint(0,2)]
+player = False
+while player == False:
+    player = int(input('Rock = 1, Paper = 2, Scissors = 3. Enter your choice: '))
+    if player == computerPlayer:
+        print('Tie, no one wins.')
+    elif player == 1:
+        if computerPlayer == 2:
+            print('You lose.',computerPlayer, 'beats',player)
+        else:
+            print('You win.',player,'beats',computerPlayer)
+    elif player == 2:
+        if computerPlayer == 3:
+            print('You lose.',computerPlayer,'beats',player)
+        else:
+            print('You win.',player,'beats',computerPlayer)
+    elif player == 3:
+        if computerPlayer == 1:
+            print('You lose.',computerPlayer,'beats',player)
+        else:
+            print('You win.',player,'beats',computerPlayer)
+    else:
+        print('That is not a valid choice, please try again.')
+    player = False
+    computerPlayer = options[randint(0,2)]
