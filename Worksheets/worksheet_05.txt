@@ -7,63 +7,102 @@
      
   1. Explain how the computer coordinate system differs from the standard Cartesian
      coordinate system. There are two main differences. List both.
+     
+     The y coordinates are reversed and objects drawn in negative space will be off screen.
 
   2. Before a Python Pygame program can use any functions
      like pygame.display.set_mode(), what two lines of code must occur first?
 
+     import pygame
+     pygame.init() 
+    
+  
   3. Explain how WHITE = (255, 255, 255) represents a color.
 
+     RGB colors range from 0-255, 0 representing no color and 255 representing full color. 255 in all three ranges mixes all 3        colors to make white.
+  
+  
   4. When do we use variable names for colors in all upper-case, and when do we
      use variable names for colors in all lower-case? (This applies to all variables,
      not just colors.)
 
+     Uppercase variables are contants, while lowercase variables cna be changed
+  
   5. What does the pygame.display.set_mode() function do?
 
+     It can be used to create a window of a specified size.
+  
   6. What does this for event in pygame.event.get() loop do?
 
+     It removes evnt from a queue and puts them inside a list.
+  
   7. What is pygame.time.Clock used for?
 
+     It tracks amount of time or manages framerate.
+  
   8. For this line of code: (3 pts)
      
      pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
      
-     * What does screen do?
-     * What does [0, 0] do?
-     * What does [100, 100] do?
-     * What does 5 do?
+     * What does screen do? Displays the screen.
+     * What does [0, 0] do? The starting coordinate of the line.
+     * What does [100, 100] do? The end coordinate of the line.
+     * What does 5 do? Line width.
      
-
+     
+  
+  
   9. What is the best way to repeat something over and over in a drawing?
+      
+     You should use an event loop.
 
  10. When drawing a rectangle, what happens if the specified line width is zero?
 
+     The line will not be there.
+ 
  11. Describe the ellipse drawn in the code below.
-     * What is the x, y of the origin coordinate?
-     * What does the origin coordinate specify? The center of the circle?
-     * What is the length and the width of the ellipse?
+     * What is the x, y of the origin coordinate? (20,20)
+     * What does the origin coordinate specify? The center of the circle? The upper left of the rectangle boundary.
+     * What is the length and the width of the ellipse? The Length x Width is 250 x 100.
      
      
      pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
      
  12. When drawing an arc, what additional information is needed over drawing
-     an ellipse?
+     an ellipse? 
+     
+     Start and end coordinates for the angles.
 
  13. Describe, in general, what are the three steps needed when printing text to
      the screen using graphics?
+     
+     .Create a variable to hold information about the font being used
+     .The program needs to create an image of the text
+     .Tell the program whre to place the image
 
  14. When drawing text, the first line of the three lines needed to draw text
      should actually be outside the main program loop. It should only run once at
      the start of the program. Why is this? You may need to ask.
 
+     The line should only run once becasue the font and size do not change.
+ 
  15. What are the coordinates of the polygon that the code below draws?
+     
+     (50,100) (0,200) (200,200) (100,50) 
      
      pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
      
  16. What does pygame.display.flip() do?
 
+     It flips the display so the image can be shown instead of causing the screen to flicker.
+ 
  17. What does pygame.quit() do?
 
+     It ends the program.
+ 
  18. Look up on-line how the pygame.draw.circle works. Get it working
      and paste a working sample here. I only need the one line of code that draws the
      circle, but make sure it is working by trying it out in a full working program.
-     
+  
+    pygame.draw.circle(screen, red,(200, 100), 30)
+  
