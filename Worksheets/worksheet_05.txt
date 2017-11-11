@@ -60,9 +60,9 @@ void draw()
 Then there will not be a border around the rectangle. 
 
  11. Describe the ellipse drawn in the code below.
-     * What is the x, y of the origin coordinate? x = 250 y = 100 
-     * What does the origin coordinate specify?  The center of the circle?
-     * What is the length and the width of the ellipse?
+     * What is the x, y of the origin coordinate? x = 20 y = 20
+     * What does the origin coordinate specify? The center of the circle? The upper left corner
+     * What is the length and the width of the ellipse? Length = 100 Width = 250
      
      
      pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
@@ -70,22 +70,36 @@ Then there will not be a border around the rectangle.
  12. When drawing an arc, what additional information is needed over drawing
      an ellipse?
 
+Start and end angles, which are radians. 
+
  13. Describe, in general, what are the three steps needed when printing text to
      the screen using graphics?
+
+Create a variable that holds information about font to be used, create an image of the text, 
+tell where the image is to be stamped.
 
  14. When drawing text, the first line of the three lines needed to draw text
      should actually be outside the main program loop. It should only run once at
      the start of the program. Why is this? You may need to ask.
 
+Because it only needs to run once at the start of the program, it doesn't hold things that change.
+
  15. What are the coordinates of the polygon that the code below draws?
      
      pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
      
+     [50,100],[0,200],[200,200],[100,50]
+     
  16. What does pygame.display.flip() do?
 
+Updates the display 'flipping' the new graphics to the screen. 
+
  17. What does pygame.quit() do?
+
+Properly shuts down a pygame program. 
 
  18. Look up on-line how the pygame.draw.circle works. Get it working
      and paste a working sample here. I only need the one line of code that draws the
      circle, but make sure it is working by trying it out in a full working program.
      
+pygame.draw.circle(screen, (50,50), 5, 1)
