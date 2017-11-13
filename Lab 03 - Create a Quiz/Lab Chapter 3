@@ -1,0 +1,45 @@
+print("Quiz")
+count = 0
+ft = int(input("How many feet are in a mile: "))
+if ft == 5280:
+    print("Correct")
+    count += 1
+else:
+    print("Incorrect")
+
+    
+number = int(input("What is 10*2/4: "))
+if number == 5:
+    print("Correct")
+    count += 1
+else:
+    print("Incorrect")
+    
+topgun = input("What is the main character's name in top gun?: ")
+lower = topgun.lower()
+if lower == 'mavrick':
+    print("Correct")
+    count += 1
+else:
+    print("Incorrect")
+
+
+Van = input("In the band Van Halen, who plays guitar, Eddie or Alex? ")
+lvan = Van.lower()
+if lvan == 'eddie':
+    print("Correct")
+    count += 1
+else:
+    print("Incorrect")
+chevy = input("What color is the chevy logo? ")
+lchevy = chevy.lower()
+if lchevy == 'yellow':
+    print("Correct")
+    count += 1
+else:
+    print("Incorrect")
+print("You got",count,"answers right")
+print("Your score is", (count/5*100))
+
+
+    
