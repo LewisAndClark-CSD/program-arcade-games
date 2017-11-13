@@ -107,10 +107,10 @@
           number = random.randrange(0, 2)
           if number == 1:
                numberHeads += 1
-               print(number)
+               print('Heads')
           elif number == 0:
                numberTails += 1
-               print(number)
+               print('Tails')
      print('Heads:', numberHeads)
      print('Tails:', numberTails)
      
