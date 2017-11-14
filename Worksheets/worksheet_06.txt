@@ -17,6 +17,8 @@
      while x < 10:
          print(x)
          x = x + 2
+    My guess: 0,2,4,6,8 on seperate lines
+    Output: 0,2,4,6,8 on seperate lines
      
   2. What does this program print out?
      
@@ -24,6 +26,8 @@
      while x < 64:
          print(x)
          x = x * 2
+    My guess: 1,2,4,8,16,32 on seperate lines
+    Output: 1,2,4,8,16,32 om seperate lines
      
   3. Why is the and x >= 0 not needed?
      
@@ -31,6 +35,7 @@
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+    You need to check for things that can never be false, ie x=0.
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -40,6 +45,8 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
+     This will print a countdown from 5 to 0, but will not print blastoff.
+     The print("Blast off!") will not print because it is the wrong part of the code.
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
