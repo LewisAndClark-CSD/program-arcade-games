@@ -17,6 +17,8 @@
      while x < 10:
          print(x)
          x = x + 2
+     guess print 0 2 4 6 8 all on new lines
+     actually prints 0 2 4 6 8 all on new lines
      
   2. What does this program print out?
      
@@ -24,6 +26,8 @@
      while x < 64:
          print(x)
          x = x * 2
+    guess print 1 2 4 8 16 32 all on new lines
+    actual print 1 2 4 8 16 32 all on new lines    
      
   3. Why is the and x >= 0 not needed?
      
@@ -31,6 +35,7 @@
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+     x starts at 0 and never goes down so its always true
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -40,6 +45,7 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
+     guess 5, 4, 3, 2, 1, 0          no blast off because str 1 != int 1
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
@@ -48,7 +54,7 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
-     
+         x = float(input("Enter a number greater than zero: "))
   6. Fix the following code:
      
      x = 10
