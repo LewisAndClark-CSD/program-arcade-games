@@ -23,5 +23,8 @@ for row in range(10):
     # Loop to print digits
     for digits in range(1,9-row):
         print(digits, end=" ")
+    # Loop to print digits2
+    for digits2 in range(7-row,0,-1):
+        print(digits2,end=" ")
     # Print new line
     print()
