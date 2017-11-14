@@ -13,27 +13,30 @@
   1. What does this program print out?
      (Remember: TWO answers. Your guess and the actual result. Label both.)
      
+     Guess: it is going to keep printing 0 on separate lines and never stop.
+     Answer: it printed 0,2,4,6,8 on separate lines and stopped but didn't print 10. I didn't see that x was reassigned at first.
      x = 0
      while x < 10:
          print(x)
          x = x + 2
      
   2. What does this program print out?
-     
+     Guess: It will print 1,2,4,8,16,32 on separate lines.
+     Answer: It will print 1,2,4,8,16,32 on separate lines.
      x = 1
      while x < 64:
          print(x)
          x = x * 2
      
   3. Why is the and x >= 0 not needed?
-     
+     This loop will never go below 0 so that makes it unnecessary to have a check for it going below 0.
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
-     
+     It prints out 5,4,3,2,1,0 but never prints "Blast off!" because the if statement checks if 1 is a string.
      x = 5
      while x >= 0:
          print(x)
