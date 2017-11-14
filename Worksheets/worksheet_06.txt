@@ -17,6 +17,14 @@
      while x < 10:
          print(x)
          x = x + 2
+         
+        it will print even numbers to 8
+        it prints  
+0
+2
+4
+6
+8
      
   2. What does this program print out?
      
@@ -24,6 +32,18 @@
      while x < 64:
          print(x)
          x = x * 2
+         
+         Itll print multiples of 64.
+         
+         It prints
+1
+2
+4
+8
+16
+32
+         
+         
      
   3. Why is the and x >= 0 not needed?
      
@@ -32,6 +52,8 @@
          print(x)
          x = x + 2
      
+    it isn't needed because we aren't dealing with numbers that will be less than 0
+    
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -41,6 +63,7 @@
              print("Blast off!")
          x = x - 1
      
+     it prints out an endless loop of 5... it does this because it is never told to quit.
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
