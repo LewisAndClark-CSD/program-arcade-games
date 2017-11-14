@@ -17,6 +17,9 @@
      while x < 10:
          print(x)
          x = x + 2
+         
+    it will print 0,2,4,6,8 on seperate lines
+    it prints 0,2,4,6,8 all on seperate lines
      
   2. What does this program print out?
      
@@ -25,12 +28,17 @@
          print(x)
          x = x * 2
      
+     it will print 1,2,4,8,16,32 on seperate lines
+     it prints 1,2,4,8,16,32 on seperate lines
+     
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+         
+         You don't need to check for things that can never be false
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -40,6 +48,8 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
+         
+         it prints 5, 4, 3, 2, 1, 0 on seperate lines because there are quotations around the number 1 making it a string
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
