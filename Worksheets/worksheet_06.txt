@@ -17,6 +17,14 @@
      while x < 10:
          print(x)
          x = x + 2
+         
+         
+         0
+         2
+         4
+         6
+         8
+         
      
   2. What does this program print out?
      
@@ -24,13 +32,23 @@
      while x < 64:
          print(x)
          x = x * 2
-     
+     1
+     2
+     4
+     8
+     16
+     32
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+     
+     Because 0 is already = to 0 and it is less than 10.
+     
+     There is no way x can go down in value in this loop.
+     
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -40,6 +58,20 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
+         
+         5
+         4
+         3
+         2
+         1
+         0
+         
+         Does not print out blast off because x is == to the character 1.
+     
+     
+     
+     
+     
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
@@ -48,6 +80,10 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
+     
+     
+     
+     
      
   6. Fix the following code:
      
