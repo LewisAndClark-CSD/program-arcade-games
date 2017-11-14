@@ -18,6 +18,8 @@
          print(x)
          x = x + 2
      
+     It will print 0 2 4 6 8 all on separate lines
+     
   2. What does this program print out?
      
      x = 1
@@ -25,12 +27,16 @@
          print(x)
          x = x * 2
      
+     It will print 1 2 4 6 8 16 32 all on separate lines
+     
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+     
+     Because there is no way for x to go down in value anyway. 
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -41,6 +47,8 @@
              print("Blast off!")
          x = x - 1
      
+     It will print 5 4 3 2 1 0, an integer will never be equal to a string, so "Blast Off!" will never print. 
+     
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
@@ -48,6 +56,8 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
+     
+     
      
   6. Fix the following code:
      
