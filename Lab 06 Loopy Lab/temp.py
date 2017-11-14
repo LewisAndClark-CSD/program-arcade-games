@@ -16,4 +16,12 @@ for row in range(1, 10):
         print(digits2, end=" ")
     # Print a new line
     print()
-    
+for row in range(10):
+    # Print spaces Loop
+    for space in range(row+1):
+        print(" ", end=" ")
+    # Loop to print digits
+    for digits in range(1,9-row):
+        print(digits, end=" ")
+    # Print new line
+    print()
