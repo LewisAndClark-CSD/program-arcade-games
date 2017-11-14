@@ -13,12 +13,19 @@
   1. What does this program print out?
      (Remember: TWO answers. Your guess and the actual result. Label both.)
      
+     It will print 0, 2, 4, 6,8
+     
+     
      x = 0
      while x < 10:
          print(x)
          x = x + 2
      
   2. What does this program print out?
+     
+     
+     It will print 2, 4, 8, 16, 32
+     
      
      x = 1
      while x < 64:
@@ -27,12 +34,20 @@
      
   3. Why is the and x >= 0 not needed?
      
+     
+     X is already set to 0 and will never be less than 0
+     
+     
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
+     
+     
+     Blast off is a string, not an integer, so it will only print 5, 4, 3, 2 ,1, 0
+     
      
      x = 5
      while x >= 0:
