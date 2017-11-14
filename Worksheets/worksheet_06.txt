@@ -17,21 +17,23 @@
      while x < 10:
          print(x)
          x = x + 2
-     
+     Guess: Prints out 0, 2, 4, 6, and 8 on seperate lines.
+     Answer: Prints out 0, 2, 4, 6, and 8 on seperate lines.
   2. What does this program print out?
      
      x = 1
      while x < 64:
          print(x)
          x = x * 2
-     
+     Guess: Prints out 1, 2, 4, 8, 16, and 32 on seperate lines.
+     Answer: Prints out 1, 2, 4, 8, 16, and 32 on seperate lines.
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
-     
+     It does not need to be checked because x is set to start at 0, and there is no chance of it ever going down in value.
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -40,7 +42,7 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
-     
+     This program prints out 5, 4, 3, 2, and 1 on seperate lines. This prints only that out because an integer can never equal a string, because the programmer put quotations around 1, it will never be equal to that and will then never print out "Blast off!".
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
