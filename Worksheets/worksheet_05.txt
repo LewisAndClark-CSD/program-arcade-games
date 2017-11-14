@@ -7,12 +7,17 @@
      
   1. Explain how the computer coordinate system differs from the standard Cartesian
      coordinate system. There are two main differences. List both.
+     The origin is in the top-right of the screen and as the y values increase 
+     the coordinates move down.
 
   2. Before a Python Pygame program can use any functions
      like pygame.display.set_mode(), what two lines of code must occur first?
+     import pygame
+     pygame.init()
 
   3. Explain how WHITE = (255, 255, 255) represents a color.
-
+     
+     
   4. When do we use variable names for colors in all upper-case, and when do we
      use variable names for colors in all lower-case? (This applies to all variables,
      not just colors.)
