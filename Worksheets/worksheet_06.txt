@@ -17,6 +17,14 @@
      while x < 10:
          print(x)
          x = x + 2
+         
+        it will print even numbers to 8
+        it prints  
+0
+2
+4
+6
+8
      
   2. What does this program print out?
      
@@ -24,6 +32,18 @@
      while x < 64:
          print(x)
          x = x * 2
+         
+         Itll print multiples of 64.
+         
+         It prints
+1
+2
+4
+8
+16
+32
+         
+         
      
   3. Why is the and x >= 0 not needed?
      
@@ -32,6 +52,8 @@
          print(x)
          x = x + 2
      
+    it isn't needed because it will always be true, never false.
+    
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -41,24 +63,33 @@
              print("Blast off!")
          x = x - 1
      
+     it does not print blast off because integers and strings are not equal.
+     
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
      x = float(input("Enter a number greater than zero: "))
-
-     while x <= 0:
-         print("Too small. Enter a number greater than zero: ")
+    
+    
+    while x <= 0:
+      print("Too small. Enter a number greater than zero: ")
+      
+        if x>= 0:
+     print()
+    
+         
      
   6. Fix the following code:
      
      x = 10
 
-     while x < 0:
+     while x > 0:
          print(x)
          x - 1
+         
 
      print("Blast-off")
-     
+     print()
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -66,6 +97,8 @@
      for i in range(10):
          print(i)
          i += 1
+         
+         the i + 1 is unnecessary.
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -83,6 +116,10 @@
          x += 1
          for j in range(10):
              x += 1
+             
+             
      print(x)
+     
+     Because the print statement has added indents which tells the program that it is seperate so it does not print the code, it just prints a space(as x would not be defined)
      
       

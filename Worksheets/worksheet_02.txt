@@ -6,37 +6,60 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
+     
+001
 
   2. Give an example of a decimal number.
+  
+352
 
   3. Give an example of a hexadecimal number.
+  
+015
 
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
+  
+1,2,8,16
 
   5. What is a compiler?
 
+a written program that becomes a code that a computer will process
   6. What is source code?
 
+ words that form a working program 
   7. What is machine language? (Don't just say binary. That's not correct.)
 
+ a language that uses readable hexadecimal or binary. 
   8. What is a first generation language? (Don't just say binary. That's not correct.)
 
+  Altair 8800, The machine language
+  
   9. What is a second generation language?
 
+  assembly language- programmer endures low levels of detail in the hardware to preform simple, common coding tasks.
  10. What is a third generation language? (Explain, don't just give one example.)
 
+ include common language features such as variables, coinstants, if then, loops, and error handling.  Uses a compiler to turn the code into a machine code. The higher the GL a language is, the closer it is to human english. 1gl being far from, 4gl being the most simple to try to interperet.
  11. What is an interpreter and how does it differ from a compiler?
+ 
+ They interperet code into machine language, which can be run in any format. A compiler only compiles into a machines native language. Both run machine code.
 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
+     
+     http://www.businessinsider.com/the-9-most-popular-programming-languages-according-to-the-facebook-for-programmers-2017-10/#1-javascript-15
+     Javascript, python, java, ruby, php, c++, css, c#, go
 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
-
+https://stackoverflow.com/jobs
+Most jobs call for python.
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
-
+Syntax refers to strucure of a language but semantics deal with the meaning assigned to the symbols and words.
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
+     
+     A cellphone. The device has speakers, a touchscreen , a camera, gps, access to the internet, runs apps, makes calls
 
      
