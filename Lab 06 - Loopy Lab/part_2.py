@@ -4,16 +4,11 @@
 # 11/15/2017
 
 #user input 
-numbero = int(input("E.g. n = "))
-#increase user input
-number = numbero*2
-for row in range(number - 1):
-    #print o's
-    print("o", end="")
-#for the left side
-for column in range(numbero - 1):
-    print("o")
-    #for the right side
-#for the bottom row
-for row in range(number):
-    print("o", end="")
+height = int(input("E.g. n = "))
+#top row
+print("o"*(height*2))
+#columns
+for i in range(height- 2):
+    print("o" + ' '*(height*2-2) +'o')
+#bottom 
+print("o"*(height*2))
