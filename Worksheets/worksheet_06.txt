@@ -71,6 +71,15 @@
 
      print("Blast-off")
      
+     Fixed Code:
+     x = 10
+
+     while x > 0:
+         x = x - 1
+         print(x)
+
+     print("Blast-off!")
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -78,6 +87,8 @@
      for i in range(10):
          print(i)
          i += 1
+         
+    i += 1 is not needed because it is after the print statement.
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -97,4 +108,4 @@
              x += 1
      print(x)
      
-      
+    The indentions are different so it is a nested loop, causing a different outcome.
