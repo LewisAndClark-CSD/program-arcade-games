@@ -59,25 +59,24 @@
      
      x = 10
 
-     while x < 0:
+     while x > 0:
          print(x)
-         x - 1
+         x -= 1
 
      print("Blast-off")
      
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
-     i = 0
      for i in range(10):
          print(i)
          i += 1
-     
+     You do not need to set i to a number because it will be made in the for loop
   8. Explain why the values printed for x are so different. (2 pts)
      
      # Sample 1
      x = 0
-     for i in range(10):
+     for i in range(10):            each of these loops are only being ran once for a total of 20 runs in all
          x += 1
      for j in range(10):
          x += 1
@@ -87,7 +86,7 @@
      x = 0
      for i in range(10):
          x += 1
-         for j in range(10):
+         for j in range(10):        this for loop is being done 10 times making it a total of 100 runs combined with the first it totals to 110 runs 
              x += 1
      print(x)
      
