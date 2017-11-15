@@ -55,6 +55,12 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
+         
+     The program should look like:
+x = float(input("Enter a number greater than zero: "))
+
+while x <= 0:
+  x = float(input("Too small. Enter a number greater than zero: "))
      
   6. Fix the following code:
      
@@ -73,6 +79,9 @@
      for i in range(10):
          print(i)
          i += 1
+     The i = 0 part of the code is unneeded since the range function will 
+     always start at 0. The i += 1 is also unnecessary since the code will
+     go by 1's until finished without it.
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -92,4 +101,6 @@
              x += 1
      print(x)
      
-      
+     For sample 1 the output is 20 since x is 10 plus 10, while for 
+     sample 2 the code is in a loop so ten is added together 10 times, 
+     and after looped 10 times the outside code adds 10.
