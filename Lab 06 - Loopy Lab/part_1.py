@@ -10,6 +10,6 @@ for i in range(9):
         print(counter, end=" ")
         #increatment the number
         counter += 1
-        #print new line
-        print()
+    #print new line
+    print()
         
