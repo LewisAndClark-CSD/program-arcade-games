@@ -67,11 +67,13 @@
      
      x = 10
 
-     while x < 0:
+     while x > 0:
          print(x)
-         x - 1
+         x = x - 1
 
      print("Blast-off")
+     
+     
      
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
@@ -80,6 +82,8 @@
      for i in range(10):
          print(i)
          i += 1
+     
+     The i = 0 and the i += 1 should be removed, they are the syntax for a while loop and are unesscary when making a for loop
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -99,4 +103,6 @@
              x += 1
      print(x)
      
+     When you nest loops like in the second example, it acts like a multiply funtion running the entire second loop for every loop of the outside, creating a much bigger number
+     than just adding the values of the two loops together like in the first example.
       
