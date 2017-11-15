@@ -3,5 +3,9 @@
 # Ryan Moore
 # 11/15/2017
 
-number = int(input("E.g. n = "))
-
+#user input 
+numbero = int(input("E.g. n = "))
+#increase user input
+number = numbero*2
+for i in range(number):
+    print('o', end="")
