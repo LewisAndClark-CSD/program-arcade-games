@@ -17,21 +17,22 @@
      while x < 10:
          print(x)
          x = x + 2
-    
+    guess: 0,2,4,6,8,
+    result:0,2,4,6,8
   2. What does this program print out?
      
      x = 1
      while x < 64:
          print(x)
          x = x * 2
-     
+     1,2,4,8,16,32
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
-     
+     because x will never be less than zero 
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -40,22 +41,22 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
-     
+     5,4,3,2,1,0 because the if statement x is equal to a string not an integer  
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
      x = float(input("Enter a number greater than zero: "))
 
      while x <= 0:
-         print("Too small. Enter a number greater than zero: ")
+         x = int(input("Too small. Enter a number greater than zero: "))
      
   6. Fix the following code:
      
      x = 10
 
-     while x < 0:
+     while x > 0:
          print(x)
-         x - 1
+         x = x - 1
 
      print("Blast-off")
      
@@ -66,7 +67,7 @@
      for i in range(10):
          print(i)
          i += 1
-     
+     the i = 0 because its already in the for loop 
   8. Explain why the values printed for x are so different. (2 pts)
      
      # Sample 1
@@ -84,5 +85,5 @@
          for j in range(10):
              x += 1
      print(x)
-     
+    the spacing for 1 says it has 2 for loops and sample 2 has a nested for loop 
       
