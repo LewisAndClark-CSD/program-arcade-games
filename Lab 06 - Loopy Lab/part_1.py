@@ -4,7 +4,9 @@
 # 11/15/2017
 
 #loop 9 times 
-for i in range(10, 55, 1):
- print(i)
- #print new line
- print()
+for row in range(10):
+     for column in range(10,55):
+          print(column,end=" ")
+#increase by one,two,three etc each time you go do           
+      #print new line
+     print()
