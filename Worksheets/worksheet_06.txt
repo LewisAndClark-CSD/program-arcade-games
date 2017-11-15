@@ -17,7 +17,8 @@
      while x < 10:
          print(x)
          x = x + 2
-     
+     Guess:Going forever
+     Actual:prints 0,2,4.6,8 all on seprate lines
   2. What does this program print out?
      
      x = 1
@@ -25,12 +26,17 @@
          print(x)
          x = x * 2
      
+     Guess:print 1,2,4,8,16,32 all on seprate lines
+     Acutal:print 1,2,4,8,16,32 all on seprate lines
+     
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+     
+     You dont need to check for things that can never be false
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -41,6 +47,7 @@
              print("Blast off!")
          x = x - 1
      
+     Answer: It will never run blast off
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
@@ -58,7 +65,7 @@
          x - 1
 
      print("Blast-off")
-     
+     X is not defined.
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -66,7 +73,7 @@
      for i in range(10):
          print(i)
          i += 1
-     
+     remove the 1 += 1
   8. Explain why the values printed for x are so different. (2 pts)
      
      # Sample 1
@@ -85,4 +92,4 @@
              x += 1
      print(x)
      
-      
+      Sample 1 only prints 110 while Sample 2 prints 1 to 110.
