@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # Lab 06 Loopy Lab
 # Conner Walkenhorst
-# 11/13/2017
+# 11/15/2017
 
-"""Lab 06 programs"""
+"""Lab 06 part 1"""
 
 # Starting Value at 10
 start = 10
