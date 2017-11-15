@@ -10,9 +10,11 @@ n = int(input("Enter a number: "))
 for i in range(n*2):
     print("o", end= "")
 print()
-for k in range(1,n-1):
-    print("o")
 
+for k in range(1,n-1):
+    print("o", (n-2)*"  ", "o")
+
+        
 for j in range(n*2):
         print("o", end= "")
 
