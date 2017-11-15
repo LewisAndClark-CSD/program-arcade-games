@@ -19,6 +19,7 @@
          x = x + 2
      Guess: Prints out 0, 2, 4, 6, and 8 on seperate lines.
      Answer: Prints out 0, 2, 4, 6, and 8 on seperate lines.
+     
   2. What does this program print out?
      
      x = 1
@@ -27,6 +28,7 @@
          x = x * 2
      Guess: Prints out 1, 2, 4, 8, 16, and 32 on seperate lines.
      Answer: Prints out 1, 2, 4, 8, 16, and 32 on seperate lines.
+     
   3. Why is the and x >= 0 not needed?
      
      x = 0
@@ -34,6 +36,7 @@
          print(x)
          x = x + 2
      It does not need to be checked because x is set to start at 0, and there is no chance of it ever going down in value.
+     
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -43,6 +46,7 @@
              print("Blast off!")
          x = x - 1
      This program prints out 5, 4, 3, 2, and 1 on seperate lines. This prints only that out because an integer can never equal a string, because the programmer put quotations around 1, it will never be equal to that and will then never print out "Blast off!".
+     
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
@@ -50,6 +54,8 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
+    
+    To fix this error of looping forever you must set the print statement under the while loop to x, as previously it was only taking the first number that you had entered as x, and couldn't change it. The other thing you must add to make this program work is simply replace the x in the while loop with int(x).
      
   6. Fix the following code:
      
@@ -61,6 +67,8 @@
 
      print("Blast-off")
      
+     To fix this code you have to switch the '<' to a '>' as before this switch this is telling the program that if x is less than 0, then do the loop. Because x is set to 10, this will never happen and it will only print out "Blast-off." The only other thing to fix about the program coding is to set x to x - 1 (aka x = x - 1) 'x -1' does nothing.
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -68,6 +76,8 @@
      for i in range(10):
          print(i)
          i += 1
+         
+    The first thing that I noticed that the coding did not need was the 'i = 10.' This is because the loop already has a range of what i is, so the coder does not need to set it beforehand. The other piece of coding not needed for this program to run would be 'i += 1' as the range works as a stepper do basically do this already, with the help of the print statement as well to show the numbers. 
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -87,4 +97,5 @@
              x += 1
      print(x)
      
+     The 1st sample prints out '20' while the 2nd one prints out '110'. The difference between the two codings are how the for loops are set up, the first being seperate and the second being nested. The first one does each loop seperately and only does j when i is finished, but the second one does j while i is still functioning. The first is only doing i 10 times and j 10 times, but the second one is doing j 10 times for each time i is done, so bascially 100 times, plus the 10 that i does. 
       
