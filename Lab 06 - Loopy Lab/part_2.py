@@ -8,4 +8,9 @@ userInput = int(input('Please enter a value for n: '))
 # Do as many times as the user specifies
 for i in range(userInput):
     print('o'*2, end = '')
+print()
+for j in range(userInput):
+    print('o'*2, end = '')
+    
+    
 
