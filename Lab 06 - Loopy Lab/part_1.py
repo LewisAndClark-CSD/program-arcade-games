@@ -12,4 +12,3 @@ for i in range(9):
         counter += 1
     #print new line
     print()
-        
