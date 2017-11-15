@@ -57,7 +57,10 @@
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
      
-     
+     x = float(input("Enter a number greater than zero: "))
+
+while x <= 0:
+    x = int(input("Too small. Enter a number greater than zero: "))
      
   6. Fix the following code:
      
@@ -69,6 +72,14 @@
 
      print("Blast-off")
      
+     x = 10
+
+while x > 0:
+         print(x)
+         x = x - 1
+         
+print("Blast-off")
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -76,6 +87,8 @@
      for i in range(10):
          print(i)
          i += 1
+     
+     The line of code "i += 1" is not needed due to the fact that the for loop and print statement alone will do the same. 
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -95,4 +108,4 @@
              x += 1
      print(x)
      
-      
+    Because Sample 1 both for loops are at the same indentation, which means that for loop i will execute, then for loop j will execute. On Sample 2 for loop j is indented into for loop i, so the loop in total will run 10 times more than Sample 1. 
