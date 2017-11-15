@@ -80,7 +80,13 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
-     
+         
+         
+         
+ANSWER:  x = float(input("Enter a number greater than zero: "))
+         while x <= 0:
+            x = int(input("Too small. Enter a number greater than zero: "))
+     You need to add an input and int on the statement in the while loop. Also set it to x
      
      
      
@@ -95,6 +101,19 @@
 
      print("Blast-off")
      
+     
+     ANSWER:
+     
+     x = 10
+
+     while x > 0:
+        print(x)
+        x = x - 1
+        if x == 0:
+            print("Blast-off")
+     
+     
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -102,6 +121,12 @@
      for i in range(10):
          print(i)
          i += 1
+         
+         
+         You don't need to set i to 0 because in range it will start at 0 automatically. Also you don't need the i += 1 because the for loop does that already. 
+         
+         
+         
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -113,6 +138,7 @@
          x += 1
      print(x)
 
+     
      # Sample 2
      x = 0
      for i in range(10):
@@ -120,5 +146,13 @@
          for j in range(10):
              x += 1
      print(x)
+     
+     
+     Because the second one has a nester for loop so it will go through way more times than than the one above. 
+     
+     
+     
+     
+     
      
       
