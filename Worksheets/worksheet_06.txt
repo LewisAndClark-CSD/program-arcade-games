@@ -72,6 +72,16 @@ while x <= 0:
 
      print("Blast-off")
      
+     If the code is trying to print 1-10 backwards before printing Blast-off,
+     the program should look like this:
+x = 10
+
+while x > 0:
+  print(x)
+  x -= 1
+
+print("Blast-off")
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
