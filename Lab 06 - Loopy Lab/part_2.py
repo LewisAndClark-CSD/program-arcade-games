@@ -9,11 +9,11 @@
 height = int(input('How tall do you want the box to be? '))
 
 #Top line
-print('o'*10)
+print('o'*(height*2))
 
 #colums
-for x in range(height):
-    print('o', ' '*6, 'o', end='\n')
+for x in range(height-2):
+    print('o', ' '*((height*2)-2), 'o',sep='', end='\n')
         
 #Bottom line
-print('o'*10)
+print('o'*(height*2))
