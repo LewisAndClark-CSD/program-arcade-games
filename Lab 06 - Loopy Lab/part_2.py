@@ -6,13 +6,12 @@
 # Input statement for the o's
 numberos = int(input("How many o's do you want? "))
  
-number = numberos * 2
-# Loop for the top of the box
-for row in range(number -1 ):
-    print("o",end="")
-    # Loop to print the sides
-for column in range(numberos):
-    print("o")
-    
 
+# Print for the top of the box
+print('o'*(numberos*2 ))
+# Loop for the spaces 
+for i in range(numberos -2):
+     print("o" + ' '*(numberos*2 -2 ) + 'o')
+# Print the bottom o's
+print('o'*(numberos*2))
 
