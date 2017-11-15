@@ -14,5 +14,5 @@ for i in range(1,10):
                 print(x, end=' ')
                 #increment the variable
                 x= x+1
-                #print a new line
-                print()
+        #print a new line
+        print()
