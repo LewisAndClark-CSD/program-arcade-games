@@ -61,6 +61,7 @@ It printed 0, 2, 4, 6, 8
          x - 1
 
      print("Blast-off")
+Answer: Change the less than sign to a greater than sign.
      
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
@@ -69,7 +70,7 @@ It printed 0, 2, 4, 6, 8
      for i in range(10):
          print(i)
          i += 1
-     
+Answer: The i += 1 isn't needed in the code.
   8. Explain why the values printed for x are so different. (2 pts)
      
      # Sample 1
@@ -88,4 +89,4 @@ It printed 0, 2, 4, 6, 8
              x += 1
      print(x)
      
-      
+Answer: The reason the values are so different is because the sample 2 has the second for loop within another for loop.
