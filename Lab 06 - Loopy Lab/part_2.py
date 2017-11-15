@@ -7,5 +7,11 @@
 numbero = int(input("E.g. n = "))
 #increase user input
 number = numbero*2
-for i in range(number):
-    print('o', end="")
+for row in range(number):
+    #print o's
+    print("o", end="")
+#for the side
+for column in range(numbero -1):
+    print("o")
+for row in range(number):
+    print(
