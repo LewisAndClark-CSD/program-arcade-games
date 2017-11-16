@@ -8,39 +8,61 @@
   1. Explain how the computer coordinate system differs from the standard Cartesian
      coordinate system. There are two main differences. List both.
 
+The computer coordinate system has point (0,0) in the top left corner, 
+while the standard cartesian coordinate system has point (0,0) in the center.
+The computer coordinate system also goes up in x and y values by the more down and right the point goes, 
+while the standard cartesian coordinate system goes up in x and y values by the more up and right the point goes.
+
   2. Before a Python Pygame program can use any functions
      like pygame.display.set_mode(), what two lines of code must occur first?
 
+import pygame and pygame.init() 
+
   3. Explain how WHITE = (255, 255, 255) represents a color.
+
+Because this format represents (red, green, blue) values. If you have full red, full green, and full blue values 
+than the resulting color would be white due to white being the absolution of color. 
 
   4. When do we use variable names for colors in all upper-case, and when do we
      use variable names for colors in all lower-case? (This applies to all variables,
      not just colors.)
 
+If the variable is a constant than it will be all uppercase lettering. 
+
   5. What does the pygame.display.set_mode() function do?
+
+Pull up a pygame window on screen.
 
   6. What does this for event in pygame.event.get() loop do?
 
+This gets an event.
+
   7. What is pygame.time.Clock used for?
+
+Contains routines to help keep track of time.
 
   8. For this line of code: (3 pts)
      
      pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
      
-     * What does screen do?
-     * What does [0, 0] do?
-     * What does [100, 100] do?
-     * What does 5 do?
+     * What does screen do? Screen tells the program where to execute 
+     * What does [0, 0] do? [0, 0] sets the starting point 
+     * What does [100, 100] do? [100, 100] sets the ending point 
+     * What does 5 do? 5 tells the z axis value 
      
 
   9. What is the best way to repeat something over and over in a drawing?
 
+void draw()
+
  10. When drawing a rectangle, what happens if the specified line width is zero?
 
+Then there will not be a border around the rectangle. 
+
  11. Describe the ellipse drawn in the code below.
-     * What is the x, y of the origin coordinate?
-     * What does the origin coordinate specify? The center of the circle?
-     * What is the length and the width of the ellipse?
+     * What is the x, y of the origin coordinate? x = 20 y = 20
+     * What does the origin coordinate specify? The center of the circle? The upper left corner
+     * What is the length and the width of the ellipse? Length = 100 Width = 250
      
      
      pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
@@ -48,22 +70,36 @@
  12. When drawing an arc, what additional information is needed over drawing
      an ellipse?
 
+Start and end angles, which are radians. 
+
  13. Describe, in general, what are the three steps needed when printing text to
      the screen using graphics?
+
+Create a variable that holds information about font to be used, create an image of the text, 
+tell where the image is to be stamped.
 
  14. When drawing text, the first line of the three lines needed to draw text
      should actually be outside the main program loop. It should only run once at
      the start of the program. Why is this? You may need to ask.
 
+Because it only needs to run once at the start of the program, it doesn't hold things that change.
+
  15. What are the coordinates of the polygon that the code below draws?
      
      pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
      
+     [50,100],[0,200],[200,200],[100,50]
+     
  16. What does pygame.display.flip() do?
 
+Updates the display 'flipping' the new graphics to the screen. 
+
  17. What does pygame.quit() do?
+
+Properly shuts down a pygame program. 
 
  18. Look up on-line how the pygame.draw.circle works. Get it working
      and paste a working sample here. I only need the one line of code that draws the
      circle, but make sure it is working by trying it out in a full working program.
      
+pygame.draw.circle(screen, (50,50), 5, 1)

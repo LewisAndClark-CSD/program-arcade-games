@@ -10,14 +10,26 @@
          print("It is hot outside.")
      else:
          print("It is not hot out.")
-     
+     the second parenthesis on the end of the first line 
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
+\
+number = int(input('Enter a number: '))
+if number < 0:
+    print('Number is negative')
+elif number > 0:
+    print('Number is posative')
+elif number == 0:
+    print('Number is zero')
 
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
 
+number = int(input('Enter a number: '))
+if -11 < number < 11:
+    print('Success')
+    
   4. This runs, but there is something wrong. What is it? (1 pt)
      
      user_input = input("A cherry is a: ")
@@ -27,7 +39,9 @@
          print("Correct!")
      else:
          print("Incorrect.")
-     
+      
+      the ".upper" is not needed, it will only count a capital "A" as correct without it anyway. 
+      
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
@@ -39,11 +53,15 @@
      else:
          print("x is not positive.")
      
+     there can't be a double equal sign in the assigning line of code. also as long as x is assigned to 4 the output can never print "x is not posirive." 
+     
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
+     
+     there is no colon at the end of the if statement, "x" is a terrible variable name!, the print statement will not print the user's input like it should it will only print "You entered 3". 
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
@@ -53,13 +71,17 @@
          else
          print("Incorrect! It is Beaker.")
      
+     else statement doesn't have a colon at the end of it. a is not defined, answer needs to be spelled out fully. there needs to be a double equals sign after what should be answer and before "Beaker" in the if statement. and the else statement needs to be backed up the same indentation as the if statement. 
+     
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
          print("That is good to hear!")
      
-  9. Look at the code below. Write you best guess here on what it will print.
+     the colon brings up a syntax error. 
+     
+  9. Look at the code below. Write your best guess here on what it will print.
      Next, run the code and see if you are correct.
      Clearly label your guess and the actual answer.
      Also, if this or any other example results in an error, make sure to
@@ -79,6 +101,8 @@
      if z:
          print("Buzz")
      
+     i think it will print "x= 5, y= 5, z= 5, Buzz". what it acually prints "x= 5, y= False, z= True, Buzz"
+     
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -97,6 +121,9 @@
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
      
+     i think it will print "True, False, False, False, True, False, False, True, False, True"
+     it actually prints "True, False, True, False, False, True, False, False, True, False, True"
+     
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -110,6 +137,7 @@
      print( (2 == 2) == True )
      print(3 < "3")
      
+     True False True True True False False True
 
  12. What things are wrong with this section of code?
      The programmer wants to set the money variable according to
@@ -130,6 +158,6 @@
      else if user_input = C:
          money = 50
 
-     
+     not using double equal signs, the user might put a lowercase letter, no space after user_input question, uses else if instead of elif and else
 
      
