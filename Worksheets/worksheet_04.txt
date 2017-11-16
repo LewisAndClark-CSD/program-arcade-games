@@ -14,17 +14,33 @@
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
 
+     name = input("Enter your name: ")
+     for i in range(10):
+        print(name)
+     print("Done")
+     
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
 
+     for i in range(20):
+     print("Red Gold")
+     
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
 
+     print(*range(2, 101, 2))
+     
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
 
+     n = 10
+     while n >= 0:
+        print(n)
+        n = n - 1
+    print("Blast off!")
+     
   5. There are three things wrong with this program. List each. (3 pts)
      
      print("This program takes three numbers and returns the sum.")
@@ -34,13 +50,23 @@
          x = input("Enter a number: ")
          total = total + i
      print("The total is:", x)
-     
+    
+    1 = there needs to be a space after the : in print.
+    2 = the input needs to be before the for loop.
+    3 = needs to ask for 3 different inputs so you can do it with different numbers.
+    
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
 
+    from random import randint
+    print(randint(1, 10))
+  
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
 
+     from random import randint
+     print(float(randint(1, 10)))
+     
   8. Write a Python program that will: (3 pts)
      
      * Ask the user for seven numbers
@@ -49,6 +75,31 @@
      and the number of negative entries. Use an if, elif, else chain, not just three
      if statements.
      
+zero = 0
+positive = 0
+negative = 0
+
+a = int(input("Enter your 1st number: "))
+b = int(input("Enter your 2nd number: "))
+c = int(input("Enter your 3rd number: "))
+d = int(input("Enter your 4th number: "))
+e = int(input("Enter your 5th number: "))
+f = int(input("Enter your 6th number: "))
+g = int(input("Enter your 7th number: "))
+sum = ([a + b + c + d + e + f + g])
+print(sum)
+if a or b or c or d or e or f or g > 0:
+    positive = positive + 1
+elif a or b or c or d or e or f or g < 0:
+    negative = negative + 1
+else:
+    zero = zero + 1
+print("There was " + str(zero) + " zeros.")
+print("There were " + str(positive) + " positive numbers.")
+print("There were " + str(negative) + " negative numbers.")
+
+     
+     
   9. Coin flip tosser: (4 pts)
      
      * Create a program that will print a random 0 or 1.
@@ -56,6 +107,24 @@
      using if statements. Don't select from a list, as shown in the chapter.
      * Add a loop so that the program does this 50 times.
      * Create a running total for the number of heads flipped, and the number of tails.
+     
+heads = 0
+tails = 0
+count = 0
+
+from random import randint
+while count < 50:
+    number = randint(0, 1)
+    if number == 1:
+        print("Heads!")
+        heads = heads + 1
+    if number == 0:
+        print("Tails!")
+        tails = tails + 1
+    count = count + 1
+print("Amount of Heads: " + str(heads))
+print("Amount of Tails: " + str(tails))
+
      
  10. Write a program that plays rock, paper, scissors: (4 pts)
      
@@ -66,4 +135,32 @@
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
      
-     
+import sys
+choice = input("Rock Paper or Scissors? ")
+from random import randint
+number = randint(1, 3)
+if number == 1:
+    print("Rock!")
+if number == 2:
+    print("Paper!")
+if number == 3:
+    print("Scissors!")
+if choice == "Scissors":
+    choicenum = 3
+if choice == "Paper":
+    choicenum = 2
+if choice == "Rock":
+    choicenum = 1
+if choicenum == number:
+    print("You tied.")
+    sys.exit(0)
+if choicenum == 2 and number == 1:
+    print("You won!")
+elif choicenum == 1 and number == 3:
+    print("You won!")
+elif choicenum == 3 and number == 2:
+    print("You won!")
+else:
+    print("You lost.")
+
+
