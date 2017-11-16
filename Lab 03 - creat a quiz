@@ -4,7 +4,7 @@
 # 11/6/2017
 
 percentage = 0
-print('Time to test you knowledge')
+print('Time to test you knowledge!')
 
 question_one = print('Who won 2011 American Idol? ')
 print('A.Trent Harmon')
@@ -53,4 +53,4 @@ if quest_five.lower =='pennsylvania':
 else:
     print('Incorrect')
 percent = percentage * 20
-print('Congratulations you got a',percent)#
+print('Congratulations you got a',percent)

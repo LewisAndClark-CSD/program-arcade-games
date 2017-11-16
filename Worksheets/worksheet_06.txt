@@ -18,6 +18,9 @@
          print(x)
          x = x + 2
      
+     guess: it will print till 8
+     actual: 2 - 8
+  
   2. What does this program print out?
      
      x = 1
@@ -25,12 +28,18 @@
          print(x)
          x = x * 2
      
+     guess: it will print till 32 
+     actual: it will print till 32 
+  
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+     
+     guess: it will never go under 0
+     actual: it will never go under 0 
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -41,6 +50,9 @@
              print("Blast off!")
          x = x - 1
      
+     guess: will count down till you get 0 but wont print blast off because its not assined. 
+     actual: won't print blast off
+     
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
@@ -48,6 +60,9 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
+     
+     guess: it will only print if x is less then or equal  to 0
+     actual: will just keep looping and won't end 
      
   6. Fix the following code:
      
@@ -59,6 +74,9 @@
 
      print("Blast-off")
      
+     guess: it will just keep looping 
+     actual: didn't print the numbers and just printed blast off!
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -66,6 +84,9 @@
      for i in range(10):
          print(i)
          i += 1
+     
+     guess: will print 0 to 10
+     actual: it printed 0 to 9 because it always prints one less then the actual number given
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -85,4 +106,7 @@
              x += 1
      print(x)
      
+     guess: will print numbers in a row without a space
+     actual: the first one will print 20 and the second one will print 110
+     the number just keeps looping 10 times and doubling the number 
       
