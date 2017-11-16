@@ -50,9 +50,13 @@ while not done:
     screen.fill(WHITE)
  
     # --- Drawing code should go here
-for i in range(10):
-    for j in range(10):
-        pygame.draw.rect(screen, RED, [5,5,5,5], 5)
+    y_offset = 0
+    for x in range(10):
+        y_offset += 5
+        x_offset = 5
+        for y in range(10):
+            pygame.draw.rect(screen, RED, [x_offset,y_offset,5,5], 5)
+            x_offset += 5
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
  
