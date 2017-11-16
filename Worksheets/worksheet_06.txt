@@ -59,6 +59,8 @@
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
      
+     instead of print it should use input
+     
   6. Fix the following code:
      
      x = 10
@@ -69,13 +71,28 @@
 
      print("Blast-off")
      
+     It should be:
+     
+     x = 10
+     
+     while x > 0:
+        print(x)
+        x = x - 1
+        
+    print("Blast-off")
+    
+    It should say while x is greater than 0, not less than. x - 1 wouldn't work as it would only make it 9.
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
      i = 0
      for i in range(10):
          print(i)
-         i += 1
+         i += 
+     
+     You do not have to define i
+     The for loop sets i
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -96,3 +113,4 @@
      print(x)
      
       
+Sample 2 has a nested for loop, making j run 10 times while Sample 1 is not nested making each run only once 
