@@ -14,16 +14,38 @@
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
 
+name = input('Enter Your Name: ')
+for number in range(10):
+   print(name)
+print('Done')
+
+
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
 
+for i in range(20):
+    print('red')
+    print('gold')
+
+
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
+
+for i in range(2,201,2):
+    print(i)
+
 
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
+
+launch = 10
+number = launch
+while number > -1:
+  print(number)
+  number = number - 1
+print('Blast Off!')
 
   5. There are three things wrong with this program. List each. (3 pts)
      
@@ -35,11 +57,19 @@
          total = total + i
      print("The total is:", x)
      
+     for one, 'x' is a terrible variable name, it does not describe what it is/does at all. where total is assigned to total + i, i should be x. in the last print statement where it calls to print x, it should print total instead. 
+     
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
+
+from random import randint
+print(randint(1,10))
 
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
+
+import random
+print(random.uniform(1.0,10.0))
 
   8. Write a Python program that will: (3 pts)
      
@@ -49,6 +79,25 @@
      and the number of negative entries. Use an if, elif, else chain, not just three
      if statements.
      
+     total = 0
+totalPositive = 0
+totalNegative = 0
+totalZero = 0
+number = input('Enter seven numbers: ')
+number = number.split()
+for num in number:
+    total = total+int(num)
+    if int(num) > 0:
+        totalPositive += 1
+    elif int(num) < 0:
+        totalNegative += 1
+    else:
+        totalZero += 1
+print('Total:',total)
+print('Total Positive:',totalPositive)
+print('Total Negative:',totalNegative)
+print('Total Zero:',totalZero)
+     
   9. Coin flip tosser: (4 pts)
      
      * Create a program that will print a random 0 or 1.
@@ -56,6 +105,20 @@
      using if statements. Don't select from a list, as shown in the chapter.
      * Add a loop so that the program does this 50 times.
      * Create a running total for the number of heads flipped, and the number of tails.
+     
+     import random
+     numberHeads = 0
+numberTails = 0
+for i in range(50):
+    number = random.randrange(0, 2)
+    if number == 1:
+        numberHeads += 1
+        print('Heads')
+    elif number == 0:
+        numberTails += 1
+        print('Tails')
+print('Heads:', numberHeads)
+print('Tails:', numberTails)
      
  10. Write a program that plays rock, paper, scissors: (4 pts)
      
@@ -66,4 +129,30 @@
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
      
-     
+     from random import randint
+options = [1,2,3]
+computerPlayer = options[randint(0,2)]
+player = False
+while player == False:
+    player = int(input('Rock = 1, Paper = 2, Scissors = 3. Enter your choice: '))
+    if player == computerPlayer:
+        print('Tie, no one wins.')
+    elif player == 1:
+        if computerPlayer == 2:
+            print('You lose.',computerPlayer, 'beats',player)
+        else:
+            print('You win.',player,'beats',computerPlayer)
+    elif player == 2:
+        if computerPlayer == 3:
+            print('You lose.',computerPlayer,'beats',player)
+        else:
+            print('You win.',player,'beats',computerPlayer)
+    elif player == 3:
+        if computerPlayer == 1:
+            print('You lose.',computerPlayer,'beats',player)
+        else:
+            print('You win.',player,'beats',computerPlayer)
+    else:
+        print('That is not a valid choice, please try again.')
+    player = False
+    computerPlayer = options[randint(0,2)]
