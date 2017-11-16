@@ -51,12 +51,12 @@ while not done:
  
     # --- Drawing code should go here
     y_offset = 0
-    for x in range(10):
-        y_offset += 5
-        x_offset = 5
-        for y in range(10):
-            pygame.draw.rect(screen, RED, [5,5,x_offset,y_offset], 5)
-            x_offset += 5
+    for x in range(1, 20):
+        y_offset += 50
+        x_offset = 50
+        for y in range(1, 20):
+            pygame.draw.circle(screen, RED, [x_offset,y_offset], 10, 5)
+            x_offset += 50
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
  
