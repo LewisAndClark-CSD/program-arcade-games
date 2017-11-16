@@ -4,7 +4,6 @@
 # 11/13/2017
 
 """Lab 06 programs"""
-
 """
  Pygame base template for opening a window
  
@@ -23,6 +22,36 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
+ 
+pygame.init()
+ 
+# Set the width and height of the screen [width, height]
+size = (700, 500)
+screen = pygame.display.set_mode(size)
+ 
+pygame.display.set_caption("My Game")
+ 
+# Loop until the user clicks the close button.
+done = False
+"""
+Pygame base template for opening a window
+ 
+Sample Python/Pygame Programs
+Simpson College Computer Science
+http://programarcadegames.com/
+http://simpson.edu/computer-science/
+ 
+Explanation video: http://youtu.be/vRB_983kUMc
+"""
+ 
+import pygame
+ 
+# Define some colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+GREEN = (0, 255, 0)
+RED = (255, 0, 0)
+BLUE = (31, 244, 255)
  
 pygame.init()
  
@@ -57,6 +86,9 @@ while not done:
     screen.fill(BLACK)
  
     # --- Drawing code should go here
+    for y in range(0, 500, 20):
+     for x in range(0, 700, 20):
+      pygame.draw.rect(screen, BLUE, (x, y, 10, 10))    
  
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
@@ -64,8 +96,6 @@ while not done:
     # --- Limit to 60 frames per second
     clock.tick(60)
  
-for y in range(0, 500, 20):
-    for x in range(0, 700, 20):
-        
 # Close the window and quit.
-        pygame.quit()
+pygame.quit()
+
