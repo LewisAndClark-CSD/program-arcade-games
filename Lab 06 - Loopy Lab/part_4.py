@@ -39,7 +39,8 @@ while not done:
             done = True
  
     # --- Game logic should go here
- 
+    
+
     # --- Screen-clearing code goes here
  
     # Here, we clear the screen to white. Don't put other drawing commands
@@ -50,6 +51,9 @@ while not done:
     screen.fill(BLACK)
  
     # --- Drawing code should go here
+    for y in range(0, 500, 20):
+        for x in range(0, 700, 20):
+            pygame.draw.rect(screen, GREEN, (x, y, 10, 10))
  
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
