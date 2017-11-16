@@ -6,22 +6,28 @@
      and punctuation. Please limit the length of each line to 80 characters.
      
   1. Write a line of code that will print your name.
-
+        print("Jared Rhodes")
   2. How do you enter a comment in a program?
-
+        You use the # character to create a comment that won't be read by the program
   3. What do the following lines of code output?
      	ALSO: Why do they give a different answer?
      
-     print(2 / 3)
-     print(2 // 3)
+     print(2 / 3) prints the sum of 2 divided by 3 
+     print(2 // 3) prints 2 / 3 
+     
+     These do different things because a single / is used as a math operator so in order to print a / out you need to use an escape code
      
   4. Write a line of code that creates a variable called pi and sets
      	it to an appropriate value.
+     	
+     	pi = 3.1415926
 
   5. Why does this code not work?
      
      A = 22
      print(a)
+     
+     This code won't work because capitalization matters and A and a are seen as 2 different variables
      
   6. All of the variable names below can be used. But which ONE of these is
      	the better variable name to use?
@@ -31,7 +37,7 @@
      Area
      AREA
      area
-     area_of_rectangle
+     area_of_rectangle - According to standards for python the one to the left is the best way of naming variabels
      Area_Of_Rectangle
      
   7. Which of these variables names are not allowed in Python? (More than one
@@ -42,12 +48,12 @@
      Apple
      APPLE
      Apple2
-     1Apple
-     account number
+     1Apple - not allowed
+     account number - not allowed
      account_number
-     account.number
+     account.number - not allowed
      accountNumber
-     account#
+     account# - not allowed
      pi
      PI
      fred
@@ -55,20 +61,25 @@
      GreatBigVariable
      greatBigVariable
      great_big_variable
-     great.big.variable
-     2x
+     great.big.variable - not allowed
+     2x - not allowed
      x2x
-     total%
-     #left
+     total% - not allowed
+     #left - not allowed
      
   8. Why does this code not work?
      
      print(a)
      a = 45
      
+     You are assigning a variable a value after you print it so the a being 45 is unknown
+     by the computer untill after it tried to print a causeing an error
+     
   9. Explain the mistake in this code:
      
      pi = float(3.14)
+     
+     3.14 is already a float to the computer since it has decimals points which integers can't have so declaring it as a float is redundent
      
  10. This program runs, but the code still could be better. Explain what is
      wrong with the code.
@@ -79,12 +90,16 @@
      area = pi  * radius ** 2
      print(area)
      
+     There is no reason to have an x variable that only passes a value onto another variable, so pi = 3.14 is better and saves time/space/annoyance
+     
  11. Explain the mistake in the following code:
      
      x = 4
      y = 5
      a = ((x) * (y))
      print(a)
+     
+     The parentheses in the a = statment are useless because order of opperations is unimportant for a single operation
      
  12. Explain the mistake in the following code:
      
@@ -93,9 +108,13 @@
      a = 3(x + y)
      print(a)
      
+     As humans we can understand that means to distribute but a computer needs to be explicitly told that by doing 3 * (x + y)
+     
  13. Explain the mistake in the following code:
      
      radius = input(float("Enter the radius:"))
+     
+     Your supposed to put the float in front of the input statment so the input statment can return the correct variable type
      
  14. Do all these print the same value? Which one is better to use and why?
      
@@ -103,26 +122,43 @@
      print(2 / 3 + 4)
      print(   2 /    3+    4  )
      
+     All of them will be understood by the computer, however normal python standards make the second print statment the correct one
+     
  15. What is a constant?
+ 
+    A variable that remains unchanged throughtout the program such as PI = 3.1415926
 
  16. How are variable names for constants different than other variable names?
+ 
+    Constant variable names are capililized such as TEST_CONSTANT
 
  17. What is a single quote and what is a double quote?
      Give and label an example of both.
+     
+     ' - This is a single quote
+     " - This is a double quote
 
  18. Write a Python program that will use escape codes to print a double-quote
      and a new line using the Window's standard. (Note: I'm asking for the Window's
      standard here. Look it up out of Chapter 1.)
+     
+     print("\"\r\n")
 
  19. Can a Python program print text to the screen using single quotes instead
      of double quotes?
+     
+     Yes it can, print('Hello World') works just as print("Hello World") does
 
  20. Why does this code not calculate the average?
      
      print(3 + 4 + 5 / 3)
      
+     Because of the order of operations the 5 / 3 would happen first and then the others would be added
+     print((3 + 4 + 5) / 3) would be the correct way of doign it
 
  21. What is an ``operator'' in Python?
+ 
+    It is a character that stands for a math function such as addition subtraction division ect...
 
  22. What does the following program print out?
      
@@ -130,15 +166,18 @@
      x + 1
      print(x)
      
-
+     This program prints out
+     
+     3
+     
  23. Correct the following code:
      
-     user_name = input("Enter your name: )"
+     user_name = input("Enter your name: ")
      
 
  24. Correct the following code:
      
-     value = int(input(print("Enter your age")))
+     value = int(input("Enter your age"))
      
 
 

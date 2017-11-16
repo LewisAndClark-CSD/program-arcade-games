@@ -13,17 +13,33 @@
      
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
+     
+     for i range(10):
+        print("Jared Rhodes")
+     print("Done")
 
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
+     
+     for i range(20):
+        print("Red")
+        print("Gold")
 
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
+     
+     for i in range(2,102,2):
+        print(i)
 
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
+     
+     counter = 10
+     while counter > 0:
+        print(counter)
+        counter -= 1
 
   5. There are three things wrong with this program. List each. (3 pts)
      
@@ -31,15 +47,24 @@
      total = 0
 
      for i in range(3):
-         x = input("Enter a number: ")
-         total = total + i
-     print("The total is:", x)
+         x = int(input("Enter a number: "))
+         total = total + x
+     print("The total is:", total)
+     
+     x not i should be added to the total since that is where the numbers are stored, the total is not stored in x it's stored in total so we should print total, finally x needs to be an integer so that you can add it
+     to total and not be a string
      
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
+  
+    import random
+    print(random.randint(1, 10))
 
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
+     
+    import random
+    print(random.random() * 9 + 1)
 
   8. Write a Python program that will: (3 pts)
      
@@ -49,6 +74,22 @@
      and the number of negative entries. Use an if, elif, else chain, not just three
      if statements.
      
+num_Positive = 0
+num_Negative = 0
+num_Zero = 0
+summation = 0
+
+for i in range(7):
+        num = int(input("Please give me a number: "))
+        summation += num
+        if num > 0:
+                num_Positive += 1
+        elif num < 0:
+                num_Negative += 1
+        else:
+                num_Zero += 1
+print("There was", num_Positive, "positive numbers", num_Negative, "negative numbers, and", num_Zero, "zeros")
+     
   9. Coin flip tosser: (4 pts)
      
      * Create a program that will print a random 0 or 1.
@@ -56,6 +97,22 @@
      using if statements. Don't select from a list, as shown in the chapter.
      * Add a loop so that the program does this 50 times.
      * Create a running total for the number of heads flipped, and the number of tails.
+     
+import random
+
+random_Binary = 0
+num_H = 0
+num_T = 0
+
+for i in range(50):
+    random_Binary = random.randint(0,1)
+    if random_Binary == 1:
+        print('Heads')
+        num_H += 1
+    if random_Binary == 0:
+        print('Tails')
+        num_T += 1
+print("Heads:", num_H, "\nTails:", num_T)
      
  10. Write a program that plays rock, paper, scissors: (4 pts)
      
@@ -65,5 +122,44 @@
      * Add to the program so it first asks the user their choice.
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
-     
+
+import random
+
+usr_Choice = int(input("Would you like \n1. Rock \n2. Paper \n3. Scissors\n"))
+    
+random_Choice = random.randint(1,3)
+
+if usr_Choice == 1:
+    print("Rock")
+elif usr_Choice == 2:
+    print("Paper")
+else:
+    print("Scissors")
+
+print("vs.")
+
+if random_Choice == 1:
+    print("Rock")
+elif random_Choice == 2:
+    print("Paper")
+else:
+    print("Scissors")
+
+if usr_Choice == random_Choice:
+    print("You tied")
+elif usr_Choice == 1 and random_Choice == 2:
+    print('You lose')
+elif usr_Choice == 1 and random_Choice == 3:
+    print('You win')
+elif usr_Choice == 2 and random_Choice == 1:
+    print('You win')
+elif usr_Choice == 2 and random_Choice == 3:
+    print('You lose')
+elif usr_Choice == 3 and random_Choice == 1:
+    print('You lose')
+elif usr_Choice == 3 and random_Choice == 2:
+    print('You win')
+else:
+    print("Something went wrong")
+
      

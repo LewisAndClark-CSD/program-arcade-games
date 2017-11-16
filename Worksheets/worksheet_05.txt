@@ -7,63 +7,98 @@
      
   1. Explain how the computer coordinate system differs from the standard Cartesian
      coordinate system. There are two main differences. List both.
+     
+     1. The coordinates on a screen start in the top left vs. Cartesian planes start at the middle
+     2. The coordinates on a screen focus on the lower right quadrant vs Cartesian focuses on the upper right quadrant
 
   2. Before a Python Pygame program can use any functions
      like pygame.display.set_mode(), what two lines of code must occur first?
+     
+     import pygame
+     pygame.init()
 
   3. Explain how WHITE = (255, 255, 255) represents a color.
+  
+    The three numbers in this case 255, 255, 255 are the red blue and green values that create the color white 
 
   4. When do we use variable names for colors in all upper-case, and when do we
      use variable names for colors in all lower-case? (This applies to all variables,
      not just colors.)
+     
+     The full uppercase variables mean that variable should remain at the same value, a lowercase variable means that variable will most likely be changed
+     such as a color of a health bar that changed to red as the health went down
 
   5. What does the pygame.display.set_mode() function do?
-
+        
+        This function gives control over everything about the screen, start menu, titles bars, the size of the screen. It's the main control function for the screen
+        
   6. What does this for event in pygame.event.get() loop do?
+  
+        This function grabs all of the different events that happen to the screen, so that they can then cause the program to do something
 
   7. What is pygame.time.Clock used for?
+  
+        the pygame.time.Clock is used to set the fps(frames per second) or in other words the number of times the screen updates per second
 
   8. For this line of code: (3 pts)
      
      pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
      
-     * What does screen do?
-     * What does [0, 0] do?
-     * What does [100, 100] do?
-     * What does 5 do?
+     * What does screen do? screen is where the computer will be drawing the line
+     * What does [0, 0] do? 0, 0 is the starting point for the line
+     * What does [100, 100] do? 100, 100 is the ending point for the line
+     * What does 5 do? 5 is the width of the line
      
 
   9. What is the best way to repeat something over and over in a drawing?
+  
+    Repeating is done using loops, if you want it to be drawn in different places using a variable that changes with each loop can make that happen
 
  10. When drawing a rectangle, what happens if the specified line width is zero?
+ 
+    The whole rectangle will be filled with the given color
 
  11. Describe the ellipse drawn in the code below.
-     * What is the x, y of the origin coordinate?
-     * What does the origin coordinate specify? The center of the circle?
-     * What is the length and the width of the ellipse?
+     * What is the x, y of the origin coordinate? - (20, 20) is the starting coordinate
+     * What does the origin coordinate specify? The center of the circle? - No, the origin is the top left corner that the circle is drawn starting from
+     * What is the length and the width of the ellipse? - The length is 230 pixels, the width is 80 pixels
      
      
      pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
      
  12. When drawing an arc, what additional information is needed over drawing
      an ellipse?
+     
+     The arc command requires start and stop angles so it knows how big of an arc to draw
 
  13. Describe, in general, what are the three steps needed when printing text to
      the screen using graphics?
+     
+     First you need to select the font, and it's size. Then you need to render the the text putting it in a buffer to be displayed. Finally you need to put the image on the screen using screen.blit([])
 
  14. When drawing text, the first line of the three lines needed to draw text
      should actually be outside the main program loop. It should only run once at
      the start of the program. Why is this? You may need to ask.
+     
+     Only one font should be used in a program, having multiple fonts will make things hard to read
 
  15. What are the coordinates of the polygon that the code below draws?
      
      pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
      
+     This draws a rectangle with corners at 50,100 0,200 200,200 100,50 with a line width of 5
+     
  16. What does pygame.display.flip() do?
+ 
+    Flip tells the screen to update and display the lines/rect ect. that are in the buffer
 
  17. What does pygame.quit() do?
+ 
+    pygame.quit() end the program and closes the screen
 
  18. Look up on-line how the pygame.draw.circle works. Get it working
      and paste a working sample here. I only need the one line of code that draws the
      circle, but make sure it is working by trying it out in a full working program.
+     
+     pygame.draw.circle(screen, BLACK, [100, 100], 100, 10)
      
