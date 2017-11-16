@@ -6,37 +6,39 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
-
+     101
   2. Give an example of a decimal number.
-
+     5
   3. Give an example of a hexadecimal number.
-
+     5
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+     1, 2, 4, and 16.
   5. What is a compiler?
-
+     A complier transfers the source code(the users program) into machine code.
   6. What is source code?
-
+     A source code is the coding of a program that was put in by the user.
   7. What is machine language? (Don't just say binary. That's not correct.)
-
+     A series of instructions(binary or hexadecimal) that the computer responds to directly.
   8. What is a first generation language? (Don't just say binary. That's not correct.)
-
+     It is a machine-level programming language that is entered through the computer's front panel switches.
   9. What is a second generation language?
-
+     It is a grouping of programming languages with assembly languages, and shows the difference between machine languages and higher-level languages.
  10. What is a third generation language? (Explain, don't just give one example.)
-
+     This refers to the high-level programming language, and is a step above the assembly language but a step below the fourth-generation language.
  11. What is an interpreter and how does it differ from a compiler?
-
+     An interpreter is a computer program that directly performs instructions in a programming language. The difference is the interpreter does not require it to be previously complied in the machine language.
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
-
+     https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html
+     The #1 most popular program language is Java, with python coming right after that in #2.
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
-
+     https://www.sitepoint.com/best-programming-language-learn-2015-job-demand-salaries/
+     The first 2 languages in the job board are Java and JavaScript.
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
-
+     Syntax refers to the grammar of the language, while semantics deals with the meaning assigned to symbols, characters, and words in the language.
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
-
+     IPhone 5se, something that runs on the hardware is its' Touch ID fingerprint scanner, and something from the software would be Siri.
      
