@@ -1,4 +1,4 @@
-     
+Jason Cobb     
      Chapter 06 Worksheet
 
      
@@ -17,21 +17,23 @@
      while x < 10:
          print(x)
          x = x + 2
-     
+It writes out 0-10 and then whatever x is + 2. Print 0, 2, 4, 6, 8, on separate lines.   
+It printed 0, 2, 4, 6, 8
   2. What does this program print out?
      
      x = 1
      while x < 64:
          print(x)
          x = x * 2
-     
+     Guess: all the multiples of 64 in separate lines.
+     answer:1, 2, 4, 8, 16, 32
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
-     
+   X starts out at zero so it won't be greater than ten. It'll always be true. You don't need to check for things that'll always be true or false. 
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -40,6 +42,7 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
+     It does not print blast off becasue strings and intgers are never equal. Though it does print a countdown from 5 to 0.
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
@@ -48,7 +51,7 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
-     
+         x = float(input("Enter a number greater than zero: "))
   6. Fix the following code:
      
      x = 10
@@ -58,6 +61,7 @@
          x - 1
 
      print("Blast-off")
+Answer: Change the less than sign to a greater than sign.
      
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
@@ -66,7 +70,7 @@
      for i in range(10):
          print(i)
          i += 1
-     
+Answer: The i += 1 isn't needed in the code.
   8. Explain why the values printed for x are so different. (2 pts)
      
      # Sample 1
@@ -85,4 +89,4 @@
              x += 1
      print(x)
      
-      
+Answer: The reason the values are so different is because the sample 2 has the second for loop within another for loop.
