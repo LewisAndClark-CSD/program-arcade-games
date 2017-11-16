@@ -5,14 +5,6 @@
 
 """Lab 06 programs"""
 
-#Do this 10 times
-
-for i in range(10):
-    #print leading spaces
-    #print the digits
-    for j in range(i):
-        print(' ',end=' ')
-    for j in range(10-i):
-        print(j,end=' ')    
-    #print a new line
-    print()
+for y in range(0, 200, 20):
+    for x in range(0, 400, 20):
+        
