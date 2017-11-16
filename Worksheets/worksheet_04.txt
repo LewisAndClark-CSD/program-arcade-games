@@ -14,18 +14,36 @@
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
 
+     for i in range(10):
+          print('Asia')
+     print('Done')
+
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
 
+     for i in range(20):
+          print('Red')
+          print('Gold')
+          
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
 
+     for i in range(2, 100 + 1, 2):
+          print(i)
+          
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
 
+     countdown = 10
+     while countdown >= 0:
+          print(countdown)
+          countdown = countdown - 1
+     print('Blast Off!')
+     
   5. There are three things wrong with this program. List each. (3 pts)
+     The first problem is that the program prints out the last input instead of adding them all together and printing the total. The second problem is the 'total = total + i' line of code. The third problem is that we need to add 'int' in front of 'input("Enter a number: ")'.
      
      print("This program takes three numbers and returns the sum.")
      total = 0
