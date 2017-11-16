@@ -17,8 +17,10 @@
      while x < 10:
          print(x)
          x = x + 2
+ 
  guess: print 0,2,4,6,8 on seperate lines
- actual: print 0,2,4,6,8 all on seoerate lines 
+ actual: print 0,2,4,6,8 all on seoerate lines
+ 
  
  
   2. What does this program print out?
@@ -28,8 +30,10 @@
          print(x)
          x = x * 2
          
+         
          Guess: print 1,2,4,8,16,32 all on seperate lines
          actual: print 1,2,4,8,16,32 all on seperate lines
+         
      
   3. Why is the and x >= 0 not needed?
      
@@ -38,7 +42,9 @@
          print(x)
          x = x + 2
          
-         you dont need to check for things that can never be false
+        
+        you dont need to check for things that can never be false
+        
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -49,16 +55,22 @@
              print("Blast off!")
          x = x - 1
      
+     
      prints countdown from 5,0. does not print blast off because integers are never equal
+     
+     
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
      x = float(input("Enter a number greater than zero: "))
 
+     
+     
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
          x=float(input("Enter a number greater than zero: "))
+         
          
      
   6. Fix the following code:
@@ -67,9 +79,14 @@
 
      while x < 0:
          print(x)
-         x - 1
+         x -= 1
 
      print("Blast-off")
+     
+     
+     while x > 0:
+        print(x)
+        x-1
      
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
@@ -78,6 +95,11 @@
      for i in range(10):
          print(i)
          i += 1
+         
+    for i in range(10):
+    print(i)
+    
+    in the range for I, its already established as 0 in default and the range increaseseach time, so adding one to i each time is pointless
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -97,4 +119,4 @@
              x += 1
      print(x)
      
-      
+Its different because of the indnetation of the lines. The First sample adds one to x 10 times in i then another 10 in j, printing 20, sample 2  has i add one, then it will go to j to add 1 to x 10 more times, then repeats this 10 times.       
