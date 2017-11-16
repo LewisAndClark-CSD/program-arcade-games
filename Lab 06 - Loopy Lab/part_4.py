@@ -16,7 +16,6 @@
  
  Explanation video: http://youtu.be/vRB_983kUMc
 """
-import random
 import pygame
  
 # Define some colors
@@ -56,11 +55,12 @@ while not done:
  
     # If you want a background image, replace this clear with blit'ing the
     # background image.
-    screen.fill(WHITE)
+    screen.fill(BLACK)
  
     # --- Drawing code should go here
-
-
+    for y in range(0, 500, 10):
+        for x in range(0, 700, 10):
+            pygame.draw.rect(screen, GREEN, [(x,y), (5 ,5)])
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
  
