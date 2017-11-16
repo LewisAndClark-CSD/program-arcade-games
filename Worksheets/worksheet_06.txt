@@ -12,6 +12,8 @@
      
   1. What does this program print out?
      (Remember: TWO answers. Your guess and the actual result. Label both.)
+     2
+     0,2,4,6,8
      
      x = 0
      while x < 10:
@@ -19,21 +21,23 @@
          x = x + 2
      
   2. What does this program print out?
-     
+     16
+     1,2,4,8,16,32
      x = 1
      while x < 64:
          print(x)
          x = x * 2
      
   3. Why is the and x >= 0 not needed?
-     
+     we already defined 0
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
-     
+     5,4,3,2,1,0
+     5,4,3,2,1,0
      x = 5
      while x >= 0:
          print(x)
@@ -48,7 +52,13 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
-     
+         
+     x = float(input("Enter a number greater than zero: "))
+
+     while x <= 0:
+         print("Too small. Enter a number greater than zero: ")
+         x = input("Enter a number greater than zero: ")
+  
   6. Fix the following code:
      
      x = 10
@@ -59,16 +69,24 @@
 
      print("Blast-off")
      
+     x = 10
+
+while x > 0:
+    print(x)
+    x - 1
+
+print("Blast-off")
+
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
-     
+     It has more code then it needs. You dont need the i += 1 because without it, it still works. The computer already know i = 0. 
      i = 0
      for i in range(10):
          print(i)
          i += 1
      
   8. Explain why the values printed for x are so different. (2 pts)
-     
+     The indentation changes the code. Making the computer add on Sample 1 and multiply and more on sample 2.
      # Sample 1
      x = 0
      for i in range(10):
