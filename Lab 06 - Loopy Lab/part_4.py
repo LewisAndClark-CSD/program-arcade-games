@@ -55,7 +55,7 @@ while not done:
         y_offset += 5
         x_offset = 5
         for y in range(10):
-            pygame.draw.rect(screen, RED, [x_offset,y_offset,5,5], 5)
+            pygame.draw.rect(screen, RED, [5,5,x_offset,y_offset], 5)
             x_offset += 5
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
