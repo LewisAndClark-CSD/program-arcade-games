@@ -5,6 +5,10 @@
 
 """ runs a map then the game """
 
+current_room = 0
+
+done = False
+
 room_list = [ ]
 room = ["You have just awoken in a jail cell of a ship(can only go North)",0,None,None,None]
 room_list.append(room)
@@ -20,12 +24,11 @@ room = ["You are in a hallway and smell something getting stronger(can go East)"
 room_list.append(room)
 room = ["You see something on the stove but you don't want to make any noise",None,6,None,None]
 room_list.append(room)
-
-current_room = 0
-done = False 
+ 
 while not done:
     print()
     print(room_list[current_room][0])
     usr_direction = input("What way do you want to go? " )
-    if usr_direction == "north": 
-        print('hi')
+    next_room = room_list[current_room][1]
+    if usr_direction == "North":
+        print("H")
