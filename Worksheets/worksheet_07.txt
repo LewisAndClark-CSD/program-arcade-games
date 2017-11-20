@@ -8,6 +8,11 @@
 
      
   1. List the four types of data we've covered, and give an example of each:
+  
+  string - list = ["This", "is", "a", "string"]
+  Integer - list = [3, 1, 4, 1, 5, 9]
+  Floating point - list = [5.234, 6.234, 9.534]
+  Boolean - list = [True, False]
 
   2. What does this code print out? For this and the following problems, make
      sure you understand WHY it prints what it does. You don't have to explain it,
@@ -19,11 +24,15 @@
      print(my_list[4])
      print(my_list[5])
      
+     It prints out 2, 101, then an error.
+     
   3. What does this code print out?
      
      my_list=[5, 2, 6, 8, 101]
      for my_item in my_list:
          print(my_item)
+         
+    It prints out 5, 2, 6, 8, and 101 on separate lines.
      
   4. What does this code print out?
      
@@ -34,6 +43,8 @@
      my_list2[2] = 10
      print(my_list2)
      
+    It prints out an error.
+     
   5. What does this code print out?
      
      my_list = [3 * 5]
@@ -41,12 +52,16 @@
      my_list = [3] * 5
      print(my_list)
      
+     It prints out [15] then [3, 3, 3, 3, 3]
+     
   6. What does this code print out?
      
      my_list = [5]
      for i in range(5):
      	my_list.append(i)
      print(my_list)
+     
+     The code prints out 5, 0, 1, 2, 3, and 4 in square brackets.
      
   7. What does this code print out?
      
@@ -56,11 +71,15 @@
      print(len("2"))
      print(len(2))
      
+     This code prints out 2, 9, 8, and 1 on separate lines, then an error.
+     
   8. What does this code print out?
      
      print("Simpson" + "College")
      print("Simpson" + "College"[1])
      print( ("Simpson" + "College")[1] )
+     
+     It prints out SimpsonCollege, Simpsono, and i on separate lines.
      
   9. What does this code print out?
      
