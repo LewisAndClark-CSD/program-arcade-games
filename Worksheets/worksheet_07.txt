@@ -58,7 +58,7 @@
      	my_list.append(i)
      print(my_list)
      
-     
+     [5, 0, 1, 2, 3, 4] 
      
   7. What does this code print out?
      
@@ -68,17 +68,23 @@
      print(len("2"))
      print(len(2))
      
+     2, 9, 8, 1, and TypeError: object of type 'int' has no len() 
+     
   8. What does this code print out?
      
      print("Simpson" + "College")
      print("Simpson" + "College"[1])
      print( ("Simpson" + "College")[1] )
      
+     SimpsonCollege, Simpsono, and i
+     
   9. What does this code print out?
      
      word = "Simpson"
      for letter in word:
          print(letter)
+     
+     S, i, m, p, s, o, n all on their own lines 
      
  10. What does this code print out?
      
@@ -87,16 +93,22 @@
          word += "College"
      print(word)
      
+     SimpsonCollegeCollegeCollege 
+     
  11. What does this code print out?
      
      word = "Hi" * 3
      print(word)
+     
+     HiHiHi 
      
  12. What does this code print out?
      
      my_text = "The quick brown fox jumped over the lazy dogs."
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
+     
+     
      
  13. What does this code print out?
      
