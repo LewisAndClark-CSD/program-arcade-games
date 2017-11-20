@@ -5,6 +5,7 @@
 
 """A text based adventure game"""
 
+#Create a list of room descriptions and hooked rooms
 room_list=[]
 room = ["You are in front of the house. The door is open.", None, None, 1, None]
 room_list.append(room)
@@ -25,15 +26,18 @@ room_list.append(room)
 room = ["The shed is very dark and tight. The door is to the North.", 7, None, None, None]
 room_list.append(room)
 
+#Set variable for current room
 current_room = 0
 done = False
 
+#Keeps the game running
 while done == False:
     print()
     print(room_list[current_room][0])
     print("What will you do?")
     user_input = input(" ").lower()
     
+    #Make north direction
     if user_input == "n":
         next_room = room_list[current_room][1]
         if next_room == None:
@@ -41,6 +45,7 @@ while done == False:
         else: 
             current_room = next_room
     
+    #Make east direction
     elif user_input == "e":
         next_room = room_list[current_room][2]
         if next_room == None:
@@ -48,6 +53,7 @@ while done == False:
         else: 
             current_room = next_room
     
+    #Make south direction
     elif user_input == "s":
         next_room = room_list[current_room][3]
         if next_room == None:
@@ -55,6 +61,7 @@ while done == False:
         else: 
             current_room = next_room
     
+    #Make west direction
     elif user_input == "w":
         next_room = room_list[current_room][4]
         if next_room == None:
@@ -62,6 +69,7 @@ while done == False:
         else: 
             current_room = next_room
     
+    #When the input is invalid
     else:
         print("Invalid Entry")
     
