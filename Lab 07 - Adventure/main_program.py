@@ -23,7 +23,12 @@ while done == False:
     print(room_list[current_room][0])
     print('Options: North, South, East, or West.')
     user_choice = input("Where would you like to go? ")
-    
+if user_choice == "North":
+    next_room = room_list[current_room][1]
+    if next_room == None:
+        print("You can't go that way.")
+    else:
+        current_room = next_room
         
 
 
