@@ -9,7 +9,7 @@
 room_list = []
 
 #Set Closet
-room = ['A cramped and cluttered closet. Just north is the door', 1, None, None, None]
+room = ['You\'re in cramped and cluttered closet. Just north is the door', 1, None, None, None]
 room_list.append(room)
 
 #Set West Hall
@@ -17,11 +17,11 @@ room = ['Opening up into a long hallway. With a staircase north,\nleading up, an
 room_list.append(room)
 
 #Set East Hall
-room = ['The end of the hall, with doors to the north, east, and south of you.', 4, None, 3, 1]
+room = ['The end of the hall, with doors to the north and south of you.', 4, None, 3, 1]
 room_list.append(room)
 
 #Set Garage
-room = ['Dark and dusty, the room appears to be a garage with\ntwo large doors to the east.', 2, 8, None, None]
+room = ['Dark and dusty, the room appears to be a garage with\ntwo large doors to the east. And north is back\ninto the hallway', 2, 8, None, None]
 room_list.append(room)
 
 #Set Production
@@ -46,6 +46,9 @@ room_list.append(room)
 
 #Room Currently in
 current_room = 0
+
+#Story Set-up
+print('You wake up in a dark room, all is quite, and for a production plant\nthat seemed strange, you turn the light on to find out\njust what happend to every body?')
 
 #Condition
 done = False
@@ -101,6 +104,10 @@ while not done:
             print('You can\'t go that way')
         else:
             current_room = next_room
+            
+    #Win
+    elif current_room == 8:
+        done = True
     
     #No comprendo
     else:
