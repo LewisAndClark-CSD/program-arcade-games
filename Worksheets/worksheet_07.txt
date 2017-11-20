@@ -8,6 +8,7 @@
 
      
   1. List the four types of data we've covered, and give an example of each:
+  The four types of data are int (3), bool (True), str ("string"), and float (2.76).
 
   2. What does this code print out? For this and the following problems, make
      sure you understand WHY it prints what it does. You don't have to explain it,
@@ -18,12 +19,22 @@
      print(my_list[1])
      print(my_list[4])
      print(my_list[5])
+     This code will print out:
+     2
+     101
+     error
      
   3. What does this code print out?
      
      my_list=[5, 2, 6, 8, 101]
      for my_item in my_list:
          print(my_item)
+     This code will print out:
+     5
+     2
+     6
+     8
+     101
      
   4. What does this code print out?
      
@@ -33,6 +44,9 @@
      print(my_list1)
      my_list2[2] = 10
      print(my_list2)
+     The code will print:
+     [5, 2, 6, 8, 101]
+     error
      
   5. What does this code print out?
      
@@ -40,6 +54,9 @@
      print(my_list)
      my_list = [3] * 5
      print(my_list)
+     This code will print out:
+     [15]
+     [3, 3, 3, 3, 3]
      
   6. What does this code print out?
      
@@ -47,6 +64,8 @@
      for i in range(5):
      	my_list.append(i)
      print(my_list)
+     This program will output:
+     [5, 0, 1, 2, 3, 4]
      
   7. What does this code print out?
      
@@ -55,18 +74,35 @@
      print(len("Hi") + len("there."))
      print(len("2"))
      print(len(2))
+     This code will output:
+     2
+     9
+     8
+     1
+     error
      
   8. What does this code print out?
      
      print("Simpson" + "College")
      print("Simpson" + "College"[1])
      print( ("Simpson" + "College")[1] )
+     SimpsonCollege
+     Simpsono
+     i
      
   9. What does this code print out?
      
      word = "Simpson"
      for letter in word:
          print(letter)
+    This code will print out:
+    S
+    i
+    m
+    p
+    s
+    o
+    n
      
  10. What does this code print out?
      
@@ -74,17 +110,24 @@
      for i in range(3):
          word += "College"
      print(word)
+    This program will output:
+    SimpsonCollegeCollegeCollege
      
  11. What does this code print out?
      
      word = "Hi" * 3
      print(word)
+    This code will print out:
+    HiHiHi
      
  12. What does this code print out?
      
      my_text = "The quick brown fox jumped over the lazy dogs."
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
+    This code will print out:
+    The 3rd spot is: 
+    The -1 spot is: .
      
  13. What does this code print out?
      
@@ -92,10 +135,20 @@
      print(s[1])
      print(s[:3])
      print(s[3:])
+     This code will print out:
+     1
+     012
+     3456789
      
  14. Write a loop that will take in a list of five numbers from the user, adding
      each to an array. Then print the array. Try doing this without looking at the
      book.
+     
+userList = []
+for number in range(5):
+    number = int(input("Enter a number for a list: "))
+    userList.append(number)
+print(userList)
 
  15. Write a program that take an array like the following, and print the average.
      Use the len function, don't just use 15, because that won't work if
@@ -105,4 +158,10 @@
      
      my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
      
+my_list = [3, 12, 3, 5, 3, 4]
+list_total= 0
+for i in range(len(my_list)):
+  list_total += my_list[i]
+list_total = list_total/len(my_list)
+print(list_total)
      
