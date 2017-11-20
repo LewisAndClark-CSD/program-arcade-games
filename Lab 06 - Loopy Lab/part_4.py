@@ -31,12 +31,12 @@ while not done:
         if event.type == pygame.QUIT:
             done = True    
     # background image.
-    screen.fill(BLACK)
+    screen.fill(BLUE)
  
     # --- Go ahead and update the screen with what we've drawn.
     for y in range(0, 500, 8):
         for x in range(0, 700, 8):
-            pygame.draw.rect(screen,GREEN,[x, y, 4, 4],0)
+            pygame.draw.rect(screen,RED,[x, y, 4, 4],0)
         print()
                     
     pygame.display.flip()
