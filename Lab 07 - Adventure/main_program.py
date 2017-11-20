@@ -25,4 +25,8 @@ room_list.append(room)
 room = ["The room is very dark and tight. The door is to the North.", 7, None, None, None]
 
 current_room = 0
-print(room_list[0])
+done = False
+
+while done == False:
+    print (" " + room_list[current_room][0])
+
