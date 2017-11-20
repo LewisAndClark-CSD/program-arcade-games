@@ -28,5 +28,35 @@ current_room = 0
 done = False
 
 while done == False:
-    print (" " + room_list[current_room][0])
+    print()
+    print(room_list[current_room][0])
+    print("What will you do?")
+    user_input = input(" ").lower()
+    if user_input == "n":
+        next_room = room_list[current_room][1]
+        if next_room == None:
+            print("You can't go that way.")
+        else: 
+            current_room = next_room
+    elif user_input == "e":
+        next_room = room_list[current_room][2]
+        if next_room == None:
+            print("You can't go that way.")
+        else: 
+            current_room = next_room
+    elif user_input == "s":
+        next_room = room_list[current_room][3]
+        if next_room == None:
+            print("You can't go that way.")
+        else: 
+            current_room = next_room
+    elif user_input == "w":
+        next_room = room_list[current_room][4]
+        if next_room == None:
+            print("You can't go that way.")
+        else: 
+            current_room = next_room
+    
+
+
 
