@@ -86,6 +86,8 @@
      word = "Simpson"
      for letter in word:
          print(letter)
+         
+     This prints out S, i, m, p, s, o , and n on separate lines. 
      
  10. What does this code print out?
      
@@ -94,16 +96,22 @@
          word += "College"
      print(word)
      
+     This code prints out SimpsonCollegeCollegeCollege.
+     
  11. What does this code print out?
      
      word = "Hi" * 3
      print(word)
+     
+     HiHiHi is printed out.
      
  12. What does this code print out?
      
      my_text = "The quick brown fox jumped over the lazy dogs."
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
+     
+     It prints out "The 3rd spot is: " with a space at the end and "The -1 spot is: " with a . at the end.
      
  13. What does this code print out?
      
@@ -112,9 +120,17 @@
      print(s[:3])
      print(s[3:])
      
+     The code prints out 1, 012, and 3456789.
+     
  14. Write a loop that will take in a list of five numbers from the user, adding
      each to an array. Then print the array. Try doing this without looking at the
      book.
+     
+a_list = []
+for num_in_list in range(5):
+    user_number = input('Enter a number to add to the list: ')
+    a_list.append(int(user_number))
+    print(a_list)
 
  15. Write a program that take an array like the following, and print the average.
      Use the len function, don't just use 15, because that won't work if
@@ -124,4 +140,10 @@
      
      my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
      
+sum = 0
+my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
+for i in range(len(my_list)):
+    sum = sum + my_list[i]
+average = sum// len(my_list)
+print(average)
      
