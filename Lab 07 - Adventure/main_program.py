@@ -16,28 +16,28 @@ room_list.append(room)
 room = ['Opening up into a long hallway. With a staircase north,\nleading up, and more hall to the east.', 5, 2, 0, None]
 room_list.append(room)
 
-#Set Staircase
-room = ['A velvet staircase, reaching north to a door.', 6, None, 1, None]
-room_list.append(room)
-
 #Set East Hall
 room = ['The end of the hall, with doors to the north, east, and south of you.', 4, None, 3, 1]
 room_list.append(room)
 
 #Set Garage
-room = ['Dark and dusty, the room appears to be a garage with two large doors to the east.', 2, 8, None, None]
+room = ['Dark and dusty, the room appears to be a garage with\ntwo large doors to the east.', 2, 8, None, None]
 room_list.append(room)
 
 #Set Production
-room = ['Quite and unmoving machines appear frozen, with wires and arms intricatly placed about the room. A wire fence lays north of you.', 7, None, 2, None]
+room = ['Quite and unmoving machines appear frozen, with wires and arms\nintricatly placed about the room.\nA wire fence lays north of you.', 7, None, 2, None]
 room_list.append(room)
 
-#Set Power
-room = ['A room with one panel, lays open waiting to be used. The exit is south of you.', None, None, 4, None]
+#Set Staircase
+room = ['A velvet staircase, reaching north to a door.', 6, None, 1, None]
 room_list.append(room)
 
 #Set Office
-room = ['Red Carpet and Cubicals allows a homely feel and a great window overlooking the production area. The exit door is south of you.', None, None, 5, None]
+room = ['Red Carpet and Cubicals allows a homely feel\nand a great window overlooking the production area.\nThe exit door is south of you.', None, None, 5, None]
+room_list.append(room)
+
+#Set Power
+room = ['A room with one panel, lays open waiting to be used.\nThe exit is south of you.', None, None, 4, None]
 room_list.append(room)
 
 #Set Outside
@@ -62,11 +62,46 @@ while not done:
     #Player direction
     direction = input('Where would you like to go? ')
     
-    #Check input
-    if direction == 'north':
+    #Check input north
+    if direction.lower() == 'north':
         next_room = room_list[current_room][1]
-     
-    if next_room == None:
-        print('You can\'t go that way')
+        
+        #Does that direction exist
+        if next_room == None:
+            print('You can\'t go that way')
+        else:
+            current_room = next_room
+    
+    #Check input east
+    elif direction.lower() == 'east':
+        next_room = room_list[current_room][2]
+        
+        #Does that direction exist
+        if next_room == None:
+            print('You can\'t go that way')
+        else:
+            current_room = next_room
+            
+    #Check input south
+    elif direction.lower() == 'south':
+        next_room = room_list[current_room][3]
+        
+        #Does that direction exist
+        if next_room == None:
+            print('You can\'t go that way')
+        else:
+            current_room = next_room
+            
+    #Check input west
+    elif direction.lower() == 'west':
+        next_room = room_list[current_room][4]
+        
+        #Does that direction exist
+        if next_room == None:
+            print('You can\'t go that way')
+        else:
+            current_room = next_room
+    
+    #No comprendo
     else:
-        current_room = next_room
+        print('I Dont Understand')
