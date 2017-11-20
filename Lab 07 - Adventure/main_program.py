@@ -2,7 +2,20 @@
 room_list = []
 
 #Create a variable called room with an array of five elements.
-room = ["North hall", "Dining room", "South hall", "Bedroom 1", "Bedroom 2", "Balcony"]
+room = ["North hall", None, 4, 5, 1]
+room_list.append(room)
+room = ["Kitchen", None, 0, 2, None]
+room_list.append(room)
+room = ["Dining room", 1, 3, None, None]
+room_list.append(room)
+room = ["South hall", 0, 5, 6, 2]
+room_list.append(room)
+room = ["Bedroom 1", None, None, 5, 0]
+room_list.append(room)
+room = ["Bedroom 2", 4, None, None, 3]
+room_list.append(room)
+room = ["Balcony", 3, None, None, None]
+room_list.append(room)
 #First element create a string with description of the first room.
 First = "North hall" + " Pictures of angels fighting demons line the walls."  
 #Other four will be number of the next room if user goes north, south, east, or west.
