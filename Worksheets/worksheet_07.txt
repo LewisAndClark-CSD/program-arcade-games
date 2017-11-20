@@ -108,7 +108,7 @@
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
      
-     
+     The 3rd spot is:, and The -1 spot is: . both on separate lines. 
      
  13. What does this code print out?
      
@@ -117,10 +117,18 @@
      print(s[:3])
      print(s[3:])
      
+     1, 012, 3456789 all on separate lines. 
+     
  14. Write a loop that will take in a list of five numbers from the user, adding
      each to an array. Then print the array. Try doing this without looking at the
      book.
 
+     myList = []
+userList = input('Enter 5 numbers: ')
+for items in userList:
+    myList.append(int(items))
+print(myList) 
+     
  15. Write a program that take an array like the following, and print the average.
      Use the len function, don't just use 15, because that won't work if
      the list size changes.
@@ -129,4 +137,8 @@
      
      my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
      
-     
+     myList = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
+ListSum = sum(myList)
+ListLength = len(myList)
+ListAverage = ListSum/ListLength
+print(ListAverage) 
