@@ -1,4 +1,4 @@
-     
+Jason Cobb     
      Chapter 07 Worksheet
 
      
@@ -8,7 +8,10 @@
 
      
   1. List the four types of data we've covered, and give an example of each:
-
+String: type("Hi there")    <class 'str'>  
+Integer: type(3)    <class 'int'>
+Floating point: type(3.14)  <class 'float'>
+Boolean: type(True) <class 'bool'>
   2. What does this code print out? For this and the following problems, make
      sure you understand WHY it prints what it does. You don't have to explain it,
      but if you don't understand why, make sure to ask.
@@ -18,13 +21,13 @@
      print(my_list[1])
      print(my_list[4])
      print(my_list[5])
-     
+It prints out builtins.IndexError: list index out of range.     
   3. What does this code print out?
      
      my_list=[5, 2, 6, 8, 101]
      for my_item in my_list:
          print(my_item)
-     
+It prints out 5, 2, 6, 8, 101 in separate lines.     
   4. What does this code print out?
      
      my_list1 = [5, 2, 6, 8, 101]
@@ -33,21 +36,26 @@
      print(my_list1)
      my_list2[2] = 10
      print(my_list2)
-     
+builtins.TypeError: 'tuple' object does not support item assignment
   5. What does this code print out?
      
      my_list = [3 * 5]
      print(my_list)
      my_list = [3] * 5
      print(my_list)
-     
+It prints out [15] and in another line prints [3, 3, 3, 3, 3].     
   6. What does this code print out?
      
      my_list = [5]
      for i in range(5):
      	my_list.append(i)
      print(my_list)
-     
+[5, 0]
+[5, 0, 1]
+[5, 0, 1, 2]
+[5, 0, 1, 2, 3]
+[5, 0, 1, 2, 3, 4]
+
   7. What does this code print out?
      
      print(len("Hi"))
@@ -55,48 +63,70 @@
      print(len("Hi") + len("there."))
      print(len("2"))
      print(len(2))
-     
+ builtins.TypeError: object of type 'int' has no len()    
   8. What does this code print out?
      
      print("Simpson" + "College")
      print("Simpson" + "College"[1])
      print( ("Simpson" + "College")[1] )
-     
+SimpsonCollege
+Simpsono
+i
+
   9. What does this code print out?
      
      word = "Simpson"
      for letter in word:
          print(letter)
-     
+S
+i
+m
+p
+s
+o
+n
+
  10. What does this code print out?
      
      word = "Simpson"
      for i in range(3):
          word += "College"
      print(word)
-     
+ SimpsonCollege
+SimpsonCollegeCollege
+SimpsonCollegeCollegeCollege
+    
  11. What does this code print out?
      
      word = "Hi" * 3
      print(word)
-     
+HiHiHi
  12. What does this code print out?
      
      my_text = "The quick brown fox jumped over the lazy dogs."
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
-     
+ The 3rd spot is:  
+The -1 spot is: .    
  13. What does this code print out?
      
      s = "0123456789"
      print(s[1])
      print(s[:3])
      print(s[3:])
-     
+ 1
+012
+3456789    
  14. Write a loop that will take in a list of five numbers from the user, adding
      each to an array. Then print the array. Try doing this without looking at the
      book.
-
+array = []
+for x in range(5):
+    user = input("Enter a number: ")
+    user = int(user)
+    array.append(user)
+    print(array)
+    
  15. Write a program that take an array like the following, and print the average.
      Use the len function, don't just use 15, because that won't work if
      the list size changes.
@@ -104,5 +134,13 @@
      Sum the numbers individually as shown in the chapter.)
      
      my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
-     
+my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
+
+total = 0
+
+
+for item in my_list:
+    total = total + item
+average = total / len(my_list)
+print(average)     
      
