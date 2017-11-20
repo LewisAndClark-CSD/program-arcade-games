@@ -13,17 +13,38 @@
      
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
+     
+        name = "Justin Riebow"
+    for letter in range(10):
+        print(name)
+    print("Done")
 
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
+     
+        red = "Red"
+    gold = "Gold"
+    for color in range(20):
+        print(red)
+        print(gold)
+    print("Done")
 
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
 
+    for number in range(2,101,2):
+        print(number)
+     
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
+     
+        number = 11
+    while number > 0:
+        number = number - 1
+        print(number)
+    print("Blast off!")
 
   5. There are three things wrong with this program. List each. (3 pts)
      
@@ -35,12 +56,23 @@
          total = total + i
      print("The total is:", x)
      
+     it should print total, not x
+     
+     
+     
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
+  
+    import rando
+    print(random.randint(1,10))
 
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
 
+    import random
+    randomNumber = random.randint(1,10)
+    print(float(randomNumber))
+     
   8. Write a Python program that will: (3 pts)
      
      * Ask the user for seven numbers
@@ -49,6 +81,25 @@
      and the number of negative entries. Use an if, elif, else chain, not just three
      if statements.
      
+    total = 0
+    positive = 0
+    negative = 0
+    zero = 0
+
+    for number in range(7):
+        user_number = int(input("Enter a number: "))
+        total += user_number
+        if user_number < 0:
+            negative = negative + 1
+        elif user_number > 0:
+            positive = positive + 1
+        else:
+            zero = zero + 1
+    print("Numbers that are zero:", str(zero))
+    print("Negative numbers:", str(negative))
+    print("Postive numbers:", str(positive))
+    print("Total:", total)
+     
   9. Coin flip tosser: (4 pts)
      
      * Create a program that will print a random 0 or 1.
@@ -56,6 +107,20 @@
      using if statements. Don't select from a list, as shown in the chapter.
      * Add a loop so that the program does this 50 times.
      * Create a running total for the number of heads flipped, and the number of tails.
+     
+    import random
+    heads = 0
+    tails = 0
+    for flips in range(50):
+        randomNumber = random.randint(0, 1)
+        if randomNumber == 0:
+            heads = heads + 1
+            print("Heads")
+        if randomNumber == 1:
+            tails = tails + 1
+            print("Tails")
+    print("Number of Heads:", heads)
+    print("Number of Tails:", tails)
      
  10. Write a program that plays rock, paper, scissors: (4 pts)
      
@@ -66,4 +131,24 @@
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
      
+    import random
+    user_choice = int(input("Rock(1), Paper(2), or Scissors(3)? "))
+    randomNumber = random.randint(1, 3)
+    if randomNumber == 1:
+        print("Rock")
+    if randomNumber == 2:
+        print("Paper")
+    if randomNumber == 3:
+        print("Scissors")
+
+    if user_choice == randomNumber:
+        print("It's a tie!")
+    elif user_choice == 3 and randomNumber == 2:
+        print("You win!")
+    elif user_choice == 2 and randomNumber == 1:
+        print("You win!")
+    elif user_choice == 1 and randomNumber == 3:
+        print("You win!")
+    else:
+        print("You lose!")
      
