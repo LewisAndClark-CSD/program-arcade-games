@@ -9,6 +9,8 @@
      
   1. List the four types of data we've covered, and give an example of each:
 
+  String, Ex: "hello". Integer, Ex: 1. Floating point, 3.145. Boolean, True. 
+  
   2. What does this code print out? For this and the following problems, make
      sure you understand WHY it prints what it does. You don't have to explain it,
      but if you don't understand why, make sure to ask.
@@ -19,11 +21,15 @@
      print(my_list[4])
      print(my_list[5])
      
+     2, 101, and IndexError: list index out of range 
+     
   3. What does this code print out?
      
      my_list=[5, 2, 6, 8, 101]
      for my_item in my_list:
          print(my_item)
+     
+     5, 2, 6, 8, 101 
      
   4. What does this code print out?
      
@@ -34,6 +40,8 @@
      my_list2[2] = 10
      print(my_list2)
      
+     [5, 2, 6, 10, 101], and TypeError: 'tuple' object does not support item assignment 
+     
   5. What does this code print out?
      
      my_list = [3 * 5]
@@ -41,12 +49,16 @@
      my_list = [3] * 5
      print(my_list)
      
+     [15], and [3, 3, 3, 3, 3]. 
+     
   6. What does this code print out?
      
      my_list = [5]
      for i in range(5):
      	my_list.append(i)
      print(my_list)
+     
+     
      
   7. What does this code print out?
      
