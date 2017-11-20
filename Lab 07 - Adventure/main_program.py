@@ -22,7 +22,8 @@ room = ["This is the garage. There is a car and tools in here. The lobby is to t
 room_list.append(room)
 room = ["You are outside. You see a shed to the South. There is a doorway leading inside to the West.", None, None, 8, 3]
 room_list.append(room)
-room = ["The room is very dark and tight. The door is to the North.", 7, None, None, None]
+room = ["The shed is very dark and tight. The door is to the North.", 7, None, None, None]
+room_list.append(room)
 
 current_room = 0
 done = False
@@ -32,30 +33,37 @@ while done == False:
     print(room_list[current_room][0])
     print("What will you do?")
     user_input = input(" ").lower()
+    
     if user_input == "n":
         next_room = room_list[current_room][1]
         if next_room == None:
             print("You can't go that way.")
         else: 
             current_room = next_room
+    
     elif user_input == "e":
         next_room = room_list[current_room][2]
         if next_room == None:
             print("You can't go that way.")
         else: 
             current_room = next_room
+    
     elif user_input == "s":
         next_room = room_list[current_room][3]
         if next_room == None:
             print("You can't go that way.")
         else: 
             current_room = next_room
+    
     elif user_input == "w":
         next_room = room_list[current_room][4]
         if next_room == None:
             print("You can't go that way.")
         else: 
             current_room = next_room
+    
+    else:
+        print("Invalid Entry")
     
 
 
