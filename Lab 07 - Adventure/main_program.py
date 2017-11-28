@@ -1,7 +1,9 @@
 #!usr/bin/env python3
-# Chapter 7 Lab
+# Main_program.py
 # Jessica Lyles
 # 11/28/2017
+
+""" first draft of adventure game """
 
 room_list = []
 room = ["You are standing in the entrance of the Mystery House.", None, None, 2, None]
