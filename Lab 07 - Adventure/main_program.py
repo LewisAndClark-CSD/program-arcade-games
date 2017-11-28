@@ -48,4 +48,4 @@ while done == False:
     if next_room == None:
         print("You can't go that way.")
     else:
-        current_room = next_room        
+        current_room = next_room
