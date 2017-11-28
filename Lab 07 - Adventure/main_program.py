@@ -17,6 +17,7 @@ room_list.append(room)
 room = ["Bedroom 2 that also has  a bed, closet, and bathroom.", 4, None, None, 3]
 room_list.append(room)
 room = ["the Balcony that oversees the lake behind the castle.", 3, None, None, None]
+room_list.append(room)
 
 #Make new variable called current_room set it to zero.
 current_room = 0
@@ -34,27 +35,16 @@ while done == False:
     answer = input("What do you want to do?: ")
     if answer == "n":
         next_room = room_list[current_room][1]
-    if next_room == None:
-        print("You can't go that way.")
-    else:
-        current_room = next_room
-        
-    if answer == "e":
+       
+    elif answer == "e":
         next_room = room_list[current_room][2]
-    if next_room == None:
-        print("You can't go that way.")
-    else:
-        current_room = next_room   
         
-    if answer == "s":
+    elif answer == "s":
         next_room = room_list[current_room][3]
-    if next_room == None:
-        print("You can't go that way.")
-    else:
-        current_room = next_room    
         
-    if answer == "w":
+    elif answer == "w":
         next_room = room_list[current_room][4]
+
     if next_room == None:
         print("You can't go that way.")
     else:
