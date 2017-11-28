@@ -6,6 +6,7 @@
 """Create a text adventure game using python"""
 
 current_room = 0
+
 room_list = []
 room = ["The Entryway", None, None, 3, None]
 room_list.append(room)
@@ -25,4 +26,38 @@ room = ["Blade Room", 4, None, None, None]
 room_list.append(room)
 room = ["Balloon Room", 5, None, None, None]
 room_list.append(room)
-print(current_room)
+
+done = False
+
+while done == False:
+    print()
+    print(room_list[current_room][0])
+    user_choice = input("Where would you like to go? ")
+    
+    if user_choice == "North":
+        next_room = room_list[current_room][1]
+        if next_room == None:
+            print("You can't go that way.")
+        else:
+            next_room = current_room
+    
+    if user_choice == "East":
+        next_room = room_list[current_room][2]
+        if next_room == None:
+            print("You can't go that way.")
+        else:
+            next_room = current_room    
+
+    if user_choice == "South":
+        next_room = room_list[current_room][3]
+        if next_room == None:
+            print("You can't go that way.")
+        else:
+            next_room = current_room
+            
+    if user_choice == "West":
+        next_room = room_list[current_room][4]
+        if next_room == None:
+            print("You can't go that way.")
+        else:
+            next_room = current_room
