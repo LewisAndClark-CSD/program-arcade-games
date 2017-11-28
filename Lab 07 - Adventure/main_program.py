@@ -29,23 +29,28 @@ current_room = 0
 
 #Since your first room is zero, the output should be the same as before.
 done = False
-while done == False:
+while not done:
     print()
     print("You are in", room_list [current_room][0])
     answer = input("What do you want to do?: ")
-    if answer == "n":
+    if answer.lower()[0] == "n":
         next_room = room_list[current_room][1]
        
-    elif answer == "e":
+    elif answer.lower()[0] == "e":
         next_room = room_list[current_room][2]
         
-    elif answer == "s":
+    elif answer.lower()[0] == "s":
         next_room = room_list[current_room][3]
         
-    elif answer == "w":
+    elif answer.lower()[0] == "w":
         next_room = room_list[current_room][4]
-
+        
+    elif answer.lower()[0] == "q":
+        break
+    
     if next_room == None:
         print("You can't go that way.")
     else:
         current_room = next_room
+        
+print("Have a nice day.")
