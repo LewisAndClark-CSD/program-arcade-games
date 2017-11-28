@@ -9,7 +9,7 @@
 room_list=[]
 room = ["You are in front of the house. The door is open.", None, None, 1, None]
 room_list.append(room)
-room = ["You are in the lobby. There are four passages including the door you came in", 1, 6, 3, 2]
+room = ["You are in the lobby. There is a passage in each direction including the door you came in.", 0, 6, 3, 2]
 room_list.append(room)
 room = ["You are in a narrow hallway. There seems to be a light coming from the end of the passage", None, 1, 4, None]
 room_list.append(room)
@@ -38,7 +38,7 @@ while done == False:
     user_input = input(" ").lower()
     
     #Make north direction
-    if user_input == "n":
+    if user_input == "go north" or user_input == "n":
         next_room = room_list[current_room][1]
         if next_room == None:
             print("You can't go that way.")
@@ -46,7 +46,7 @@ while done == False:
             current_room = next_room
     
     #Make east direction
-    elif user_input == "e":
+    elif user_input == "go east" or user_input == "e":
         next_room = room_list[current_room][2]
         if next_room == None:
             print("You can't go that way.")
@@ -54,7 +54,7 @@ while done == False:
             current_room = next_room
     
     #Make south direction
-    elif user_input == "s":
+    elif user_input == "go south" or user_input == "s":
         next_room = room_list[current_room][3]
         if next_room == None:
             print("You can't go that way.")
@@ -62,13 +62,15 @@ while done == False:
             current_room = next_room
     
     #Make west direction
-    elif user_input == "w":
+    elif user_input == "go west" or user_input == "w":
         next_room = room_list[current_room][4]
         if next_room == None:
             print("You can't go that way.")
         else: 
             current_room = next_room
-    
+    #quits the game
+    elif user_input == "quit" or user_input == "q":
+        done = True
     #When the input is invalid
     else:
         print("Invalid Entry")
