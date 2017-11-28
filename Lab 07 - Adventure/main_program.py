@@ -3,10 +3,12 @@
 #Ethan Dall
 #11-20-17
 
-"""Factory Escape"""
+"""Text adventre game"""
 
 #Created an empty list for room
 room_list = []
+
+#Room template [description, N, E, S, W]
 
 #Set Closet
 room = ['You\'re in cramped and cluttered closet. Just north is the door.\n', 1, None, None, None]
