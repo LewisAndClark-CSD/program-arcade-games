@@ -61,15 +61,9 @@ while done == False:
             print("You can't go that way")
         else:
             current_room = next_room
-        elif user_direction == "e":
-            next_room = room_list[current_room][2]
-            if next_room == None:
-                print("You can't go that way")    
-            else:
-                current_room = next_room    
-        
-    
-        
-   
-    
-        
+    elif user_direction == "e":
+        next_room = room_list[current_room][2]
+        if next_room == None:
+            print("You can't go that way")    
+        else:
+            current_room = next_room        
