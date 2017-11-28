@@ -8,28 +8,29 @@ room_list = []
 
 #establishes all the room descriptions and the direction numbers
 #note: the number direction order is: north, east, south, west
-bedroom = ['There\'s nothing of interest in here. You can either go north into \
-the party room or in the dining room east.', 4, 1, None, None]
+bedroom = ['There\'s nothing of interest in here. You can either go \nnorth \
+into the party room or in the dining room east.', 4, 1, None, None]
 
 dinning_room = ['There\'s a table in here neatly set up. You can go to the\
- bedroom west, the kitchen north, and the basement east.', 5, 2, None, 0]
+ bedroom\nwest, the kitchen north, and the basement east.', 5, 2, None, 0]
 
-basement = ['It is very spooky down here. You can\'t see anything.\
-You can only go back west to the dining room.', None, None, None, 1]
+basement = ['It is very spooky down here. You can\'t see anything. \
+You can\nonly go back west to the dining room.', None, None, None, 1]
 
-balcony = ['It\'s little chilly out today. You can only go back into the\
-party room.', None, 4, None, None]
+balcony = ['It\'s little chilly out today. You can only go back\ninto the \
+party room east.', None, 4, None, None]
 
 party_room = ['There is a disco ball on the ceiling and a dance floor. \
-Other than that, nothing else is here. You can go west to the balcony, \
-north to the attic, east to the kitchen, and south to the bedroom.', 6, 5, 0, 3]
+Other than\nthat, nothing else is here. You can go west to the balcony, \
+north to the\nattic, east to the kitchen, and south to \
+the bedroom.', 6, 5, 0, 3]
 
-kitchen = ['The wall is covered in knives. Seems safe enough. You can go \
+kitchen = ['The wall is covered in knives. Seems safe enough.\nYou can go \
 west to the party room or south to the dining room.', None, None, 1, 4]
 
 attic = ['Wow! Look at all the dust. You could make a small garden with \
-all the dust in here. You may want to leave before the dust is a mild \
-inconvenience. You can only go south back to the\
+all the\ndust in here. You may want to leave before the dust is a mild \
+inconvenience.\nYou can only go south, back to the \
 party room.', None, None, 4, None]
 
 #appends it all to the room_list
@@ -71,7 +72,7 @@ while done == False:
         else:
             print('You can\'t go that way!')
             
-    elif direction.lower() == 'w 'or direction.lower() == 'west':
+    elif direction.lower() == 'w' or direction.lower() == 'west':
         if room_list[current_room][4] != None:
             current_room = room_list[current_room][4]
         else:
