@@ -3,37 +3,39 @@
 #Bethany DuMontelle
 #November 20 2017
 
-room_list = [bedroom, dinning_room, basement, balcony, party_room, 
-             kitchen, attic]
+#creates the room list
+room_list = []
 
-bedroom = ['As soon as you walk into the bedroom, it becomes apparent\
-that you are not alone in this room. The adjacent rooms illuminate\
-the one you\'re currently in; no lights exist in here. You can only see a bed\
-covered in dark gray rags and an old wooden dresser that would\
-fall apart if you happen to move past it. You can either go to the party room\
-north or the dinning room east.', 4, 1, None, None]
+#establishes all the room descriptions and the direction numbers
+bedroom = 'There\'s nothing of interest in here. You can either go north into\
+the party room or in the dining room east.', 4, 1, None, None
 
-dinning_room = ['The chadelier hangs from the ceiling above the long dinner \
-table. The table itself is neatly organzed: the red table cloth is at equal \
-length on all sides, plates correspond to each chair, the spoons, knives, and\
-forks are all to the side of each plate, chairs neatly tucked in, and all the \
-decor matches the rest of the table It\'s as if you walked in just before the\
-food was placed on the table. You can go the kitchen north, the bedroom west,\
-or the basement west.', 5, 2, None, 0]
+dinning_room = 'There\'s a table in here neatly set up. You can go to the\
+ bedroom west, the kitchen north, and the basement east.', 5, 2, None, 0
 
-basement = ['As you walk into the basement, you can hear what is most likely \
-water dripping, echoing with each drop. Darkness engulfs the room when \
-you walk further into it. It smells musty. If you walk any further into the\
-basement, you feel like you will never find your way back out You can only\
-go west back to the dining room.', None, None, None, 1]
+basement = 'It is very spooky down here. You can\'t see anything.\
+You can only go back west to the dining room.', None, None, None, 1
 
-balcony = ['The outdoors are far brighter than inside the house, despite\
-it being night. The air is nippy, and all you can see are trees past the\
-balcony. You can only go east back to the party room.', None, 4, None, None]
+balcony = 'It\'s little chilly out today. You can only go back into the\
+party room.', None, 4, None, None
 
-party_room = [' ', 6, 5, 0, 3]
+party_room = 'There is a disco ball on the ceiling and a dance floor. \
+Other than that, nothing else is here. You can go west to the balcony, \
+north to the attic, east to the kitchen, and south to the bedroom.', 6, 5, 0, 3
 
-kitchen = [' ', None, None, 1, 4]
+kitchen = 'The wall is covered in knives. Seems safe enough. You can go \
+west to the party room or south to the dining room.', None, None, 1, 4
 
-attic = [' ', None, None, 4, None]
+attic = 'Wow! Look at all the dust. You could make a small garden with \
+all the dust in here. You may want to leave before the dust is a mild \
+inconvenience. You can only go south back to the\
+party room.', None, None, 4, None
 
+#appends it all to the room_list
+room_list.append(bedroom)
+room_list.append(dinning_room)
+room_list.append(basement)
+room_list.append(balcony)
+room_list.append(party_room)
+room_list.append(kitchen)
+room_list.append(attic)
