@@ -27,7 +27,6 @@ room_list.append(room)
 
 current_room = 0
 
-print('You are in a room. There is a passage to the south.', room_list[0])
 
 done = False
 
