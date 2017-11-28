@@ -2,7 +2,7 @@
 room_list = []
 
 #Create a variable called room with an array of five elements.
-room = ["the North hall pictures of angels fighting demons line the walls.", None, 4, 5, 1]
+room = ["the North hall pictures of angels fighting demons line the walls.", None, 4, 3, 1]
 
 #Append the room to the room list
 room_list.append(room)
@@ -25,5 +25,37 @@ current_room = 0
 #print(room_list)
 
 #Use the current_room and room_list to print which room the user is in.
-print("You are in", room_list [current_room][0])
+
 #Since your first room is zero, the output should be the same as before.
+done = False
+while done == False:
+    print()
+    print("You are in", room_list [current_room][0])
+    answer = input("What do you want to do?: ")
+    if answer == "n":
+        next_room = room_list[current_room][1]
+    if next_room == None:
+        print("You can't go that way.")
+    else:
+        current_room = next_room
+        
+    if answer == "e":
+        next_room = room_list[current_room][2]
+    if next_room == None:
+        print("You can't go that way.")
+    else:
+        current_room = next_room   
+        
+    if answer == "s":
+        next_room = room_list[current_room][3]
+    if next_room == None:
+        print("You can't go that way.")
+    else:
+        current_room = next_room    
+        
+    if answer == "w":
+        next_room = room_list[current_room][4]
+    if next_room == None:
+        print("You can't go that way.")
+    else:
+        current_room = next_room        
