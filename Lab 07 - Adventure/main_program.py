@@ -1,4 +1,7 @@
-#Chapter 7 Lab
+#!usr/bin/env python3
+# Chapter 7 Lab
+# Jessica Lyles
+# 11/28/2017
 
 room_list = []
 room = ["You are standing in the entrance of the Mystery House.\nTo the south is the rest of the rooms.", None, None, 2, None]
