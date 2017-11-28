@@ -2,21 +2,21 @@
 room_list = []
 
 #Create a variable called room with an array of five elements.
-room = ["North hall pictures of angels fighting demons line the walls.", None, 4, 5, 1]
+room = ["the North hall pictures of angels fighting demons line the walls.", None, 4, 5, 1]
 
 #Append the room to the room list
 room_list.append(room)
-room = ["Kitchen", None, 0, 2, None]
+room = ["the Kitchen that has pots and pans setup for cooking.", None, 0, 2, None]
 room_list.append(room)
-room = ["Dining room", 1, 3, None, None]
+room = ["the Dining room that has plates and silverwear set out.", 1, 3, None, None]
 room_list.append(room)
-room = ["South hall", 0, 5, 6, 2]
+room = ["the South hall that has many sets of different armor.", 0, 5, 6, 2]
 room_list.append(room)
-room = ["This is our Bedroom 1.", None, None, 5, 0]
+room = ["Bedroom 1 that has a bed, closet, and bathroom.", None, None, 5, 0]
 room_list.append(room)
-room = ["This is the Bedroom 2.", 4, None, None, 3]
+room = ["Bedroom 2 that also has  a bed, closet, and bathroom.", 4, None, None, 3]
 room_list.append(room)
-room = ["This is the Balcony.", 3, None, None, None]
+room = ["the Balcony that oversees the lake behind the castle.", 3, None, None, None]
 
 #Make new variable called current_room set it to zero.
 current_room = 0
