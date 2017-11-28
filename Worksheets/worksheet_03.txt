@@ -10,13 +10,28 @@
          print("It is hot outside.")
      else:
          print("It is not hot out.")
-     
+     -Missing the second closing parenthesis in the temperature definition
+
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
 
+     userNum = int(input('Choose a number: '))
+     if userNum > 0:
+	print('Your Number is positve')
+     elif userNum < 0:
+	print('Your Number is negative')
+     else:
+	print('Your Number is Zero')
+
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
+
+    userNum = int(input('Choose a number: '))
+    if -10 > userNum > 10:
+	print("'Success'")
+    else:
+	print("'Failure'")
 
   4. This runs, but there is something wrong. What is it? (1 pt)
      
@@ -27,7 +42,8 @@
          print("Correct!")
      else:
          print("Incorrect.")
-     
+     -The Choices print after the user answers the question, with no prompt.
+
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
@@ -38,12 +54,14 @@
          print("x is positive.")
      else:
          print("x is not positive.")
+    -There does not need to be two equal signs in front of x to set it to 4. The other is that the user doesnt choose a value for x.
      
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
+    -There needs to be two equal signs in the if statement, no colon after the if statement, and no int() in the x definition.
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
@@ -52,13 +70,15 @@
          print("Correct!")
          else
          print("Incorrect! It is Beaker.")
-     
+    -In the if statment it does not call for 'answer', The else is not indented correctly, no colon after else, and there is no two equal signs in the if statment.     
+
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
          print("That is good to hear!")
-     
+    -or is not used correctly [Plus there is no space after the '?']     
+
   9. Look at the code below. Write you best guess here on what it will print.
      Next, run the code and see if you are correct.
      Clearly label your guess and the actual answer.
@@ -78,7 +98,9 @@
          print("Fizz")
      if z:
          print("Buzz")
-     
+    My Guess: x= 5, y= 5, z= 5, Buzz
+    Anwser: x= 5, y= False, z= True, Buzz     
+
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -96,7 +118,10 @@
      print(x == 5 and y == 10)
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
-     
+    
+    My Guess: True, False, False, False, True, False, False, True, False, True
+    Anwser: True, False, True, False, False, True, False, False, True, False, True     
+
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -110,6 +135,8 @@
      print( (2 == 2) == True )
      print(3 < "3")
      
+    My Guess: True, False, True, True, Error, Error, False, True, True, False
+    Anwser: True, False, True, True, True, False, False, True, Error
 
  12. What things are wrong with this section of code?
      The programmer wants to set the money variable according to
@@ -129,7 +156,4 @@
          money = 70
      else if user_input = C:
          money = 50
-
-     
-
-     
+    -Not using double equal signs, the user might put a lowercase letter, no space after user_input question, uses else if instead of elif and else 
