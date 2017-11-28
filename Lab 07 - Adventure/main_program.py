@@ -22,7 +22,7 @@ roomList.append(room)
 room = ['You are in the Bathroom. \nWest hallway is to the south.', None, None, 2, None]
 roomList.append(room)
 #WELDING
-room = ['You are in Welding. \nCentral hallway is to the south.', None, None,6, None]
+room = ['You are in Welding. \nCentral hallway is to the south.', None, None, 3, None]
 roomList.append(room)
 #AUTO
 room = ['You are in Auto Collision. \nEast hallway is to the south.', None, None, 4,  None]
@@ -30,17 +30,56 @@ roomList.append(room)
 
 nextRoom = 0
 currentRoom = 0
+
 done = False
 while done == False:
     print()
     print(roomList[currentRoom][0])
     dirChoice = input('What direction do you want to go? ')
+   
+   #dirChoice direction
     if dirChoice == 'North':
-        if [currentRoom][1] == 2:
-            nextRoom = roomList[currentRoom][1]
-        elif [currentRoom][1] == None:
-            print("You can't go that way. ")
+        dirChoice = 0
+    elif dirChoice == 'South':
+        dirChoice = 1
+    elif dirChoice == 'West':
+        dirChoice = 2
+    elif dirChoice == 'East':
+        dirChoice = 3
+    else:
+        print("\nYou can't go that way! ")
+        print(roomList[currentRoom][0])
+        dirChoice = input('What direction do you want to go? ')
+        
+    #North    
+    if dirChoice == 0:
+        if (roomList[currentRoom][1]) == None:
+            print("\nYou can't go that way! ")
+            print(roomList[currentRoom][0])
+            dirChoice = input('What direction do you want to go? ')                
         else:
-            currentRoom = nextRoom
-            
-    
+            currentRoom = (roomList[currentRoom][1])
+    #South
+    if dirChoice == 1:
+        if (roomList[currentRoom][3]) == None:
+            print("\nYou can't go that way! ")
+            print(roomList[currentRoom][0])
+            dirChoice = input('What direction do you want to go? ')                
+        else:
+            currentRoom = (roomList[currentRoom][3])
+    #West
+    if dirChoice == 2:
+        if (roomList[currentRoom][4]) == None:
+            print("\nYou can't go that way! ")
+            print(roomList[currentRoom][0])
+            dirChoice = input('What direction do you want to go? ')                
+        else:
+            currentRoom = (roomList[currentRoom][4]) 
+    #East
+    if dirChoice == 3:
+        if (roomList[currentRoom][2]) == None:
+            print("\nYou can't go that way! ")
+            print(roomList[currentRoom][0])
+            dirChoice = input('What direction do you want to go? ')                
+        else:
+            currentRoom = (roomList[currentRoom][2])    

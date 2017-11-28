@@ -42,7 +42,8 @@ while not done:
     # background image.
     screen.fill(BLACK)
     for x in range(0,700, 5):
-        for y in range
+        for y in range(0,500,5):
+            pygame.draw.rect(screen, GREEN, [1 + x,1 + y ,2,2])
     # --- Drawing code should go here
  
     # --- Go ahead and update the screen with what we've drawn.
