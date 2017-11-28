@@ -7,11 +7,11 @@
 
 #Create a list of room descriptions and hooked rooms
 room_list=[]
-room = ["You are in front of the house. The door is open.", None, None, 1, None]
+room = ["You are in front of the house. The door is open to the south.", None, None, 1, None]
 room_list.append(room)
 room = ["You are in the lobby. There is a passage in each direction including the door you came in.", 0, 6, 3, 2]
 room_list.append(room)
-room = ["You are in a narrow hallway. There seems to be a light coming from the end of the passage", None, 1, 4, None]
+room = ["You are in a narrow hallway. There seems to be a light coming from the end of the passage to the south.", None, 1, 4, None]
 room_list.append(room)
 room = ["You are in a hall. The lobby is to the North. There's a light coming from the West. There is a door leading outside to the East.", 1, 7, None, 4]
 room_list.append(room)
