@@ -4,25 +4,25 @@
 # 11/28/2017
 
 room_list = []
-room = ["You are standing in the entrance of the Mystery House.\nTo the south is the rest of the rooms.", None, None, 2, None]
+room = ["You are standing in the entrance of the Mystery House.", None, None, 2, None]
 room_list.append(room)
 
-room = ["You are standing in the Mystery Children's Room.\nTo the south and east are the other rooms.", None, 2, 4, None]
+room = ["You are standing in the Mystery Children's Room.", None, 2, 4, None]
 room_list.append(room)
 
-room = ["You are standing in the hallway of the Mystery house.\nThere are rooms in all directions.", 0, 3, 5, 1]
+room = ["You are standing in the hallway of the Mystery house.", 0, 3, 5, 1]
 room_list.append(room)
 
-room = ["You are standing in the Mystery Bathroom.\nThe rest of the Mystery House is to the west.", None, None, None, 2]
+room = ["You are standing in the Mystery Bathroom.", None, None, None, 2]
 room_list.append(room)
 
-room = ["You are standing in the Mystery Children's Closet.\nThere is a room to the north.", 1, None, None, None]
+room = ["You are standing in the Mystery Children's Closet.", 1, None, None, None]
 room_list.append(room)
 
-room = ["You are standing in the Mystery Parent's Room.\nTwo rooms lay to the north and south.", 2, None, 6, None]
+room = ["You are standing in the Mystery Parent's Room.", 2, None, 6, None]
 room_list.append(room)
 
-room = ["You are in the Mystery Parent's Bathroom.\nOne room is to the north.", 5, None, None, None]
+room = ["You are in the Mystery Parent's Bathroom.", 5, None, None, None]
 room_list.append(room)
 
 current_room = 0
