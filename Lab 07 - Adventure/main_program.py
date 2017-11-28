@@ -5,6 +5,7 @@
 
 """Create a text adventure game using python"""
 
+current_room = 0
 room_list = []
 room = ["The Entryway", None, None, 3, None]
 room_list.append(room)
@@ -20,7 +21,8 @@ room = ["East Hall", 2, None, 8, 4]
 room_list.append(room)
 room = ["Weight Room", 2, None, None, None]
 room_list.append(room)
-room = ["Knive Room", 4, None, None, None]
+room = ["Blade Room", 4, None, None, None]
 room_list.append(room)
 room = ["Balloon Room", 5, None, None, None]
 room_list.append(room)
+print(current_room)
