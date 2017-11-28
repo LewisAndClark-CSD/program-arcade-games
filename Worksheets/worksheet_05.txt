@@ -16,17 +16,23 @@
      pygame.init()
 
   3. Explain how WHITE = (255, 255, 255) represents a color.
-     
+     The three 255 represtent the amount of red, green, and blue. Having all of the colors
+     at full intensity means the color is white.
      
   4. When do we use variable names for colors in all upper-case, and when do we
      use variable names for colors in all lower-case? (This applies to all variables,
      not just colors.)
+     Variables in all upper-case are constants, meaning they don't change. If the 
+     color is meant to change, the variable name should be in lower-case.
 
   5. What does the pygame.display.set_mode() function do?
+     It will open a display window to print the picture created by the code.
 
   6. What does this for event in pygame.event.get() loop do?
+     It will allow the user to interact with the display window.
 
   7. What is pygame.time.Clock used for?
+     It controls how fast the screen updates.
 
   8. For this line of code: (3 pts)
      
@@ -39,6 +45,7 @@
      
 
   9. What is the best way to repeat something over and over in a drawing?
+     
 
  10. When drawing a rectangle, what happens if the specified line width is zero?
 
