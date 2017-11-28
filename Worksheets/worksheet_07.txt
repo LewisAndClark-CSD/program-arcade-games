@@ -8,6 +8,11 @@
 
      
   1. List the four types of data we've covered, and give an example of each:
+  
+  string - list = ["This", "is", "a", "string"]
+  Integer - list = [3, 1, 4, 1, 5, 9]
+  Floating point - list = [5.234, 6.234, 9.534]
+  Boolean - list = [True, False]
 
   2. What does this code print out? For this and the following problems, make
      sure you understand WHY it prints what it does. You don't have to explain it,
@@ -19,11 +24,15 @@
      print(my_list[4])
      print(my_list[5])
      
+     It prints out 2, 101, then an error.
+     
   3. What does this code print out?
      
      my_list=[5, 2, 6, 8, 101]
      for my_item in my_list:
          print(my_item)
+         
+    It prints out 5, 2, 6, 8, and 101 on separate lines.
      
   4. What does this code print out?
      
@@ -34,6 +43,8 @@
      my_list2[2] = 10
      print(my_list2)
      
+    It prints out an error.
+     
   5. What does this code print out?
      
      my_list = [3 * 5]
@@ -41,12 +52,16 @@
      my_list = [3] * 5
      print(my_list)
      
+     It prints out [15] then [3, 3, 3, 3, 3]
+     
   6. What does this code print out?
      
      my_list = [5]
      for i in range(5):
      	my_list.append(i)
      print(my_list)
+     
+     The code prints out 5, 0, 1, 2, 3, and 4 in square brackets.
      
   7. What does this code print out?
      
@@ -56,17 +71,23 @@
      print(len("2"))
      print(len(2))
      
+     This code prints out 2, 9, 8, and 1 on separate lines, then an error.
+     
   8. What does this code print out?
      
      print("Simpson" + "College")
      print("Simpson" + "College"[1])
      print( ("Simpson" + "College")[1] )
      
+     It prints out SimpsonCollege, Simpsono, and i on separate lines.
+     
   9. What does this code print out?
      
      word = "Simpson"
      for letter in word:
          print(letter)
+         
+     This prints out S, i, m, p, s, o , and n on separate lines. 
      
  10. What does this code print out?
      
@@ -75,16 +96,22 @@
          word += "College"
      print(word)
      
+     This code prints out SimpsonCollegeCollegeCollege.
+     
  11. What does this code print out?
      
      word = "Hi" * 3
      print(word)
+     
+     HiHiHi is printed out.
      
  12. What does this code print out?
      
      my_text = "The quick brown fox jumped over the lazy dogs."
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
+     
+     It prints out "The 3rd spot is: " with a space at the end and "The -1 spot is: " with a . at the end.
      
  13. What does this code print out?
      
@@ -93,9 +120,17 @@
      print(s[:3])
      print(s[3:])
      
+     The code prints out 1, 012, and 3456789.
+     
  14. Write a loop that will take in a list of five numbers from the user, adding
      each to an array. Then print the array. Try doing this without looking at the
      book.
+     
+a_list = []
+for num_in_list in range(5):
+    user_number = input('Enter a number to add to the list: ')
+    a_list.append(int(user_number))
+    print(a_list)
 
  15. Write a program that take an array like the following, and print the average.
      Use the len function, don't just use 15, because that won't work if
@@ -105,4 +140,10 @@
      
      my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
      
+sum = 0
+my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
+for i in range(len(my_list)):
+    sum = sum + my_list[i]
+average = sum// len(my_list)
+print(average)
      
