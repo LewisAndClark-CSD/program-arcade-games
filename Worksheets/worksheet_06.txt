@@ -17,6 +17,14 @@
      while x < 10:
          print(x)
          x = x + 2
+         
+         
+         0
+         2
+         4
+         6
+         8
+         
      
   2. What does this program print out?
      
@@ -24,13 +32,23 @@
      while x < 64:
          print(x)
          x = x * 2
-     
+     1
+     2
+     4
+     8
+     16
+     32
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+     
+     Because 0 is already = to 0 and it is less than 10.
+     
+     There is no way x can go down in value in this loop.
+     
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -40,6 +58,20 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
+         
+         5
+         4
+         3
+         2
+         1
+         0
+         
+         Does not print out blast off because x is == to the character 1.
+     
+     
+     
+     
+     
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
@@ -48,6 +80,16 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
+         
+         
+         
+ANSWER:  x = float(input("Enter a number greater than zero: "))
+         while x <= 0:
+            x = int(input("Too small. Enter a number greater than zero: "))
+     You need to add an input and int on the statement in the while loop. Also set it to x
+     
+     
+     
      
   6. Fix the following code:
      
@@ -59,6 +101,19 @@
 
      print("Blast-off")
      
+     
+     ANSWER:
+     
+     x = 10
+
+     while x > 0:
+        print(x)
+        x = x - 1
+        if x == 0:
+            print("Blast-off")
+     
+     
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -66,6 +121,12 @@
      for i in range(10):
          print(i)
          i += 1
+         
+         
+         You don't need to set i to 0 because in range it will start at 0 automatically. Also you don't need the i += 1 because the for loop does that already. 
+         
+         
+         
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -77,6 +138,7 @@
          x += 1
      print(x)
 
+     
      # Sample 2
      x = 0
      for i in range(10):
@@ -84,5 +146,13 @@
          for j in range(10):
              x += 1
      print(x)
+     
+     
+     Because the second one has a nester for loop so it will go through way more times than than the one above. 
+     
+     
+     
+     
+     
      
       

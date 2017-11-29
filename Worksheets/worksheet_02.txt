@@ -1,4 +1,4 @@
-     
+Brady Ballmann     
      Chapter 02 Worksheet
 
      
@@ -7,36 +7,98 @@
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
 
+     1010
+     
+     
   2. Give an example of a decimal number.
+  
+    17
 
   3. Give an example of a hexadecimal number.
 
+  A
+  
+  
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
 
+  0, 2, 4, 8, 16
+  
+  
   5. What is a compiler?
 
+  Turns source code into machine code
+  
   6. What is source code?
 
+  Code the programmer enters
+  
   7. What is machine language? (Don't just say binary. That's not correct.)
 
+  Machine code is what the computer interpretes source code into
+  
   8. What is a first generation language? (Don't just say binary. That's not correct.)
 
+  A combination of 0 and 1's to represent numbers
+  It is the same thing as machine language
+  
+  
   9. What is a second generation language?
 
+  Assembly language that uses a compiler to turn source code into machine code. 
+  
  10. What is a third generation language? (Explain, don't just give one example.)
+ 
+ A high level computer programming language. Like python or C. Turns source code directly into machine code. 
 
  11. What is an interpreter and how does it differ from a compiler?
 
+ It runs source code and interprets it directly into machine code on the fly.
+ 
+ It is diffirent because you can not switch between different computing machines like linux and windows.
+ 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
 
+     This website: https://www.tiobe.com/tiobe-index//
+     
+     Top 10:
+     Java
+     C
+     C++
+     C#
+     Python
+     JavaScript
+     PHP
+     Visual Basic .NET
+     Assembly language
+     Ruby
+     
+     
+     
+     
+     
+     
+     
+     
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
 
+     Most jobs are looking for Java developers. 
+     
+     https://www.dice.com/jobs?q=Developer&l=Saint+Charles%2C+MO&searchid=9954836866302&stst=
+     
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
 
+     syntax deals with the structure/form of the code
+     
+     semantics deal with meaning assigned to that specific symbol, character, or word 
+     
+     
+     
+     
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
 
+     My phone has ram and an operating system(ios). The software is like the apps that I run on it. 
      
