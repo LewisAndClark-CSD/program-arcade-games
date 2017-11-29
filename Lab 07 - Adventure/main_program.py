@@ -43,28 +43,28 @@ while done == False:
     
     user_choice = input("Where would you like to go? ")
     
-    if user_choice == "North":
+    if user_choice.lower()[0] == "n":
         next_room = room_list[current_room][1]
         if next_room == None:
             print("You can't go that way.")
         else:
             current_room = next_room
     
-    elif user_choice == "East":
+    elif user_choice.lower()[0] == "e":
         next_room = room_list[current_room][2]
         if next_room == None:
             print("You can't go that way.")
         else:
             current_room = next_room    
 
-    elif user_choice == "South":
+    elif user_choice.lower()[0] == "s":
         next_room = room_list[current_room][3]
         if next_room == None:
             print("You can't go that way.")
         else:
             current_room = next_room
             
-    elif user_choice == "West":
+    elif user_choice.lower()[0] == "w":
         next_room = room_list[current_room][4]
         if next_room == None:
             print("You can't go that way.")
