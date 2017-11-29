@@ -39,7 +39,7 @@ while done == False:
     print("You are in", room_list[current_room][0])
     #print exits
     if room_list[current_room][1] != None:
-        print("/tThere is an exit to the North.")
+        print("\tThere is an exit to the North.")
     if room_list[current_room][2] != None:
         print("\tThere is an exit to the East.")
     if room_list[current_room][3] != None:
