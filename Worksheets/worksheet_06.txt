@@ -17,6 +17,9 @@
      while x < 10:
          print(x)
          x = x + 2
+         
+    Guess: print 0,2,4,6,8 all on seperate lines.
+    Actual: print 0,2,4,6,8 all on seperate lines.
      
   2. What does this program print out?
      
@@ -25,12 +28,17 @@
          print(x)
          x = x * 2
      
+     Guess: print 1,2,4,8,16,32 all on seperate lines.
+     Actual: print 1,2,4,8,16,32 all on seperate lines.
+     
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+     
+     It never goes down, it only increases. Therefore it will always be true so its not needed.
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -41,13 +49,17 @@
              print("Blast off!")
          x = x - 1
      
+     It doesn't print blast off because of the if x == "1" is a string not an int. It does print a countdown from 5 to 0 however.
+     
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
      x = float(input("Enter a number greater than zero: "))
 
      while x <= 0:
-         print("Too small. Enter a number greater than zero: ")
+         x = float(input("Too small. Enter a number greater than zero: "))
+
+     
      
   6. Fix the following code:
      
@@ -59,6 +71,15 @@
 
      print("Blast-off")
      
+     Fixed Code:
+     x = 10
+
+     while x > 0:
+         x = x - 1
+         print(x)
+
+     print("Blast-off!")
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
@@ -66,6 +87,8 @@
      for i in range(10):
          print(i)
          i += 1
+         
+    i += 1 is not needed because it is after the print statement.
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -85,4 +108,4 @@
              x += 1
      print(x)
      
-      
+    The indentions are different so it is a nested loop, causing a different outcome.
