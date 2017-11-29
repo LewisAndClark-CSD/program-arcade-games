@@ -37,6 +37,15 @@ while done == False:
     print("Press Q to quit at anytime")
     print()
     print("You are in", room_list[current_room][0])
+    #print exits
+    if room_list[current_room][1] != None:
+        print("/tThere is an exit to the North.")
+    if room_list[current_room][2] != None:
+        print("\tThere is an exit to the East.")
+    if room_list[current_room][3] != None:
+        print("\tThere is an exit to the South.")
+    if room_list[current_room][4] != None:
+        print("\tThere is an exit to the West.")
     
     user_input = input("Which direction do you want to explore? ").lower()
     #Controls directions for north
