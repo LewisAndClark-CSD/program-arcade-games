@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+#Adventure.py
+#Jason Cobb
+#11/28/17
+
 #Create an empty array called room_list
 room_list = []
 
