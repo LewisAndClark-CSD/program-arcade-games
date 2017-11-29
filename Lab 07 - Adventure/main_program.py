@@ -31,6 +31,16 @@ current_room = 0
 while done == False:
     print()
     print(room_list[current_room][0])
+    #print exits
+    if room_list[current_room][1] != None:
+        print("\tThere is an exit to the North.")
+    if room_list[current_room][2] != None:
+        print("\tThere is an exit to the East.")
+    if room_list[current_room][3] != None:
+        print("\tThere is an exit to the South.")
+    if room_list[current_room][4] != None:
+        print("\tThere is an exit to the West.")
+    
     user_choice = input("Where would you like to go? ")
     
     if user_choice == "North":
@@ -62,4 +72,4 @@ while done == False:
             current_room = next_room
     
     else:
-        print("say again? ")
+        print("say again?")
