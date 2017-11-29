@@ -18,52 +18,79 @@ room = ["You are in the Diner. ",None,2,0,None]
 
 room_list.append(room)
 
-# 3
+# 2
 room = ["You are in the bedroom hallway.",None,3,None,1]
 
 room_list.append(room)
+# 3
+room = ["You are in the bedroom. ",4,None,None,2]
+
+room_list.append(room)
 # 4
-room = ["You are in the bedroom. ",8,None,None,2]
+room = ["You are in the hallway between the bathroom and the bedroom. ",5,None,3,None]
 
 room_list.append(room)
 # 5
-room = ["You are in the hallway between the bathroom and the bedroom. ",3,None,7,None]
-
-room_list.append(room)
-# 6
-room = ["You are in the Bathroom.",None,None,8,6]
-
-room_list.append(room)
-# 7
-room = ["You are in the hallway between the balcony and the bathroom.",None,7,None,5]
-
-room_list.append(room)
-# 8
-room = ["You are outside on the balcony. There is a passage way to the  East",None,None,4,None]
+room = ["You are in the Bathroom.",None,None,4,None]
 
 room_list.append(room)
 
 
 current_room = 0
 
-
-
 done = False
 
-while done == False:
+while not done:
     print()
-    print(room_list[current_room][0])
+    print(room_list[current_room][0])    
+    
+    if room_list[current_room][1] != None:
+        print("There is an exit to the North")
+    if room_list[current_room][2] != None:
+        print("There is an exit to the East")
+    if room_list[current_room][3] != None:
+        print("There is an exit to the South")
+    if room_list[current_room][4] != None:
+        print("There is an exit to the West")
+        
     user_direction = input("What direction would you like to go? ")
     print()
-    if user_direction == "n" or "north":
+    # Printing the exits
+    
+    
+    if user_direction == "n" or user_direction == "north":
         next_room = room_list[current_room][1]
         if next_room == None:
             print("You can't go that way")
         else:
-            current_room = next_room
-    elif user_direction == "e":
+            current_room = next_room      
+            
+    
+    elif user_direction == "e" or user_direction == "east":
         next_room = room_list[current_room][2]
         if next_room == None:
             print("You can't go that way")    
         else:
-            current_room = next_room        
+            current_room = next_room   
+            
+    elif user_direction == "s" or user_direction == "south":
+        next_room = room_list[current_room][3]
+        if next_room == None:
+            print("You can't go that way") 
+        else:
+            current_room = next_room
+            
+    elif user_direction == "w" or user_direction == "west":
+        next_room = room_list[current_room][4]
+        if next_room == None:
+            print("You can't go that way")    
+        else:
+            current_room = next_room  
+            
+    else:
+        print("The program does not understand what you typed")
+            
+            
+            
+            
+    
