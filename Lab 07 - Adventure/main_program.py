@@ -40,7 +40,7 @@ while done == False:
         print("\tThere is an exit to the South.")
     if room_list[current_room][4] != None:
         print("\tThere is an exit to the West.")
-    
+    f
     user_choice = input("Where would you like to go? ")
     
     if user_choice.lower()[0] == "n":
