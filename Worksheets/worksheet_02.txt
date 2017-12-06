@@ -1,4 +1,4 @@
-     
+Jason Cobb     
      Chapter 02 Worksheet
 
      
@@ -6,37 +6,37 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
-
+binary: 01110101 (117)
   2. Give an example of a decimal number.
-
+decimal: 117
   3. Give an example of a hexadecimal number.
-
+hexadecimal: 75 
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+1 = 1, 10 = 2, 100 = 4, 1000 = 8, 10000 = 16
   5. What is a compiler?
-
+A compiler takes a program written by the user, or soucre code, and turns it into a machine code.
   6. What is source code?
-
+The soucre code is a text that lists commands to be compiled into an workable computer programming.
   7. What is machine language? (Don't just say binary. That's not correct.)
-
+Machine code is compuiter programming language consisting of binary or hexadecimal intructions that computers can respond to directly.
   8. What is a first generation language? (Don't just say binary. That's not correct.)
-
+The 1GL consists of only ones and zeros to represent numbers in binary number system.
   9. What is a second generation language?
-
+The 2GL is called assembly language because each command used a mnemonic program called compiler to change the mnemonics into numbers that represent the commands.
  10. What is a third generation language? (Explain, don't just give one example.)
-
+The 3GL is called a compiler that takes program typed in by the user and then turns it into machine code. 
  11. What is an interpreter and how does it differ from a compiler?
-
+An interpreter looks at the source code and interprets it to machine language instructions on the fly, while compiler only takes the source code without looking at it. 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
-
+https://blog.newrelic.com/2017/10/09/popular-programming-languages-2017/ Java is the programming language skill most demand among empolyers. JavaScript .NET HTML Python SQL C or C++ Node.js Ruby PHP.
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
-
+Java, JavaScript, Python, PHP, C#, C++, CSS, Ruby, C, Objective-C.
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
-
+Syntax is a rule of governng the construction of valid statements in a language. Semantics refers to the set of rules of programming language are violated or misused.
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
-
+My phone. It uses apps to entertain me and occupy my time. My phone also has regular updates, user interface framework, and application suite. 
      
