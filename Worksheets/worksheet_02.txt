@@ -6,37 +6,54 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
-
+     01101100
+  
   2. Give an example of a decimal number.
-
+     74
+ 
+  
   3. Give an example of a hexadecimal number.
-
+     3FA
+  
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+     1, 2, 4, 8, 16
+  
   5. What is a compiler?
-
+     Converts source code to machine code
+ 
   6. What is source code?
-
+     Programs written by the developer
+  
   7. What is machine language? (Don't just say binary. That's not correct.)
-
+     The native code ran by the computer
+  
   8. What is a first generation language? (Don't just say binary. That's not correct.)
-
+     Machine language
+  
   9. What is a second generation language?
-
+     Assembly language
+ 
  10. What is a third generation language? (Explain, don't just give one example.)
-
+     Python, C. Logical structures.
+ 
  11. What is an interpreter and how does it differ from a compiler?
-
+     An interpreter and a compiler are almost the same thing, except the interpreter does not need to convert code to objects to      execute them.
+ 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
-
+     Java, Python, C, Ruby, Javascript, C#, PHP, Objective-C, SQL. Inc.com
+ 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
-
+     Java was the most popular one. Indeed.com
+ 
  14. What is the difference between the ``syntax'' and ``semantics'' of a
-     language?
-
+     language? Syntax are grammatical structures while Semantics are meanings for vocabulary symbols.
+     
+ 
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
-
+     
+     Operating system: Dolphin OS
+     CPU:	IBM PowerPC Gekko @ 486 MHz
      

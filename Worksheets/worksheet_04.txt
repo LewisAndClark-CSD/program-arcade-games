@@ -14,17 +14,39 @@
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
 
+            name = input('Enter your name: ')
+            for number in range(10):
+               print(name)
+            print('Done')
+  
+  
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
 
+            for color in range(20):
+             print('Red')
+             print('Gold')
+  
+  
+  
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
 
+                    for even in range(2, 101, 2):
+                      print(even)
+  
+  
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
-
+                   
+                   for number in range(10,-1,-1):
+                    print(number)
+                   print('Blast off!')
+  
+  
+  
   5. There are three things wrong with this program. List each. (3 pts)
      
      print("This program takes three numbers and returns the sum.")
@@ -37,10 +59,22 @@
      
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
 
+              import random
+
+              print (random.randint(1,11))
+  
+  
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
+     
+             import random
 
+             print (random.uniform(1.0,10.0))
+  
+  
+  
+  
   8. Write a Python program that will: (3 pts)
      
      * Ask the user for seven numbers
@@ -49,7 +83,27 @@
      and the number of negative entries. Use an if, elif, else chain, not just three
      if statements.
      
-  9. Coin flip tosser: (4 pts)
+     
+    total = 0
+    totalpositive = 0
+    totalnegative = 0
+    totalzero = 0
+    number = input('Enter 7 numbers: ')
+    number = number.split()
+    for num in number:
+        total = total+int(num)
+        if int(num) > 0:
+           totalpositive += 1
+        elif int(num) < 0:
+           totalnegative += 1
+        else:
+           totalzero += 1
+    print(total)
+    print(totalpositive, totalnegative, totalzero)
+    
+    
+    
+ 9. Coin flip tosser: (4 pts)
      
      * Create a program that will print a random 0 or 1.
      * Instead of 0 or 1, print heads or tails. Do this
@@ -57,6 +111,25 @@
      * Add a loop so that the program does this 50 times.
      * Create a running total for the number of heads flipped, and the number of tails.
      
+                          import random
+
+                         heads = 1
+                         tails = 0
+
+                         for coinflips in range(50):
+                             number = random.randint(0,2)
+                             if number == 1:
+                                 heads += 1
+                             else:
+                                 tails += 1
+                                 print('Head:',str(heads),'\nTails:',str(tails))
+
+ 
+ 
+ 
+ 
+ 
+ 
  10. Write a program that plays rock, paper, scissors: (4 pts)
      
      * Create a program that randomly prints 0, 1, or 2.
@@ -65,5 +138,58 @@
      * Add to the program so it first asks the user their choice.
      * (It will be easier if you have them enter 1, 2, or 3.)
      * Add conditional statement to figure out who wins.
+     
+     
+     import random
+
+rock = 1
+paper = 2
+scissors = 3
+
+choice = int(input('Choose 1, 2, or 3: '))
+
+for selection in range(1):
+    number = random.randint(0,3)
+    if number == 1:
+             print('Rock')
+    elif number == 2:
+             print('Paper')
+    elif number == 3:
+             print('Scissors')
+
+    if choice == 1:
+        if number == 2:
+             print('Loss')
+        elif number == 3:
+             print('Win')
+        elif number == 1:
+             print('Draw')
+
+    if choice == 2:
+        if number == 2:
+             print('Draw')
+        elif number == 3:
+             print('Loss')
+        elif number == 1:
+             print('Win')
+             
+    if choice == 3:
+        if number == 2:
+             print('Win')
+        elif number == 3:
+             print('Draw')
+        elif number == 1:
+             print('Loss')        
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
