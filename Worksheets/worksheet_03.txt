@@ -15,9 +15,21 @@
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
 
+innum = input('Enter a number: ')
+if innum > 0:
+    print('Positive')
+elif innum < 0
+    print('Negative')
+else:
+    print('Zero')
+    
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
-
+     
+innum = input('Enter a number: ')
+if innum >= -10 and innum <= 10
+    print('Success')
+    
   4. This runs, but there is something wrong. What is it? (1 pt)
      
      user_input = input("A cherry is a: ")
@@ -27,24 +39,30 @@
          print("Correct!")
      else:
          print("Incorrect.")
-     
+it will always answer incorrect unless A is the input B has no specific 
+response
+
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
      Identify both issues. (2 pts)
      
-     x == 4
-     if x >= 0:
+     x = 4
+     if x > 0:
          print("x is positive.")
      else:
          print("x is not positive.")
-     
+less than or equal to is no longer a issue and x is now equal to 4 instead 
+of compared to 4     
+
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
-     
+no int() on the input, it does not compare x to 3 but uses a invalid sign,
+nothing happens unless 3 is input
+
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
      answer = input("What is the name of Dr. Bunsen Honeydew's assistant? ")
@@ -52,13 +70,16 @@
          print("Correct!")
          else
          print("Incorrect! It is Beaker.")
-     
+answer is not the same as "a", the indentions are messed up, else is missing a 
+colon, the if statment needs to be == so that it will compare them
+
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
          print("That is good to hear!")
-     
+it will always print('that is good to hear!')   
+
   9. Look at the code below. Write you best guess here on what it will print.
      Next, run the code and see if you are correct.
      Clearly label your guess and the actual answer.
@@ -78,37 +99,43 @@
          print("Fizz")
      if z:
          print("Buzz")
-     
+buzz
+Output:
+x= 5
+y= False
+z= True
+Buzz
+
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
      x = 5
      y = 10
      z = 10
-     print(x < y)
-     print(y < z)
-     print(x == 5)
-     print(not x == 5)
-     print(x != 5)
-     print(not x != 5)
-     print(x == "5")
-     print(5 == x + 0.00000000001)
-     print(x == 5 and y == 10)
-     print(x == 5 and y == 5)
-     print(x == 5 or y == 5)
+     print(x < y)                   true
+     print(y < z)                   false
+     print(x == 5)                  true
+     print(not x == 5)              invalid
+     print(x != 5)                  false
+     print(not x != 5)              invalid
+     print(x == "5")                invalid
+     print(5 == x + 0.00000000001)  false
+     print(x == 5 and y == 10)      true true
+     print(x == 5 and y == 5)       true false
+     print(x == 5 or y == 5)        true false
      
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
-     print("3" == "3")
-     print(" 3" == "3")
-     print(3 < 4)
-     print(3 < 10)
-     print("3" < "4")
-     print("3" < "10")
-     print( (2 == 2) == "True" )
-     print( (2 == 2) == True )
-     print(3 < "3")
+     print("3" == "3")              true
+     print(" 3" == "3")             false     
+     print(3 < 4)                   true
+     print(3 < 10)                  true
+     print("3" < "4")               true
+     print("3" < "10")              false
+     print( (2 == 2) == "True" )    false
+     print( (2 == 2) == True )      true
+     print(3 < "3")                 invalid
      
 
  12. What things are wrong with this section of code?
@@ -131,5 +158,5 @@
          money = 50
 
      
-
+it should be elif for ocupation b and c and there should be a else statment asking again if a invalid input is input.
      
