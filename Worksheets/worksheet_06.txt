@@ -17,21 +17,23 @@
      while x < 10:
          print(x)
          x = x + 2
-     
+     my guess is that its going to print 0, 2, 4, 6, 8
+     guess was correct
   2. What does this program print out?
      
      x = 1
      while x < 64:
          print(x)
          x = x * 2
-     
+     my guess it that it's going to print 1, 2, 4, 8, 16, 32 all on seperate lines
+     the correct answer is 1 , 2 , 4 , 8, 16, 32
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
-     
+     You dont need to check for things that can only be true
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
      x = 5
@@ -40,14 +42,20 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
-     
+    5
+    4
+    3
+    2
+    1
+    0
+    It does not print "Blast off!" because x would have to be equal to an integer but its a string
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
      
      x = float(input("Enter a number greater than zero: "))
 
      while x <= 0:
-         print("Too small. Enter a number greater than zero: ")
+         x = float(input("Too small. Enter a number greater than zero: "))
      
   6. Fix the following code:
      

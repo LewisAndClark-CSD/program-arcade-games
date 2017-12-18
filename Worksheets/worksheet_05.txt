@@ -8,40 +8,68 @@
   1. Explain how the computer coordinate system differs from the standard Cartesian
      coordinate system. There are two main differences. List both.
 
+     The Cartesian coordinate system will start (0,0) in the middle of the screen where as the computer coordinate system starts (0,0) in the top left of the screen.
+
   2. Before a Python Pygame program can use any functions
      like pygame.display.set_mode(), what two lines of code must occur first?
 
+     import pygame
+     pygame.init()
   3. Explain how WHITE = (255, 255, 255) represents a color.
 
+   This sets the red blue and green values to 100% which makes the color white
+   
   4. When do we use variable names for colors in all upper-case, and when do we
      use variable names for colors in all lower-case? (This applies to all variables,
      not just colors.)
 
+    All uppercase variable names is to show that the variable is a constant and wont be changed, and all lowercase variable names do change
+     
   5. What does the pygame.display.set_mode() function do?
+  
+  this initializes the display window and screen module
 
   6. What does this for event in pygame.event.get() loop do?
+  
+  This gets events from the queue
 
   7. What is pygame.time.Clock used for?
 
+  used for frame rate
+  
   8. For this line of code: (3 pts)
      
      pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
      
      * What does screen do?
+        Decides which screen to draw the line on
      * What does [0, 0] do?
+     Starting point
      * What does [100, 100] do?
+     End point
      * What does 5 do?
+     Thickness
      
 
   9. What is the best way to repeat something over and over in a drawing?
-
+    
+    Establish a variable name that is easily accessed throughout the code.
+    OR
+    When drawing establish a range for the drawing to repeat.
+    
  10. When drawing a rectangle, what happens if the specified line width is zero?
-
+    
+    It fills the entire rectangle with the color
+    
  11. Describe the ellipse drawn in the code below.
      * What is the x, y of the origin coordinate?
-     * What does the origin coordinate specify? The center of the circle?
-     * What is the length and the width of the ellipse?
+     (20,20)
+     * What does the origin coordinate specify?
+     Where the top corner of the elipse starts
+     The center of the circle?
      
+     * What is the length and the width of the ellipse?
+     The length and the width of the ellipse is 250, 100
      
      pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
      

@@ -14,17 +14,39 @@
   1. Write a Python program that will use a for loop to print your name
      10 times, and then the word ``Done'' at the end.
 
+name = 1
+while name <= 10:
+    name = name + 1
+    print("Cole")
+    
   2. Write a Python program that will use a for loop to print ``Red''
      and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
      Don't use \n.)
 
+RG = 1
+while RG <= 20:
+    RG = RG + 1
+    print('Red ' + ' Gold')
+    
+
+     
   3. Write a Python program that will use a for loop to print the even
      numbers from 2 to 100, inclusive.
+     
+    for num in range(2, 102, 2):
+        print(num)
+    
 
   4. Write a Python program that will use a while loop to count from
      10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
      a WHILE loop, don't use a FOR loop.
 
+num = 11
+while num >=1:
+    num = num - 1
+    print(num)
+print("Blast Off!")
+     
   5. There are three things wrong with this program. List each. (3 pts)
      
      print("This program takes three numbers and returns the sum.")
@@ -35,12 +57,24 @@
          total = total + i
      print("The total is:", x)
      
+    The print statement should be after the for loop
+    The equation should be total = total + str(x)
+     when you print it should be print("The total is:", total)
+     
   6. Write a program that prints a random integer from 1 to 10 (inclusive).
+
+import random
+for x in range(1):
+    print(random.randint(1,10))
 
   7. Write a program that prints a random floating point number somewhere between
      1 and 10 (inclusive). Do not make the mistake of generating a random number from
      0 to 10 instead of 1 to 10.
 
+import random
+for x in range(1):
+    print(float(random.randint(1,10)))
+    
   8. Write a Python program that will: (3 pts)
      
      * Ask the user for seven numbers
@@ -49,6 +83,26 @@
      and the number of negative entries. Use an if, elif, else chain, not just three
      if statements.
      
+pos_num = 0
+neg_num = 0
+zero = 0
+number_sum = 0
+number_count = 0
+while number_count <= 6:
+    number_count = number_count + 1
+    number_input = int(input('Enter a number: '))
+    number_sum = number_sum + number_input
+    if number_input > 0:
+        pos_num = pos_num + 1
+    elif number_input < 0:
+        neg_num = neg_num + 1
+    elif number_input == 0:
+    zero = zero + 1
+print("Your total is " + str(number_sum))
+print('There were ' + str(pos_num) + ' positive numbers')
+print('There were ' + str(neg_num) + ' negative numbers')
+print('There were ' + str(zero) + ' numbers equal to zero')
+
   9. Coin flip tosser: (4 pts)
      
      * Create a program that will print a random 0 or 1.
@@ -57,6 +111,25 @@
      * Add a loop so that the program does this 50 times.
      * Create a running total for the number of heads flipped, and the number of tails.
      
+heads = 0
+tails = 0
+count = 0
+from random import randint
+while count < 50:
+    number = randint(0,1)
+    if number == 1:
+        print("Heads!")
+        heads = heads + 1
+    elif number == 0:
+        print("Tails!")
+        tails = tails + 1
+    count = count + 1
+print('You flipped heads ' + str(heads) + ' times')
+print('You flipped tails ' + str(tails) + ' times')
+
+        
+    
+
  10. Write a program that plays rock, paper, scissors: (4 pts)
      
      * Create a program that randomly prints 0, 1, or 2.

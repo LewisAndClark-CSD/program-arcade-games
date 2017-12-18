@@ -7,36 +7,88 @@
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
 
+        50 = 0110010
+        
   2. Give an example of a decimal number.
 
+    50
+    
   3. Give an example of a hexadecimal number.
 
+        50 = 32
+  
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+    
+    1 = 1
+    10 = 2
+    100 = 4
+    1000 = 8
+    10000 = 16
+    
   5. What is a compiler?
 
+  A program that allows the computer to read a certain language of code
+  
   6. What is source code?
-
+        
+        Source code is the original code of a program
+        
   7. What is machine language? (Don't just say binary. That's not correct.)
 
+  A language like binary or hexidecimal that the computer can read and function accordingly
+  
   8. What is a first generation language? (Don't just say binary. That's not correct.)
+  
+  A machine-level programming language
 
   9. What is a second generation language?
 
+  The generational way to catagorize generational languages
+  
  10. What is a third generation language? (Explain, don't just give one example.)
+ 
+    A generational way to categorize high-level computer programming languages like C++ or Java.
 
  11. What is an interpreter and how does it differ from a compiler?
 
+    An interpreter translates programs one line at a time while a compiler reads the program as a whole
+ 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
-
+https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html
+     
+     Java
+     Python
+     C
+     Ruby
+     JavaScript
+     C#
+     PHP
+     Objective-C
+     SQL
+     C
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
+https://www.google.com/search?q=programer+jobs&oq=programer+jobs&aqs=chrome.0.0l6.13551j0j4&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&htidocid=7t4j-0Qr7EV5XWqFAAAAAA%3D%3D&safe=active&ssui=on
 
+HTML,XML,JaveScript,PL/SQL
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
 
+     Syntax: formal rules governing the construction of valid statements in a language.
+     Semantics: set of rules which ive the meaning of a statement.
+     
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
 
+     Iphone
+     
+     Hardware:
+     Retina Displays
+     Finger print scanner
+     Camera
+     
+     Software:
+     iOS
+     siri
      
