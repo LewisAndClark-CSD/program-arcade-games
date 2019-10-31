@@ -8,7 +8,9 @@
 
      
   1. List the four types of data we've covered, and give an example of each:
-
+  
+    The first type of data is a string, something like "Hello, World." The second type is an integer, a number, and an example is "user_input = int(user_input)". The third type is a floating point, which is also a number but includes the numbers past the point, an example would be "3.194", and finally we have the boolean, true or false, and an example is "while done is false:".
+    
   2. What does this code print out? For this and the following problems, make
      sure you understand WHY it prints what it does. You don't have to explain it,
      but if you don't understand why, make sure to ask.
@@ -19,11 +21,15 @@
      print(my_list[4])
      print(my_list[5])
      
+     This program prints out 2, 101, and an error message as there is no 5th variable in the list.
+     
   3. What does this code print out?
      
      my_list=[5, 2, 6, 8, 101]
      for my_item in my_list:
          print(my_item)
+    
+    The program prints out 5, 2, 6, 8, and 101.
      
   4. What does this code print out?
      
@@ -34,6 +40,8 @@
      my_list2[2] = 10
      print(my_list2)
      
+     It prints out [5, 2, 6, 10, 101] and an error message because in the list the 3rd variable (8) is changed to 10 before it prints the list and the error message is to tell you you can't change the variables in a tuple like a list.
+     
   5. What does this code print out?
      
      my_list = [3 * 5]
@@ -41,12 +49,16 @@
      my_list = [3] * 5
      print(my_list)
      
+     This code prints out [15] and [3, 3, 3, 3, 3] as the first list does 3 times 5, but the 2nd '3' 5 times. 
+     
   6. What does this code print out?
      
      my_list = [5]
      for i in range(5):
      	my_list.append(i)
      print(my_list)
+     
+     This prints out [5, 0, 1, 2, 3, 4] as the list starts at the variable 5, then goes up in range to 5. 
      
   7. What does this code print out?
      
@@ -56,17 +68,23 @@
      print(len("2"))
      print(len(2))
      
+     The code prints out 2, 9, 8, 1, and an error message as 2 is an integer and does not have a len function. The other numbers represent how many letters, spaces, characters, etc. are in the strings.
+     
   8. What does this code print out?
      
      print("Simpson" + "College")
      print("Simpson" + "College"[1])
      print( ("Simpson" + "College")[1] )
      
+     This prints out 'SimpsonCollege", "Simpsono" and "i" (without qoutations) as in the first there is no space between them indicated, the second prints Simpson and the 1st variable of college, and the 3rd only prints the 1st variable of the entire string.
+     
   9. What does this code print out?
      
      word = "Simpson"
      for letter in word:
          print(letter)
+    
+    This prints out S, i, m, p, s, o, and n on all different lines because the for loop steps through the entire word, previously defined as "Simpson" and prints out each letter/variable in it.
      
  10. What does this code print out?
      
@@ -75,16 +93,22 @@
          word += "College"
      print(word)
      
+     This prints out "SimponCollegeCollegeCollege" because there are no indicated spaces, word is defined originally as "Simpson" and then "College" is added 3 times in the range.
+     
  11. What does this code print out?
      
      word = "Hi" * 3
      print(word)
+     
+     This prints out "HiHiHi" as word is defined as the string "Hi" times 3 and then prints the word. 
      
  12. What does this code print out?
      
      my_text = "The quick brown fox jumped over the lazy dogs."
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
+     
+     This code prints out "The 3rd sopt is: " and "The -1 spot is: ." as the 3rd variable is a space, and the -1 variable is the period at the end of the line.
      
  13. What does this code print out?
      
@@ -93,9 +117,17 @@
      print(s[:3])
      print(s[3:])
      
+     This prints out 1, 012, and 3456789 because the 1st variable is 1, the 2nd print statement starts at 1 and stops before 3, and the 3rd print statement starts at variable three and goes to the end of the string.
+     
  14. Write a loop that will take in a list of five numbers from the user, adding
      each to an array. Then print the array. Try doing this without looking at the
      book.
+     
+     numberList = []
+     numbers = input('Enter 5 Numbers: ')
+     for item in numbers:
+         numberList.append(int(item))
+     print(numberList)
 
  15. Write a program that take an array like the following, and print the average.
      Use the len function, don't just use 15, because that won't work if
@@ -104,5 +136,11 @@
      Sum the numbers individually as shown in the chapter.)
      
      my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
+     
+     my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
+     list_average = 0
+     for i in range(len(my_list)):
+         list_average = list_average + int(my_list[i])
+     print((list_average)/len(my_list))
      
      
