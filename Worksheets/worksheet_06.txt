@@ -17,6 +17,9 @@
      while x < 10:
          print(x)
          x = x + 2
+         
+    it will print 0,2,4,6,8 on seperate lines
+    it prints 0,2,4,6,8 all on seperate lines
      
   2. What does this program print out?
      
@@ -25,12 +28,17 @@
          print(x)
          x = x * 2
      
+     it will print 1,2,4,8,16,32 on seperate lines
+     it prints 1,2,4,8,16,32 on seperate lines
+     
   3. Why is the and x >= 0 not needed?
      
      x = 0
      while x < 10 and x >= 0:
          print(x)
          x = x + 2
+         
+         You don't need to check for things that can never be false
      
   4. What does this program print out? (0 pts) Explain. (1 pt)
      
@@ -40,6 +48,8 @@
          if x == "1":
              print("Blast off!")
          x = x - 1
+         
+         it prints 5, 4, 3, 2, 1, 0 on seperate lines because there are quotations around the number 1 making it a string
      
   5. Fix the following code so it doesn't repeat forever, and keeps asking
      the user until he or she enters a number greater than zero: (2 pts)
@@ -48,6 +58,8 @@
 
      while x <= 0:
          print("Too small. Enter a number greater than zero: ")
+     
+     instead of print it should use input
      
   6. Fix the following code:
      
@@ -59,13 +71,28 @@
 
      print("Blast-off")
      
+     It should be:
+     
+     x = 10
+     
+     while x > 0:
+        print(x)
+        x = x - 1
+        
+    print("Blast-off")
+    
+    It should say while x is greater than 0, not less than. x - 1 wouldn't work as it would only make it 9.
+     
   7. What is wrong with this code? It runs but it has unnecessary code.
      Find all the unneeded code. Also, answer why it is not needed. (1 pt)
      
      i = 0
      for i in range(10):
          print(i)
-         i += 1
+         i += 
+     
+     You do not have to define i
+     The for loop sets i
      
   8. Explain why the values printed for x are so different. (2 pts)
      
@@ -86,3 +113,4 @@
      print(x)
      
       
+Sample 2 has a nested for loop, making j run 10 times while Sample 1 is not nested making each run only once 
