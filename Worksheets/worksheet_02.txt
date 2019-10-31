@@ -7,36 +7,67 @@
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
 
+    1011 0001 1101
+     
   2. Give an example of a decimal number.
+  
+    56
 
   3. Give an example of a hexadecimal number.
+  
+  F7C6
 
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
+  
+  1, 2, 4, 8, 16
 
   5. What is a compiler?
 
+  Takes the program written and converts it to machine code.
+  
   6. What is source code?
+  
+  The code that is typed by a user.
 
   7. What is machine language? (Don't just say binary. That's not correct.)
+  
+  Machine language uses the same system as binary code does, and can not only use it to interpret commands, but also to store data, like documents.
 
   8. What is a first generation language? (Don't just say binary. That's not correct.)
+  
+  A first generation language is where a number represents data or instructions for a computer to perform.
 
   9. What is a second generation language?
+  
+  Assembly language
 
  10. What is a third generation language? (Explain, don't just give one example.)
+ 
+ Program languages that uses logic to make certain commands perform, such as python, COBOL, and C#.
 
  11. What is an interpreter and how does it differ from a compiler?
+ 
+ An interpreter directly translates source code into machine code, while a compiler takes it and turns it into machine code.
 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
+     
+     java, python, C#, Ruby, JavaScript, C,PHP, Objective-C, SQL
+     https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html
 
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
 
+     The most common languages people are looking for when hiring are python, c+, and java.
+     https://stackoverflow.com/jobs
+     
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
 
+     Syntax is the code structure, while semantics is the meaning of the symbols and words.
+     
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
 
-     
+     A piece of technology I commonly use is my new 3ds. It has duel screens, with the bottom screen being a touch-screen. The top screen is able to go in 3d, thus the name.
+     It also connects to the intenet and you can download games from their shop in the console.
